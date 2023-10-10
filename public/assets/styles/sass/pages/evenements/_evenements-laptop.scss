@@ -1,0 +1,295 @@
+/* === Page évènements === */
+
+/* Style pour version Laptop */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    :root {
+        font-size: 10px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    
+    /* === Barre de navigation === */
+    @import '../../layout/navbar-laptop';
+
+    main {
+        width: 100%;
+        height: auto;
+        flex-grow: 1;
+        background-color: $grey_white;
+        &.dark-mode {
+            background-color: $grey_black;
+        }
+    }
+
+    /* === Section 1 : Informations === */
+
+    #sectionInformationsEvents {
+        width: 100%;
+        height: 100%;
+    }
+
+    // Conteneur principal des informations
+    .main__container-infos {
+        width: 100%;
+        height: 50vh;
+        padding: 10px;
+        background-color: $grey_white;
+
+        // Ajout dark mode
+        &.dark-mode {
+            background-color: $grey_black;
+        }
+
+        // Conteneur titre
+        > .main__container-infos__title {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            width: 100%;
+            height: 22.5%;
+            font-family: $fontText, sans-serif;
+
+            // Titre
+            > .main__container-infos__title--title {
+                font-size: 3.6rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+        }
+
+        // Conteneur textes
+        > .main__container-infos__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 78.5%;
+            font-family: $fontText, sans-serif;
+
+            // Ajout dark mode
+            &.dark-mode {
+                color: $white;
+            }
+
+            // Textes
+            > .main__container-infos__text--text {
+                width: 75%;
+                margin-bottom: 20px;
+                text-align: center;
+                font-size: 2.4rem;
+                font-family: $fontText, sans-serif;
+                color: $black;
+
+                // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                
+                > span {
+                    font-weight: bold;
+                    font-family: $fontText, sans-serif;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+            }  
+        }
+    }
+
+    /* === Section 2 : Evènements === */
+
+    #sectionEventsEvents {
+        width: 100%;
+        height:  auto;
+    }
+
+    // Conteneur principal des évènements
+    .main__container-events {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        background-color: $white;
+
+        // Ajout dark mode
+        &.dark-mode {
+            background-color: $black;
+        }
+
+        // Conteneur principal des informations
+        > .main__container-events__infos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            height: auto;
+
+            // Conteneur titre
+            > .main__container-events__infos__title {
+                display: flex;
+                align-items: center;
+                width: 80%;
+                height: 20%;
+                font-family: $fontText, sans-serif;
+
+                // Titre
+                > .main__container-events__infos__title--title {
+                    font-size: 3.2rem;
+                    font-weight: bold;
+                    font-family: $fontText, sans-serif;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+            }
+
+            // Conteneur date
+            > .main__container-events__infos__date {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 80%;
+                height: 20%;
+
+                // Date
+                > .main__container-events__infos__date--text{
+                    padding: 5px;
+                    font-size: 2.4rem;
+                    font-weight: bold;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+
+                > p {
+                    padding: 5px;
+                    font-size: 2.4rem;
+                    font-family: $fontText, sans-serif;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+            }
+
+            // Conteneur horaires
+            > .main__container-events__infos__hours {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 80%;
+                height: 20%;
+                margin-bottom: 1%;
+
+                // Horaires
+                > .main__container-events__infos__hours--text{
+                    padding: 5px;
+                    font-size: 2.4rem;
+                    font-weight: bold;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+
+                > p {
+                    padding: 5px;
+                    font-size: 2.4rem;
+                    font-family: $fontText, sans-serif;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+            }
+
+            // Conteneur description
+            > .main__container-events__infos__description {
+                width: 80%;
+                height: auto;
+
+                // Description
+                > .main__container-events__infos__description--text{
+                    padding: 5px;
+                    font-size: 2.4rem;
+                    font-weight: bold;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+
+                > p {
+                    padding: 5px;
+                    font-size: 2.4rem;
+                    text-align: justify;
+                    font-family: $fontText, sans-serif;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        // Conteneur principal de l'image
+        > .main__container-events__picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: auto;
+
+            // Conteneur image
+            > .main__container-events__picture__img {
+                width: 80%;
+                height: 100%;
+                overflow: hidden;
+
+                // Image
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover
+                }
+            }
+        }
+    }
+
+    .space__div {
+        width: 100%;
+        height: 10vh;
+        background-color: $grey_white;
+
+        // Ajout dark mode
+        &.dark-mode {
+            background-color: $grey_black;
+        }
+    }
+
+    /* === Footer === */
+    @import '../../layout/footer-laptop';
+}

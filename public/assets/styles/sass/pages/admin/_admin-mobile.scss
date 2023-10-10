@@ -1,0 +1,683 @@
+/* === Page admin === */
+
+/* Style pour version Mobile */
+@media screen and (max-width: 767px) {
+    :root {
+        font-size: 10px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%
+    }
+
+    main {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-grow: 1
+    }
+
+    #sectionDeconnexion {
+        width: 100%;
+        height: 15vh;
+    }
+
+    // Conteneur principal
+    .main__container__deconnexion {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+
+        // Conteneur burger
+        > .main__container__deconnexion__burger-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 100%;
+
+            // Burger
+            > img {
+                width: 40px;
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+
+                // Hover zoom
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        // Conteneur titre
+        > .main__container__deconnexion__title-container {
+            display: none;
+        }
+
+        // Conteneur ID admin et bouton déconnexion
+        > .main__container__deconnexion__button-id-container {
+            display: none;
+        }
+    }
+
+    #sectionAdd {
+        width: 100%;
+        height: 15vh;
+    }
+
+    // Conteneur principal
+    .main__container__links-add {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+
+        // Conteneur des liens vers les tableaux
+        > .main__container__links-add__links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+
+            // Liens
+            > button {
+                padding: 1%;
+                font-size: 1.4rem;
+                font-family: sans-serif;
+                border: none;
+                color: $black;
+                background-color: $grey_white;
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                    padding: 1%;
+                }
+            }
+
+            > p {
+                font-size: 1.6rem;
+                margin: 0 1% 0 1%;
+            }
+        }
+
+        > div {
+            width: 33.33%;
+        }
+
+        // Conteneur filtre produits
+        > .filter_admin-products {
+            width: 100%;
+            height: auto;
+            margin: 2% 0 2% 0;
+
+            // Fomulaire
+            > form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                
+                // Select
+                > .filter__admin-products__select {
+                    width: 100%;
+                    height: 4vh;
+                    cursor: pointer;
+                    border: none;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                    font-size: 1.4rem;
+                }
+
+                // Search
+                > .filter__admin-products__search-input {
+                    width: 100%;
+                    height: 4vh;
+                    margin: 1.5% 0 1.5% 0;
+                    border: none;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                    font-size: 1.4rem;
+                }
+
+                > .filter__admin-products__button {
+                    width: 100%;
+                    height: 4vh;
+                    cursor: pointer;
+                    border: none;
+                    background-color: $white;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                    font-size: 1.4rem;
+
+                    &:hover {
+                        background-color: $black;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        // Conteneur bouton ajouter
+        > .main__container__links-add__add {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin: 1.5% 0 1.5% 0;
+
+            // Bouton
+            > .main__container__links-add__add--btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                width: 100%;
+                text-align: center;
+                text-decoration: none;
+                font-family: sans-serif;
+                font-size: 1.4rem;
+                color: $white;
+                background-color: #007bff;
+
+                &:hover {
+                    background-color:  #0067eb;
+                }
+            }
+        }
+    }
+
+    #sectionTables {
+        width: 100%;
+        height: auto;
+    }
+
+    // Conteneur de tout les tableaux
+    .main__container__tables {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+        // Conteneur principal tableau 1
+        > .main__container__tables__one {
+            display: block;
+            width: 90%;
+            height: auto;
+            overflow-x: auto;
+
+            // Tableau 1
+            > table {
+                width: 100%;
+                height: auto;
+
+                > thead {
+                    width: 100%;
+                    height: 10vh;
+    
+                    > tr {
+                        width: 100%;
+                        height: 10vh;
+                        
+                        > th {
+                            width: 16.6%;
+                            height: 10vh;
+                            font-size: 1.2rem;
+                            font-family: sans-serif;
+                            font-weight: bold;
+                            line-height: 90px;
+                            vertical-align: center;
+                            background-color: lightgrey;
+                        }
+                    }
+                }
+
+                > tbody {
+                    width: 100%;
+                    height: auto;
+
+                    > tr {
+                        width: 100%;
+                        height: auto;
+                        border-bottom: 1px solid lightgrey;
+
+                        td {
+                            padding: 10px;
+                            width: 16.6%;
+                            height: auto;
+                            max-width: 300px; 
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                            white-space: nowrap;
+                            font-size: 1.2rem;
+                            font-family: sans-serif;
+                            text-align: center;
+                            background-color: $white;
+
+                            > a {
+                                text-decoration: none;
+                                
+                                img {
+                                    width: 40px;
+                                    margin-block: 10px;
+                                    transition: transform 0.2s ease-in-out;
+
+                                    // Hover zoom
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+
+        // Conteneur principal tableau 2
+        > .main__container__tables__two {
+            display: none;
+            width: 90%;
+            height: auto;
+            overflow-x: auto;
+
+            // Tableau 2
+            > table {
+                width: 100%;
+                height: auto;
+
+                > thead {
+                    width: 100%;
+                    height: 10vh;
+    
+                    > tr {
+                        width: 100%;
+                        height: 10vh;
+                        
+                        > th{
+                            width: 14.28%;
+                            height: 10vh;
+                            font-size: 1.2rem;
+                            font-family: sans-serif;
+                            font-weight: bold;
+                            line-height: 90px;
+                            vertical-align: center;
+
+                            background-color: lightgrey;
+                        }
+                    }
+                }
+
+                > tbody {
+                    width: 100%;
+                    height: auto;
+
+                    > tr {
+                        width: 100%;
+                        height: auto;
+                        border-bottom: 1px solid lightgrey;
+
+                        td {
+                            padding: 10px;
+                            width: 14.28%;
+                            height: auto;
+                            max-width: 300px; 
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                            white-space: nowrap;
+                            font-size: 1.2rem;
+                            font-family: sans-serif;
+                            text-align: center;
+                            background-color: $white;
+
+                            > a {
+                                text-decoration: none;
+                                
+                                img {
+                                    width: 40px;
+                                    margin-block: 10px;
+                                    transition: transform 0.2s ease-in-out;
+
+                                    // Hover zoom
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+
+        // Conteneur principal tableau 3
+        > .main__container__tables__three {
+            display: none;
+            width: 90%;
+            height: auto;
+            overflow-x: auto;
+
+            // Tableau 3
+            > table {
+                width: 100%;
+                height: auto;
+                margin-top: 30%;
+
+                > thead {
+                    width: 100%;
+                    height: 10vh;
+    
+                    > tr {
+                        width: 100%;
+                        height: 10vh;
+                        
+                        > th{
+                            width: 20%;
+                            height: 10vh;
+                            font-size: 1.2rem;
+                            font-family: sans-serif;
+                            font-weight: bold;
+                            line-height: 90px;
+                            vertical-align: center;
+                            background-color: lightgrey;
+                        }
+                    }
+                }
+
+                > tbody {
+                    width: 100%;
+                    height: auto;
+
+                    > tr {
+                        width: 100%;
+                        height: auto;
+                        border-bottom: 1px solid lightgrey;
+
+                        td {
+                            padding: 10px;
+                            width: 20%;
+                            height: auto;
+                            max-width: 300px; 
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                            white-space: nowrap;
+                            font-size: 1.2rem;
+                            font-family: sans-serif;
+                            text-align: center;
+                            background-color: $white;
+
+                            > a {
+                                text-decoration: none;
+                                
+                                img {
+                                    width: 40px;
+                                    margin-block: 10px;
+                                    transition: transform 0.2s ease-in-out;
+
+                                    // Hover zoom
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Menu latéral burger */
+    
+    // Conteneur principal
+    .main__container__menu-lateral {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 60%;
+        min-height: 100vh;
+        background-color: $black;
+
+        // Conteneur logo et bouton close
+        > .main__container__menu-lateral__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 15vh;
+
+            // Logo
+            > img {
+                width: 85%;
+                height: auto;
+            }
+
+            // Bouton close
+            >.main__container__menu-lateral__close {
+                width: 15%;
+
+                // Icônes
+                > img {
+                    width: 20px;
+                    cursor: pointer;
+                    transition: transform 0.2s ease-in-out;
+    
+                    // Hover zoom
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        // Conteneur titre
+        > .main__container__menu-lateral__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 10vh;
+            background-color: $grey_black;
+
+            // Titre
+            > h2 {
+                font-size: 2rem;
+                font-family: sans-serif;
+                font-weight: bold;
+                color: $white;
+            }
+        }
+
+        // Conteneur liens
+        > .main__container__menu-lateral__links {
+            width: 100%;
+            height: 25vh;
+            background-color: $grey_black;
+
+            // Conteneur liens vers les tableaux
+            > .main__container__menu-lateral__links__datas {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                height: 5vh;
+                padding: 2%;
+
+                // Titre
+                > h3 {
+                    font-size: 1.6rem;
+                    font-family: sans-serif;
+                    color: gray;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+
+                > h3::after {
+                    content: '▼';
+                    font-size: 20px;
+                    margin-left: 5px;
+                }
+            }
+
+            // Conteneur liens vers les paramètres admin
+            > .main__container__menu-lateral__links__settings {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                height: 5vh;
+                padding: 2%;
+
+                // Titre
+                > h3 {
+                    font-size: 1.6rem;
+                    font-family: sans-serif;
+                    color: gray;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+
+                > h3::after {
+                    content: '▼';
+                    font-size: 20px;
+                    margin-left: 5px;
+                }
+            }
+
+            // Conteneur caché "modifcations de données"
+            > .main__container__menu-lateral__links__datas__hidden {
+                display: none;
+                width: 100%;
+                height: 10vh;
+
+                > nav {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    width: 97%;
+                    height: 10vh;
+                    margin-left: 3%;
+
+                    button {
+                        margin-bottom: 5px;
+                        font-size: 1.4rem;
+                        font-family: sans-serif;
+                        border: none;
+                        color: $white;
+                        background-color: $grey_black;
+
+                        &:hover {
+                            color: gray;
+                        }
+                    }
+                }     
+            }
+            
+    
+            // Conteneur caché "paramètres"
+            > .main__container__menu-lateral__links__settings__hidden {
+                display: none;
+                width: 100%;
+                height: 10vh;
+
+                > nav {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    width: 97%;
+                    height: 5vh;
+                    margin-left: 3%;
+
+                    button {
+                        margin-bottom: 5px;
+                        font-size: 1.4rem;
+                        font-family: sans-serif;
+                        border: none;
+                        color: $white;
+                        background-color: $grey_black;
+
+                        &:hover {
+                            color: gray;
+                        }
+                    }
+                }     
+            }
+        }
+
+        > .main__container__menu-lateral__id-deconnexion {
+            width: 100%;
+            height: 50vh;
+            background-color: $grey_black;
+
+            // Conteneur ID admin
+            > .main__container__deconnexion__button-id-container__id {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 10vh;
+
+                // ID admin
+                > .main__container__deconnexion__button-id-container__id--id {
+                    font-family: sans-serif;
+                    font-size: 1.6rem;
+                    color: $white;
+                    
+                    > span {
+                        font-weight: bold;
+                    }
+                }
+                
+                // Id rôle
+                > .main__container__deconnexion__button-id-container__id--role {
+                    font-family: sans-serif;
+                    font-size: 1.4rem;
+                    color: grey;
+                }
+            }
+
+            // Conteneur bouton déconnexion
+            >.main__container__deconnexion__button-id-container__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 10vh;
+                
+                // Bouton
+                > .main__container__deconnexion__button-id-container__button--btn {
+                    height: 40px;
+                    width: 90%;
+                    line-height: 40px;
+                    vertical-align: center;
+                    text-align: center;
+                    font-size: 1.4rem;
+                    font-family: sans-serif;
+                    text-decoration: none;
+                    color: $black;
+                    background-color: $grey_white;
+
+                    &:hover {
+                        background-color: $black;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+/* === Section 1 : Carrousel === */
+#sectionCarouselAccueil {
+    width: 100vw;
+    height: 85vh;
+}
+
+// Style pour le carrousel
+.carousel {
+    width: 100vw;
+    height: 85vh;
+
+    // Style pour le conteneur du carrousel
+    > .carousel__slider {
+        display: flex;
+        width: 100vw;
+        height: 85vh;
+        overflow: hidden;
+        
+        // Style pour chaque élément du carrrousel
+        > .carousel__slider__item {
+            width: 100vw;
+            height: 85vh;
+            position: relative;
+          
+            // Style pour les images à l'intérieur de chaque élément
+            > .carousel__slider__item--img {
+                width: 100vw;
+                height: 85vh;
+            }
+
+            // Style pour le titre à l'intérieur de chaque élément
+            > .carousel__slide__item--title {
+                position: absolute;
+                top: 35%;
+                left: 18.5%;
+                width: 37.5%;
+                text-align: left;
+                font-size: 7rem;
+                font-family: $fontText, sans-serif;
+                font-weight: bold;
+                color: $white;
+            }
+
+            // Style pour le lien à l'intérieur de chaque élément
+            > .carousel__slide__item--link {
+                position: absolute;
+                bottom: 30%;
+                left: 18.5%;
+                height: 70px;
+                width: 225px;
+                text-decoration: none;
+                text-align: center;
+                vertical-align: center;
+                line-height: 70px;
+                font-size: 1.8rem;
+                font-family: $fontText, sans-serif;
+                color: $black;
+                background-color: $white;
+
+                @import '../../states/accueil_hover/hover';
+
+                // Ajout du dark mode
+                &.dark-mode {
+                    color: $white;
+                    background-color: $black;
+
+                    &:hover {
+                        background-color: $white;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+/* === Section 3 : Petit carrousel === */
+#sectionLittleCarouselAccueil {
+    width: 100%;
+    height: 30vh;
+}
+
+.little__carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    > .little__carousel__slider {
+       display: flex;
+        width: 100%;
+        height: 100%;
+
+        > .little__carousel__slider__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: $grey_white;
+
+            // Ajout du dark mode
+            &.dark-mode {
+                background-color: #222222;
+            }
+
+            > .little__carousel__slide__item--title {    
+                margin-bottom: 15px; 
+                font-size: 3.2rem;
+                font-weight: bold;
+                text-align: center;
+                font-family: $fontText, sans-serif;
+
+                // Ajout du dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+
+            > .little__carousel__slide__item--text {
+                font-size: 2.8rem;
+                font-style: italic;
+                text-align: center;
+                font-family: $fontText, sans-serif;
+
+                // Ajout du dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

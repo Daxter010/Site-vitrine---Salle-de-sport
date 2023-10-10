@@ -1,0 +1,22 @@
+// Hover menu déroulant "espaces" (navbar)
+&:hover .nav__sublist {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $fontText, sans-serif;
+    font-size: 2rem;
+    z-index: 1;
+    background-color: white;
+
+    // Ajout du dark mode
+    &.dark-mode {
+        background-color: black;
+    }
+}
+
+// Style hover background <li> et couleur des liens <a> (navbar)
+&:hover {
+    color: $white;
+    background-color: $black;
+}

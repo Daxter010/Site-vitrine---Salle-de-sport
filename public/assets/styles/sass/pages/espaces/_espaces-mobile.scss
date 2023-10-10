@@ -1,0 +1,1003 @@
+/* === Page espaces === */
+
+/* Style pour version Mobile */
+@media screen and (max-width: 767px) {
+    :root {
+        font-size: 10px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    /* === Barre de navigation === */
+    @import '../../layout/navbar-mobile';
+
+    main {
+        width: 100%;
+        height: auto;
+        flex-grow: 1;
+    }
+   
+    /* === Section 1 : Tout les espaces === */
+
+    #sectionEspaces {
+        width: 100%;
+        height: auto;
+    }
+
+    // Conteneur principal
+    .main__container__espaces {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+        // Conteneur espaces circuits et cardio
+        > .main__container__espaces-circuits-cardio {
+            width: 100%;
+            height: auto;
+
+            // Conteneur circuits
+            > .main__container__espaces-circuits-cardio__circuits {
+
+                // Filtre noir
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width:100%;
+                    height: 100%;    
+                    background-color: rgba(0, 0, 0, 0.5);   
+                }
+
+                // Au survol, retire le filtre noir
+                &:hover::before {
+                    background-color: transparent;
+                }
+
+                position: relative;     
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                
+                // Image de fond
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                // Titre
+                > h2 {
+                    position: absolute;
+                    top: 0%;        
+                    height: 100%;
+                    width: 100%;
+                    font-size: 2.4rem;
+                    font-family: $fontText, sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 25.5vh;
+                    vertical-align: middle;
+                    color:$white;
+                }
+
+                // Au survol, le titre disparaît
+                &:hover {
+                    h2 {
+                        display: none
+                    }
+                }
+            }
+
+            // Conteneur cardio
+            > .main__container__espaces-circuits-cardio__cardio {
+
+                // Filtre noir
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width:100%;
+                    height: 100%;   
+                    background-color: rgba(0, 0, 0, 0.5);   
+                }
+
+                // Au survol, retire le filtre noir
+                &:hover::before {
+                    background-color: transparent;
+                }
+
+                position: relative;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+
+                // Image de fond
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                // Titre
+                > h2 {
+                    position: absolute;
+                    top: 0;      
+                    height: 100%;
+                    width: 100%;
+                    font-size: 2.4rem;
+                    font-family: $fontText, sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 25.5vh;
+                    vertical-align: middle;
+                    color:$white;
+                }
+
+                // Au survol, le titre disparaît
+                &:hover {
+                    h2 {
+                        display: none
+                    }
+                }
+            }
+        }
+
+        // Conteneur vestiaires
+        > .main__container__espaces-vestiaires {
+
+            // Filtre noir
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);   
+            }
+
+            // Au survol, retire le filtre noir
+            &:hover::before {
+                background-color: transparent;    
+            }
+
+            position: relative;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+
+            // Image de fond
+            > img {
+                width: 100%;
+                height: 100%;     
+                object-fit: cover;
+            }
+
+            // Titre
+            > h2 {
+                position: absolute;
+                top: 0;   
+                height: 100%;
+                width: 100%;
+                font-size: 2.4rem;
+                font-family: $fontText, sans-serif;
+                font-weight: bold;
+                text-align: center;
+                line-height: 25.5vh;
+                vertical-align: middle;
+                color:$white;
+            }
+
+            // Au survol, le titre disparaît
+            &:hover {
+                h2 {
+                    display: none
+                }
+            }
+        }
+
+        // Conteneur espaces musculation et machines guidées
+        > .main__container__espaces-musculation-machines {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+
+            // Conteneur musculation
+            > .main__container__espaces-musculation {
+
+                // Filtre noir
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width:100%;
+                    height: 100%;     
+                    background-color: rgba(0, 0, 0, 0.5);   
+                }
+
+                // Au survol, retire le filtre noir
+                &:hover::before {
+                    background-color: transparent;
+                }
+
+                position: relative;        
+                width: 100%;
+                height: 100%; 
+                cursor: pointer; 
+                
+                // Image de fond
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                // Titre
+                > h2 {
+                    position: absolute;
+                    top: 0;              
+                    height: 100%;
+                    width: 100%;
+                    font-size: 2.4rem;
+                    font-family: $fontText, sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 25.5vh;
+                    vertical-align: middle;
+                    color:$white;
+                }
+
+                // Au survol, le titre disparaît
+                &:hover {
+                    h2 {
+                        display: none
+                    }
+                }
+            }
+
+            // Conteneur machines guidées
+            > .main__container__espaces-machines {
+                // Filtre noir
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0; 
+                    width:100%;
+                    height: 100%;                 
+                    background-color: rgba(0, 0, 0, 0.5);   
+                    transition: background-color 0.3s ease; 
+                }
+
+                // Au survol, retire le filtre noir
+                &:hover::before {
+                    background-color: transparent;
+                }
+
+                position: relative;            
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+
+                // Image de fond
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                // Titre
+                > h2 {
+                    position: absolute;
+                    top: 0;                 
+                    height: 100%;
+                    width: 100%;
+                    font-size: 2.4rem;
+                    font-family: $fontText, sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 25.5vh;
+                    vertical-align: middle;
+                    color:$white;
+                }
+
+                // Au survol, le titre disparaît
+                &:hover {
+                    h2 {
+                        display: none
+                    }
+                }
+            }
+        }
+    }
+
+    /* === Elements (cachés) montrés uniquement au click === */
+
+    // Conteneur principal Circuits-training
+    .main-show__circuits-training {
+        display: none;   
+        width: 100%;
+        height: auto;
+
+        // Conteneur de l'image de fond
+        > .main-show__circuits-training__img-container{
+            display: none;
+            position: relative;     
+            width: 100%;
+            height: 100%;
+
+            // Filtre noir
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height: 100%;       
+                background-color: rgba(0, 0, 0, 0.5);   
+            }
+
+            // Image de fond
+            > .main-show__circuits-training__img-container--img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        // Conteneur du contenus principal
+        .main-show__circuits-training__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            background-color: black;
+
+            //  Conteneur titre + icon 
+            > .main-show__circuits-training__title-close {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 20%;
+                padding: 10px;
+
+                // Titre
+                > .main-show__circuits-training__title-close--title {
+                    font-size: 2.4rem;
+                    line-height: 60px;
+                    vertical-align: center;
+                    font-family: $fontText, sans-serif;
+                    font-weight: bold;
+                    color: $white;
+                }
+
+                // Icon close
+                > .main-show__circuits-training__title-close--icon {
+                    margin-top: 25px;
+                    width: 15px;
+                    height: 15px;
+                    cursor: pointer;
+                    transition: transform 0.2s ease-in-out;
+
+                    // Hover zoom
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            // Conteneur texte
+            .main-show__circuits-training__text {
+                width: 90%;
+                height: auto;
+
+                // Texte
+                > .main-show__circuits-training__text--text {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    font-family: $fontText, sans-serif;
+                    color: $grey_white;
+
+                    > span {
+                        font-weight: bold;
+                        color: $white;
+                    } 
+                }
+            }
+
+            // Conteneur photos + textes descriptif
+            .main-show__circuits-training__img-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+
+                // Conteneur images
+                > .main-show__circuits-training__img-text__img {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+
+                    // Images
+                    >.main-show__circuits-training__img-text__img--img {
+                        width: 70%;
+                        height: auto;
+                    }
+                }
+
+                // Conteneur textes
+                > .main-show__circuits-training__img-text__text {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+
+                    // Textes
+                    > .main-show__circuits-training__img-text__text--text {
+                        font-size: 1.6rem;
+                        padding: 5px;
+                        text-align: justify;
+                        font-family: $fontText, sans-serif;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    // Conteneur principal Cardio
+    .main-show__cardio {
+        display: none;
+        width: 100%;
+        height: auto;
+
+        // Conteneur de l'image de fond
+        > .main-show__cardio__img-container{
+            display: none;
+            position: relative;    
+            width: 100%;
+            height: auto;
+
+            // Filtre noir
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height: 100%;         
+                background-color: rgba(0, 0, 0, 0.5);   
+            }
+
+            // Image de fond
+            > .main-show__cardio__img-container--img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        // Conteneur du contenus principal
+        .main-show__cardio__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            background-color: black;
+
+            //  Conteneur titre + icon 
+            > .main-show__cardio__title-close {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 20%;
+                padding: 10px;
+
+                // Titre
+                > .main-show__cardio__title-close--title {
+                    font-size: 2.4rem;
+                    line-height: 60px;
+                    vertical-align: center;
+                    font-family: $fontText, sans-serif;
+                    font-weight: bold;
+                    color: $white;
+                }
+
+                // Icon close
+                > .main-show__cardio__title-close--icon {
+                    margin-top: 25px;
+                    width: 15px;
+                    height: 15px;
+                    cursor: pointer;
+                    transition: transform 0.2s ease-in-out;
+
+                    // Hover zoom
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            // Conteneur texte
+            .main-show__cardio__text {
+                width: 90%;
+                height: auto;
+
+                // Texte
+                > .main-show__cardio__text--text {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    font-family: $fontText, sans-serif;
+                    color: $white;
+                }
+            }
+
+            // Conteneur photos + textes descriptif
+            .main-show__cardio__img-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+
+                // Conteneur images
+                > .main-show__cardio__img-text__img {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+
+                    // Images
+                    >.main-show__cardio__img-text__img--img {
+                        width: 70%;
+                        height: auto;
+                    }
+                }
+
+                // Conteneur textes
+                > .main-show__cardio__img-text__text {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+
+                    // Textes
+                    > .main-show__cardio__img-text__text--text {
+                        font-size: 1.6rem;
+                        text-align: justify;
+                        font-family: $fontText, sans-serif;
+                        color: $grey_white;
+
+                        > span {
+                            font-weight: bold;
+                            color: $white;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+
+    // Conteneur principal Vestiaires
+    .main-show__vestiaires {
+        display: none;
+        height: auto;
+
+        // Conteneur de l'image de fond
+        > .main-show__vestiaires__img-container{
+            display: none;
+            position: relative;
+            width: 100%;
+            height: auto;
+
+            // Filtre noir
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height: 100%; 
+                background-color: rgba(0, 0, 0, 0.5);   
+            }
+
+            // Image de fond
+            > .main-show__vestiaires__img-container--img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        // Conteneur du contenus principal
+        .main-show__vestiaires__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            background-color: black;
+
+            //  Conteneur titre + icon 
+            > .main-show__vestiaires__title-close {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 20%;
+                padding: 10px;
+
+                // Titre
+                > .main-show__vestiaires__title-close--title {
+                    font-size: 2.4rem;
+                    line-height: 60px;
+                    vertical-align: center;
+                    font-family: $fontText, sans-serif;
+                    font-weight: bold;
+                    color: $white;
+                }
+
+                // Icon close
+                > .main-show__vestiaires__title-close--icon {
+                    margin-top: 25px;
+                    width: 15px;
+                    height: 15px;
+                    cursor: pointer;
+                    transition: transform 0.2s ease-in-out;
+
+                    // Hover zoom
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            // Conteneur texte
+            .main-show__vestiaires__text {
+                width: 90%;
+                height: auto;
+
+                // Texte
+                > .main-show__vestiaires__text--text {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    font-family: $fontText, sans-serif;
+                    color: $grey_white;
+
+                    > span {
+                        font-weight: bold;
+                        color: $white;
+                    } 
+                }
+            }
+
+            // Conteneur photos + textes descriptif
+            .main-show__vestiaires__img-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+
+                // Conteneur images
+                > .main-show__vestiaires__img-text__img {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+
+                    // Images
+                    >.main-show__vestiaires__img-text__img--img {
+                        width: 70%;
+                        height: auto;
+                    }
+                }
+
+                // Conteneur textes
+                > .main-show__vestiaires__img-text__text {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+
+                    // Textes
+                    > .main-show__vestiaires__img-text__text--text {
+                        font-size: 1.6rem;
+                        padding: 5px;
+                        text-align: justify;
+                        font-family: $fontText, sans-serif;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    // Conteneur principal Musculation
+    .main-show__musculation {
+        display: none;
+        width: 100%;
+        height: auto;
+
+        // Conteneur de l'image de fond
+        > .main-show__musculation__img-container{
+            display: none;
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            // Filtre noir
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height: 100%; 
+                background-color: rgba(0, 0, 0, 0.5);   
+            }
+
+            // Image de fond
+            > .main-show__musculation__img-container--img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        // Conteneur du contenus principal
+        .main-show__musculation__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            background-color: black;
+
+            //  Conteneur titre + icon 
+            > .main-show__musculation__title-close {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 20%;
+                padding: 10px;
+
+                // Titre
+                > .main-show__musculation__title-close--title {
+                    font-size: 2.4rem;
+                    line-height: 60px;
+                    vertical-align: center;
+                    font-family: $fontText, sans-serif;
+                    font-weight: bold;
+                    color: $white;
+                }
+
+                // Icon close
+                > .main-show__musculation__title-close--icon {
+                    margin-top: 25px;
+                    width: 15px;
+                    height: 15px;
+                    cursor: pointer;
+                    transition: transform 0.2s ease-in-out;
+
+                    // Hover zoom
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            // Conteneur texte
+            .main-show__musculation__text {
+                width: 90%;
+                height: auto;
+
+                // Texte
+                > .main-show__musculation__text--text {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    font-family: $fontText, sans-serif;
+                    color: $white;
+                }
+            }
+
+            // Conteneur photos + textes descriptif
+            .main-show__musculation__img-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+
+                // Conteneur images
+                > .main-show__musculation__img-text__img {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+
+                    // Images
+                    >.main-show__musculation__img-text__img--img {
+                        width: 70%;
+                        height: auto;
+                    }
+                }
+
+                // Conteneur textes
+                > .main-show__musculation__img-text__text {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+
+                    // Textes
+                    > .main-show__musculation__img-text__text--text {
+                        font-size: 1.6rem;
+                        text-align: justify;
+                        font-family: $fontText, sans-serif;
+                        color: $grey_white;
+
+                        > span {
+                            font-weight: bold;
+                            color: $white;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+
+    // Conteneur principal Machines
+    .main-show__machines {
+        display: none;
+        width: 100%;
+        height: auto;
+
+        // Conteneur de l'image de fond
+        > .main-show__machines__img-container{
+            display: none;
+            position: relative;   
+            width: 100%;
+            height: 100%;
+
+            // Filtre noir
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height: 100%;    
+                background-color: rgba(0, 0, 0, 0.5);   
+            }
+
+            // Image de fond
+            > .main-show__machines__img-container--img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        // Conteneur du contenus principal
+        .main-show__machines__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            background-color: black;
+
+            //  Conteneur titre + icon 
+            > .main-show__machines__title-close {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                height: 20%;
+                padding: 10px;
+
+                // Titre
+                > .main-show__machines__title-close--title {
+                    font-size: 2.4rem;
+                    line-height: 60px;
+                    vertical-align: center;
+                    font-family: $fontText, sans-serif;
+                    font-weight: bold;
+                    color: $white;
+                }
+
+                // Icon close
+                > .main-show__machines__title-close--icon {
+                    margin-top: 25px;
+                    width: 15px;
+                    height: 15px;
+                    cursor: pointer;
+                    transition: transform 0.2s ease-in-out;
+
+                    // Hover zoom
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            // Conteneur texte
+            .main-show__machines__text {
+                width: 90%;
+                height: auto;
+
+                // Texte
+                > .main-show__machines__text--text {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    color: $white;
+                }
+            }
+
+            // Conteneur photos + textes descriptif
+            .main-show__machines__img-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+
+                // Conteneur images
+                > .main-show__machines__img-text__img {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+
+                    // Images
+                    >.main-show__machines__img-text__img--img {
+                        width: 70%;
+                        height: auto;
+                    }
+                }
+
+                // Conteneur textes
+                > .main-show__machines__img-text__text {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+
+                    // Textes
+                    > .main-show__machines__img-text__text--text {
+                        font-size: 1.6rem;
+                        text-align: justify;
+                        font-family: $fontText, sans-serif;
+                        color: $grey_white;
+
+                        > span {
+                            font-weight: bold;
+                            color: $white;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+
+    /* === Footer === */
+    @import '../../layout/footer-mobile'; 
+}

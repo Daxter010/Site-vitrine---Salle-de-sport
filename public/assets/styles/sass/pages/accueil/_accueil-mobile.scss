@@ -1,0 +1,488 @@
+/* === Page accueil === */
+
+/* Style pour version Mobile */
+@media screen and (max-width: 767px) {
+    :root {
+        font-size: 10px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%
+    }
+
+    /* === Barre de navigation === */
+    @import '../../layout/navbar-mobile';
+
+    main {
+        width: 100%;
+    }
+
+   /* === Section 1 : Carrousel === */
+   @import '../../modules/carousel_accueil/carousel-mobile';
+
+    /* === Section 2 : Liens boutique, évènements, pub application mobile Magic Form === */
+    #seciontLinksEventsPub  {
+        width: 100%;
+        height: 100vh;
+    }
+
+    // Conteneur principal
+    .main__containerr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        //  Conteneur des produits et de la publicité 
+        > .main__container__products-pub {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 50%;
+
+            // Produits
+            > .main__container__products {
+                position: relative; 
+                width: 100%;
+                height: 50%;
+                background-color: #1A151E;
+
+                // Image des produits
+               > .main__container__products--img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;    
+               }
+
+               // Lien vers la page produits
+               > .main__container__products--link {
+                    position: absolute;
+                    bottom: 10%;
+                    left: 5%;
+                    height: 40px;
+                    width: 90%;
+                    text-decoration: none;
+                    text-align: center;
+                    vertical-align: center;
+                    line-height: 40px;
+                    font-size: 1.8rem;
+                    font-family: $fontText, sans-serif;
+                    color: $black;
+                    background-color: $white;
+
+                    @import '../../states/accueil_hover/hover';
+
+                    // Ajout du dark mode
+                    &.dark-mode {
+                        background-color: $black;
+                        color: $white;
+
+                        &:hover {
+                            background-color: $white;
+                            color: $black;
+                        }
+                    }
+                }
+            }
+
+            // Publicité 
+            > .main__container__pub {
+                display: flex;
+                width: 100%;
+                height: 50%;
+
+                // Ajout du dark mode
+                &.dark-mode {
+                    background-color: $black;
+                }
+
+                // Contenu texte de la publicité
+                > .main__container__pub__content-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    height: 100%;
+
+                    // Titre de la publicité 
+                    > .main__container__pub__content-text--title {
+                        width: 87%;
+                        margin-left: 10%;
+                        font-size: 2rem;
+                        font-family: $fontText, sans-serif;
+                        font-weight: bold;
+
+                        // Ajout du dark mode
+                        &.dark-mode {
+                            color:$white;
+                        }
+                    }
+
+                    // Liste des points forts
+                    > .main__container__pub__content-text__list{
+
+                        // Éléments de la liste des points forts 
+                        > .main__container__pub__content-text__list--item {
+                            font-size: 1.5rem;
+                            list-style-type: disc;
+                            font-family: $fontText, sans-serif;
+
+                            // Ajout du dark mode
+                            &.dark-mode {
+                                color: $white;
+                            }
+                        }
+                    }  
+
+                    // Liens d'application 
+                    > div > .main__container__pub__content-text__app--link {
+                        margin: 0 15px;
+
+                        // Logo Google store / Apple store
+                        > img {
+                            width: 100px;
+                            transition: transform 0.2s ease-in-out;
+
+                            // Hover zoom
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+
+                // Conteneur image de la publicité 
+                > .main__container__pub__content-img{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    width: 35%;
+                    height: 100%;
+
+                    // Image de la publicité 
+                    > img {  
+                        width: 80%;
+                        height: 80%;
+                        object-fit: contain;
+                        transition: transform 0.2s ease-in-out;
+
+                        // Hover zoom
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }   
+        }
+
+        // Conteneur évènements
+        .main__container__events {
+            position: relative;
+            width: 100%;
+            height: 50%;
+
+            // Image du conteneur évènements
+            > img {
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            // Titre
+            > .main__container__events--title {
+                position: absolute;
+                top: 70%;
+                left: 15%;
+                width: 70%;
+                text-align: center;
+                font-size: 2rem;
+                font-family: $fontText, sans-serif;
+                font-weight: bold;
+                color: $white;
+            }
+
+            // Lien vers la page produits
+            > .main__container__events--link {
+                position: absolute;
+                top: 85%;
+                left: 5%;
+                height: 40px;
+                width: 90%;
+                text-decoration: none;
+                text-align: center;
+                vertical-align: center;
+                line-height: 40px;
+                font-size: 1.8rem;
+                font-family: $fontText, sans-serif;
+                color: $black;
+                background-color: $white;
+
+                // Hover
+                @import '../../states/accueil_hover/hover';
+
+                // Ajout du dark mode
+                &.dark-mode {
+                    background-color: $black;
+                    color: $white;
+
+                    &:hover {
+                        background-color: $white;
+                        color: $black;
+                    }
+                }
+            }
+        }
+        
+        // Filtre sur l'image des évènements
+        .main__container__events::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);   
+        }
+    }
+
+    /* === Section 3 : Petit carrousel === */
+    @import '../../modules/carousel_accueil/carousel-mobile';
+
+    /* === Section 4 : Lien Magic Form France / Plien page contact / lien partenaire === */
+    #sectionLinksWebsiteContactPartner {
+        width: 100%;
+        height: 100%; 
+    }
+    
+    // Conteneur principal pour les liens de pages
+    .main__container_links-pages {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        // Filtre sur l'image de Magic Form France
+        .main__container_links-pages__mf::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);   
+        }
+
+        //  Conteneur Magic Form France
+        > .main__container_links-pages__mf {
+            position: relative;
+            width: 100%;
+            height: 100%;
+           
+
+            // Style pour le lien de Magic Form France
+            > .main__container_links-pages__mf--link {
+                position: absolute;
+                bottom: 5%;
+                left: 5%;
+                height: 40px;
+                width: 90%;
+                text-decoration: none;
+                text-align: center;
+                vertical-align: center;
+                line-height: 40px;
+                font-family: $fontText, sans-serif;
+                font-size: 1.8rem;
+                color: $black;
+                background-color: $white;
+
+                // Hover
+                @import '../../states/accueil_hover/hover';
+
+                // Ajout du dark mode
+                &.dark-mode {
+                    background-color: $black;
+                    color: $white;
+
+                    &:hover {
+                        background-color: $white;
+                        color: $black;
+                    }
+                }
+            }
+
+            // Style pour le titre
+            > h3 {
+                position: absolute;
+                bottom: 22.5%;
+                left: 10%;
+                width: 80%;
+                text-align: center;
+                font-size: 2rem;
+                font-family: $fontText, sans-serif;
+                font-weight: bold;
+                color: $white;
+            }
+
+            // Style pour l'image
+            > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        // Filtre sur l'image lien page contact
+        .main__container_links-pages__contact::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        
+            background-color: rgba(0, 0, 0, 0.5);   
+        }
+
+        // Conteneur de lien vers page contact
+        > .main__container_links-pages__contact{
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            // Style lien vers page contact
+            > .main__container_links-pages__contact--link {
+                position: absolute;
+                bottom: 5%;
+                left: 5%;
+                height: 40px;
+                width: 90%;
+                text-decoration: none;
+                text-align: center;
+                vertical-align: center;
+                line-height: 40px;
+                font-size: 1.8rem;
+                font-family: $fontText, sans-serif;
+                color: $black;
+                background-color: $white;
+
+                // Hover
+                @import '../../states/accueil_hover/hover';
+
+                // Ajout du dark mode
+                &.dark-mode {
+                    background-color: $black;
+                    color: $white;
+
+                    &:hover {
+                        background-color: $white;
+                        color: $black;
+                    }
+                }
+            }
+
+            // Style pour le titre
+            > h3 {
+                position: absolute;
+                bottom: 25%;
+                left: 5%;
+                width: 90%;
+                text-align: center;
+                font-size: 2rem;
+                font-family: $fontText, sans-serif;
+                font-weight: bold;
+                color: $white;
+            }
+
+            // Style pour l'image
+            > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        // Filtre sur l'image de lien partenaire
+        .main__container_links-pages__partner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);   
+        }
+
+        // Conteneur lien vers page partenaire
+        > .main__container_links-pages__partner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            // Style lien vers page partenaire
+            > .main__container_links-pages__partner--link {
+                position: absolute;
+                bottom: 5%;
+                left: 5%;
+                height: 45px;
+                width: 90%;
+                text-decoration: none;
+                text-align: center;
+                vertical-align: center;
+                line-height: 45px;
+                font-size: 1.8rem;
+                font-family: $fontText, sans-serif;
+                z-index: 1;
+                color: $black;
+                background-color: $white;
+
+                // Hover
+                @import '../../states/accueil_hover/hover';
+
+                // Ajout du dark mode
+                &.dark-mode {
+                    background-color: $black;
+                    color: $white;
+
+                    &:hover {
+                        background-color: $white;
+                        color: $black;
+                    }
+                }
+            }
+
+            // Style pour le titre
+            > h3 {
+                position: absolute;
+                bottom: 25%;
+                left: 5%;
+                width: 95%;
+                text-align: center;
+                font-size: 2rem;
+                font-family: $fontText, sans-serif;
+                font-weight: bold;
+                color: $white;
+            }
+
+            // Style pour l'image de fond
+            > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            // Style pour le logo
+            > :nth-child(4) {
+               display: none;
+            }
+        }
+    }
+
+    /* === Footer === */
+    @import '../../layout/footer-mobile';
+}

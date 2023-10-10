@@ -1,0 +1,249 @@
+// Carousel
+.carousel__schedules {
+    width: 33.33%;
+    height: 100%;
+    background-color: $grey_white;
+
+    // Ajout dark mode
+    &.dark-mode {
+        background-color: $grey_black;
+    }
+
+    // Slider
+    > .carousel__schedules__slider {
+        width: 100%;
+        height: 100%;
+
+        // Premier slide
+        > .carousel__schedules__slider__item {
+            width: 100%;
+            height: 100%;
+
+            // Conteneur horaires normaux
+            > .main__container__contact__schedules-normal {
+                width: 100%;
+                height: 100%;
+
+                // Conteneur titre
+                > .main__container__contact__schedules-normal__title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 20%;
+
+                    // Titre
+                    > .main__container__contact__schedules-normal__title--title {
+                        font-size: 3.2rem;
+                        color: $black;
+                        font-family: $fontText, sans-serif;
+                        font-weight: bold;
+
+                        // Ajout dark mode
+                        &.dark-mode {
+                            color: $white;
+                        }
+                    }
+
+                    // Icon
+                    > img {
+                        width: 25px;
+                        margin-left: 15px;
+                    }
+                }
+
+                // Conteneur jours / heures
+                > .main__container__contact__schedules-normal__days-hours {
+                    display: flex;
+                    width: 100%;
+                    height: 60%;
+
+                    // Conteneur jours
+                    > .main__container__contact__schedules-normal__days-hours__days {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50%;
+                        height: 100%;
+
+                        > p {
+                            font-size: 2.2rem;
+                            font-family: $fontText, sans-serif;
+                            margin: 5px 0 5px 0;
+                            color: $black;
+
+                            // Ajout dark mode
+                            &.dark-mode {
+                                color: $white;
+                            }
+                        }
+                    }
+
+                    // Conteneur heures
+                    > .main__container__contact__schedules-normal__days-hours__hours {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50%;
+                        height: 100%;
+
+                        > p {
+                            font-size: 2.2rem;
+                            font-family: $fontText, sans-serif;
+                            margin: 5px 0 5px 0;
+                            color: $black;
+
+                            // Ajout dark mode
+                            &.dark-mode {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+
+                // Conteneur alerte
+                > .main__container__contact__schedules-normal__alert {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 20%;
+
+                    > p {
+                        width: 75%;
+                        text-align: center;
+                        font-size: 2.4rem;
+                        font-family: $fontText, sans-serif;
+                        font-weight: bold;
+                        color: $black;
+
+                        // Ajout dark mode
+                        &.dark-mode {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Deuxième slide
+        > .carousel__schedules__slider__item {
+            width: 100%;
+            height: 100%;
+
+            // Conteneur horaires normaux
+            > .main__container__contact__schedules-medical {
+                width: 100%;
+                height: 100%;
+
+                // Conteneur titre
+                > .main__container__contact__schedules-medical__title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 20%;
+
+                    // Titre
+                    > .main__container__contact__schedules-medical__title--title {
+                        font-size: 3.2rem;
+                        font-family: $fontText, sans-serif;
+                        color: $black;
+
+                        // Ajout dark mode
+                        &.dark-mode {
+                            color: $white;
+                        }
+                    }
+
+                    // Icon
+                    > img {
+                        width: 25px;
+                        margin-left: 15px;
+                    }
+                }
+
+                // Conteneur jours / heures
+                > .main__container__contact__schedules-medical__days-hours {
+                    display: flex;
+                    width: 100%;
+                    height: 60%;
+
+                    // Conteneur jours
+                    > .main__container__contact__schedules-medical__days-hours__days {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50%;
+                        height: 100%;
+
+                        > p {
+                            font-size: 2.2rem;
+                            font-family: $fontText, sans-serif;
+                            margin: 5px 0 5px 0;
+                            color: $black;
+
+                            // Ajout dark mode
+                            &.dark-mode {
+                                color: $white;
+                            }
+                        }
+                    }
+
+                    // Conteneur heures
+                    > .main__container__contact__schedules-medical__days-hours__hours {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50%;
+                        height: 100%;
+
+                        > p {
+                            font-size: 2.2rem;
+                            font-family: $fontText, sans-serif;
+                            margin: 5px 0 5px 0;
+                            color: $black;
+
+                            // Ajout dark mode
+                            &.dark-mode {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+
+                // Conteneur alerte
+                > .main__container__contact__schedules-medical__alert {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 20%;
+
+                    > p {
+                        width: 70%;
+                        text-align: center;
+                        font-size: 2.4rem;
+                        font-family: $fontText, sans-serif;
+                        font-weight: bold;
+                        color: $black;
+
+                        // Ajout dark mode
+                        &.dark-mode {
+                            color: $white;
+                        }
+                    }
+
+                    > img {
+                        width: 25px;
+                        margin: 0 5px 25px 5px;
+                    }
+                }
+            }
+        }
+    }
+}

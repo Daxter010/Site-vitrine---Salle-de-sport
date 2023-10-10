@@ -1,0 +1,129 @@
+// Menu tablette (actif)
+.nav__menu-mobile.active {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background-color: $white;
+    box-shadow: inset 0 8px 60px rgb(0,0,0,0.1);
+    border-bottom: 1px solid $grey_white;
+    z-index: 2;
+    
+    &.dark-mode {
+        background-color: $grey_black;
+        border-bottom: 1px solid $black;
+    }
+
+    // Liste des éléments de menu mobile 
+    > .nav__list-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+        height: 30vh;
+
+        // Élément de menu mobile individuel
+        > .nav__item-mobile {
+            margin: 15px 0px 0px 20px;
+
+            // Lien dans le menu mobile
+            > a {
+                font-size: 1.8rem;
+                text-decoration: none;
+                font-family: $fontText, sans-serif;
+                color: $black;
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                    padding: 5px;
+                }
+
+                &.dark-mode {
+                    color: $white;
+                    &:hover {
+                        background-color: $white;
+                        color: $black;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Contrôles et icônes du menu mobile 
+    .nav__control-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 30vh;
+
+        // Icônes de réseaux sociaux dans le menu mobile 
+        > .nav__icons-mobile {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;  
+            width: 100%;
+            height: 15vh;
+
+            // Liens
+            > .nav__icon-mobile {
+                margin-inline-start: 25px;
+
+                // Icône de réseau social mobile
+                > img {
+                    width: 35px;
+                    transition: transform 0.2s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        // Conteneur du conteneur du mode sombre
+        > .nav__dark-mode-mobile{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 15vh;
+
+            // Conteneur du mode sombre
+            > div {
+                position: relative;
+                display: block;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 55px;
+                height: 3vh;
+                border-radius: 160px;
+                cursor: pointer;
+                background-color: $grey_black;
+                transition: 0.5s;
+                box-shadow: inset 0 8px 60px rgb(0,0,0,0.1),
+                            inset 0 8px 8px rgb(0,0,0,0.1),
+                            inset 0 -4px 4px rgb(0,0,0,0.1);
+
+                @import '../../modules/btn_navbar/buttons-tablet';
+
+                // Au click, déclenche la classe active en javascript
+                &.back-dark-mode.active .nav__dark-mode-button {
+                    left: 28px;
+                }
+
+                // Ajout du dark mode
+                &.dark-mode {
+                    background-color: $white;
+                }
+            }
+        }     
+    }  
+}  

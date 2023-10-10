@@ -1,0 +1,330 @@
+/* === Formulaire ajout produits === */
+
+/* Style pour version Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        font-size: 10px;
+    }
+
+    #bodyFormAddProducts {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #mainFormAddProducts {
+        width: 100%;
+        height: 100vh;
+    }
+
+    // Arrière plan
+    .background__form-add-products {
+        width: 30.7%;
+        height: 100vh;
+        background-color: $grey_black;
+    }
+    
+    // Conteneur principal
+    .main__container__form-add-products {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        display: flex;
+        width: 90%;
+        height: 90vh;
+        background-color: $white;
+        box-shadow: 15px 15px 15px 5px rgba(0, 0, 0, 0.1);
+
+        // Conteneur logo
+        > .main__container__form-add-products__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 28.6%;
+            height: 100%;
+            background-color: $black;
+
+            // Logo
+            > img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        // Conteneur formulaire
+        > .main__container__form-add-products__form {
+            width: 71.4%;
+            height: 100%;
+
+            // Conteneur titre
+            > .main__container__form-add-products__form__title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 20%;
+
+                // Titre
+                > h1 {
+                    font-size: 3.2rem;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+
+            // Conteneur formulaire
+            > .main__container__form-add-products__form__form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 80%;
+
+                // Formulaire
+                > .form-add-products {
+                    width: 70%;
+                    height: 90%;
+
+                    > :nth-child(1) {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: 20%;
+
+                        // Titre
+                        > .form-add-products__title {
+                            display: flex;
+                            flex-direction: column;
+                            width: 45%;
+                            height: 100%;
+
+
+                            > label {
+                                font-size: 2.4rem;
+                                font-weight: bold;
+                                font-family: sans-serif;
+                        
+                            }
+
+                            > input {
+                                margin-top: 10px;
+                                padding: 10px;
+                                width: 100%;
+                                height: 50%;
+                                font-size: 2rem;
+                                border: solid 0.5px lightgray;
+                            }
+                        }
+
+                        // Sous titre
+                        > .form-add-products__subtitle {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            width: 45%;
+                            height: 100%;
+
+                            > label {
+                                font-size: 2.4rem;
+                                font-weight: bold;
+                                font-family: sans-serif;
+                        
+                            }
+
+                            > input {
+                                margin-top: 10px;
+                                padding: 10px;
+                                width: 100%;
+                                height: 50%;
+                                font-size: 2rem;
+                                border: solid 0.5px lightgray;
+                            }
+                        }
+                    }
+
+                    > :nth-child(2) {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        height: 20%;
+                        
+                        // Prix
+                        > .form-add-products__price {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            width: 45%;
+                            height: 100%;
+
+                            > label {
+                                font-size: 2.4rem;
+                                font-weight: bold;
+                                font-family: sans-serif;
+                        
+                            }
+
+                            > input {
+                                margin-top: 10px;
+                                padding: 10px;
+                                width: 100%;
+                                height: 50%;
+                                font-size: 2rem;
+                                border: solid 0.5px lightgray;
+                            }
+                        }
+
+                        // Stock
+                        > .form-add-products__stock {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            width: 45%;
+                            height: 100%;
+
+                            > label {
+                                font-size: 2.4rem;
+                                font-weight: bold;
+                                font-family: sans-serif;
+                        
+                            }
+
+                            > input {
+                                margin-top: 10px;
+                                padding: 10px;
+                                width: 100%;
+                                height: 50%;
+                                font-size: 2rem;
+                                border: solid 0.5px lightgray;
+                            }
+                        }
+                    }
+
+                    // Description
+                    > .form-add-products__description {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 25%;
+
+                        > label {
+                            font-size: 2.4rem;
+                            font-family: sans-serif;
+                            font-weight: bold;
+                        }
+
+                        > textarea {
+                            margin-top: 10px;
+                            padding: 10px;
+                            width: 100%;
+                            height: 65%;
+                            font-size: 2rem;
+                            font-family: sans-serif;
+                            border: solid 0.5px lightgray;
+                        }
+                    }
+
+                    > :nth-child(4) {
+                        display: flex;
+                        width: 100%;
+                        height: 15%;
+                        margin-top: 5px;
+
+                        // Image
+                        > .form-add-products__picture {
+                            display: flex;
+                            flex-direction: column;
+                            width: 65%;
+                            height: 100%;
+
+                            > label {
+                                font-size: 2.4rem;
+                                font-family: sans-serif;
+                                font-weight: bold;
+                            
+                            }
+
+                            > input {
+                                margin-top: 10px;
+                                padding: 10px;
+                                width: 100%;
+                                height: 50%;
+                                font-size: 1.4rem;
+                            }
+                        }
+
+                        // Select
+                        > .form-add-products__select {
+                            display: flex;
+                            flex-direction: column;
+                            width: 35%;
+                            height: 100%;
+
+                            > label {
+                                font-size: 2.4rem;
+                                font-family: sans-serif;
+                                font-weight: bold;
+                            
+                            }
+
+                            > select {
+                                font-size: 2.2rem;
+                                font-family: sans-serif;
+                                margin-top: 12.5px;
+                                padding: 5px;
+                                width: 100%;
+                                height: 50%;
+                                border: solid 0.5px lightgray;
+                            }
+                        }
+                    }
+                    
+                    // Bouton
+                    > .form-add-products__btn {
+                        width: 100%;
+                        height: 20%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                       
+                        > button {
+                            width: 45%;
+                            height: 50%;
+                            font-size: 2.2rem;
+                            font-family: sans-serif;
+                            border: none;
+                            background-color: $black;
+                            color: $white;
+
+                            &:hover {
+                                background-color: $grey_black;
+                                color: $white;
+                                cursor: pointer;
+                            }
+                        }
+
+                        > a {
+                            width: 45%;
+                            height: 50%;
+                            text-align: center;
+                            line-height: 60px;
+                            vertical-align: middle;
+                            font-size: 2.2rem;
+                            font-family: sans-serif;
+                            border: none;
+                            text-decoration: none;
+                            background-color: $black;
+                            color: $white;
+
+                            &:hover {
+                                background-color: $grey_black;
+                                color: $white;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

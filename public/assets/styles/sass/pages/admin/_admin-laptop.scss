@@ -1,0 +1,698 @@
+/* === Page admin === */
+
+/* Style pour version Laptop */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    :root {
+        font-size: 10px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%
+    }
+
+    main {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-grow: 1
+    }
+
+    #sectionDeconnexion {
+        width: 100%;
+        height: 15vh;
+    }
+
+    // Conteneur principal
+    .main__container__deconnexion {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+
+        // Conteneur burger
+        > .main__container__deconnexion__burger-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 100%;
+
+            // Burger
+            > img {
+                width: 60px;
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+
+                // Hover zoom
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        // Conteneur titre
+        > .main__container__deconnexion__title-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 100%;
+
+            // Titre 1 (Magic Form Romilly-sur-Seine)
+            > .main__container__deconnexion__title-container-titleOne {
+                font-family: sans-serif;
+                font-size: 2.8rem;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            // Titre 2 (Tableau de bord)
+            > .main__container__deconnexion__title-container-titleTwo {
+                font-family: sans-serif;
+                font-size: 2.6rem;
+                font-weight: bold;
+            }
+        }
+
+        // Conteneur ID admin et bouton déconnexion
+        > .main__container__deconnexion__button-id-container {
+            display: flex;
+            width: 40%;
+            height: 100%;
+
+            // Conteneur ID admin
+            > .main__container__deconnexion__button-id-container__id {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                height: 100%;
+
+                // ID admin
+                > .main__container__deconnexion__button-id-container__id--id {
+                    font-family: sans-serif;
+                    font-size: 2.2rem;
+                    
+                    > span {
+                        font-weight: bold;
+                    }
+                }
+                
+                // Id rôle
+                > .main__container__deconnexion__button-id-container__id--role {
+                    font-family: sans-serif;
+                    font-size: 2rem;
+                    color: grey;
+                }
+            }
+
+            // Conteneur bouton déconnexion
+            >.main__container__deconnexion__button-id-container__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                height: 100%;
+                
+                // Bouton
+                > .main__container__deconnexion__button-id-container__button--btn {
+                    height: 70px;
+                    width: 225px;
+                    line-height: 70px;
+                    vertical-align: center;
+                    text-align: center;
+                    font-size: 1.8rem;
+                    font-family: sans-serif;
+                    text-decoration: none;
+                    color: $black;
+                    background-color: $grey_white;
+
+                    &:hover {
+                        background-color: $black;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    #sectionAdd {
+        width: 100%;
+        height: 15vh;
+    }
+
+    // Conteneur principal
+    .main__container__links-add {
+        display: flex;
+        width: 100%;
+        height:  15vh;
+        background-color: $grey_white;
+
+        // Conteneur des liens vers les tableaux
+        > .main__container__links-add__links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33.33%;
+            height: 15vh;
+
+            // Liens
+            > button {
+                padding: 1%;
+                font-size: 1.8rem;
+                font-family: sans-serif;
+                border: none;
+                color: $black;
+                background-color: $grey_white;
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                    padding: 1%;
+                    cursor: pointer;
+                }
+            }
+
+            > p {
+                font-size: 2rem;
+                margin: 0 1% 0 1%;
+            }
+        }
+
+        > div {
+            width: 33.33%;
+        }
+
+        // Conteneur filtre produits
+        > .filter_admin-products {
+            width: 33.33%;
+            height: 100%;
+
+            // Fomulaire
+            > form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                
+                // Select
+                > .filter__admin-products__select {
+                    width: 30%;
+                    height: 32%;
+                    margin-right: 1%;
+                    cursor: pointer;
+                    border: none;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                    font-size: 1.6rem;
+                }
+
+                // Search
+                > .filter__admin-products__search-input {
+                    width: 40%;
+                    height: 32%;
+                    margin: 0 1.5% 0 1.5%;
+                    border: none;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                    font-size: 1.6rem;
+                }
+
+                > .filter__admin-products__button {
+                    width: 30%;
+                    height: 32%;
+                    cursor: pointer;
+                    border: none;
+                    background-color: $white;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                    font-size: 1.6rem;
+
+                    &:hover {
+                        background-color: $black;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        // Conteneur bouton ajouter
+        > .main__container__links-add__add {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33.33%;
+            height: 15vh;
+
+            // Bouton
+            > .main__container__links-add__add--btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 225px;
+                text-align: center;
+                text-decoration: none;
+                font-family: sans-serif;
+                font-size: 1.8rem;
+                color: $white;
+                background-color: #007bff;
+
+                &:hover {
+                    background-color:  #0067eb;
+                }
+            }
+        }
+    }
+
+    #sectionTables {
+        width: 100%;
+        height: auto;
+    }
+
+    // Conteneur de tout les tableaux
+    .main__container__tables {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+        // Conteneur principal tableau 1
+        > .main__container__tables__one {
+            display: block;
+            width: 95%;
+            height: auto;
+
+            // Tableau 1
+            > table {
+                width: 100%;
+                height: auto;
+
+                > thead {
+                    width: 100%;
+                    height: 10vh;
+    
+                    > tr {
+                        width: 100%;
+                        height: 10vh;
+                        
+                        > th{
+                            width: 16.6%;
+                            height: 10vh;
+                            font-size: 1.8rem;
+                            font-family: sans-serif;
+                            font-weight: bold;
+                            line-height: 90px;
+                            vertical-align: center;
+                            background-color: lightgrey;
+                        }
+                    }
+                }
+
+                > tbody {
+                    width: 100%;
+                    height: auto;
+
+                    > tr {
+                        width: 100%;
+                        height: auto;
+                        border-bottom: 1px solid lightgrey;
+
+                        td {
+                            padding: 10px;
+                            width: 16.6%;
+                            height: auto;
+                            max-width: 300px; 
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                            white-space: nowrap;
+                            line-height: auto;
+                            vertical-align: middle;
+                            font-size: 1.8rem;
+                            font-family: sans-serif;
+                            text-align: center;
+                            background-color: $white;
+
+                            > a {
+                                text-decoration: none;
+                                
+                                img {
+                                    width: 60px;
+                                    transition: transform 0.2s ease-in-out;
+
+                                    // Hover zoom
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+
+        // Conteneur principal tableau 2
+        > .main__container__tables__two {
+            display: none;
+            width: 95%;
+            height: auto;
+
+            // Tableau 2
+            > table {
+                width: 100%;
+                height: auto;
+
+                > thead {
+                    width: 100%;
+                    height: 10vh;
+    
+                    > tr {
+                        width: 100%;
+                        height: 10vh;
+                        
+                        > th{
+                            width: 14.2%;
+                            height: 10vh;
+                            font-size: 1.8rem;
+                            font-family: sans-serif;
+                            font-weight: bold;
+                            line-height: 90px;
+                            vertical-align: center;
+
+                            background-color: lightgrey;
+                        }
+                    }
+                }
+
+                > tbody {
+                    width: 100%;
+                    height: auto;
+
+                    > tr {
+                        width: 100%;
+                        height: auto;
+                        border-bottom: 1px solid lightgrey;
+
+                        td {
+                            padding: 10px;
+                            width: 14.2%;
+                            height: auto;
+                            max-width: 300px; 
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                            white-space: nowrap;
+                            line-height: auto;
+                            vertical-align: middle;
+                            font-size: 1.8rem;
+                            font-family: sans-serif;
+                            text-align: center;
+                            background-color: $white;
+
+                            > a {
+                                text-decoration: none;
+                                
+                                img {
+                                    width: 60px;
+                                    transition: transform 0.2s ease-in-out;
+
+                                    // Hover zoom
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+
+        // Conteneur principal tableau 3
+        > .main__container__tables__three {
+            display: none;
+            width: 95%;
+            height: auto;
+            overflow-x: auto;
+
+            // Tableau 3
+            > table {
+                width: 100%;
+                height: auto;
+
+                > thead {
+                    width: 100%;
+                    height: 10vh;
+    
+                    > tr {
+                        width: 100%;
+                        height: 10vh;
+                        
+                        > th{
+                            width: 20%;
+                            height: 10vh;
+                            font-size: 1.8rem;
+                            font-family: sans-serif;
+                            font-weight: bold;
+                            line-height: 90px;
+                            vertical-align: center;
+                            background-color: lightgrey;
+                        }
+                    }
+                }
+
+                > tbody {
+                    width: 100%;
+                    height: auto;
+
+                    > tr {
+                        width: 100%;
+                        height: auto;
+                        border-bottom: 1px solid lightgrey;
+
+                        td {
+                            padding: 10px;
+                            width: 20%;
+                            height: auto;
+                            line-height: auto;
+                            max-width: 300px; 
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                            white-space: nowrap;
+                            vertical-align: middle;
+                            font-size: 1.8rem;
+                            font-family: sans-serif;
+                            text-align: center;
+                            background-color: $white;
+
+                            > a {
+                                text-decoration: none;
+                                
+                                img {
+                                    width: 60px;
+                                    transition: transform 0.2s ease-in-out;
+
+                                    // Hover zoom
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Menu latéral burger */
+    
+    // Conteneur principal
+    .main__container__menu-lateral {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 30%;
+        height: 100vh;
+        background-color: $black;
+
+        // Conteneur logo et bouton close
+        > .main__container__menu-lateral__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 15vh;
+
+            // Logo
+            > img {
+                width: 85%;
+                height: auto;
+            }
+
+            // Bouton close
+            >.main__container__menu-lateral__close {
+                width: 15%;
+
+                // Icône
+                > img {
+                    width: 25px;
+                    cursor: pointer;
+                    transition: transform 0.2s ease-in-out;
+    
+                    // Hover zoom
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        // Conteneur titre
+        > .main__container__menu-lateral__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 10vh;
+            background-color: $grey_black;
+
+            // Titre
+            > h2 {
+                font-size: 2.8rem;
+                font-family: sans-serif;
+                font-weight: bold;
+                color: $white;
+            }
+        }
+
+        // Conteneur liens
+        > .main__container__menu-lateral__links {
+            background-color: $grey_black;
+            width: 100%;
+            height: 75vh;
+
+            // Conteneur liens vers les tableaux
+            > .main__container__menu-lateral__links__datas {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                height: 5%;
+                padding: 2%;
+
+                // Titre
+                > h3 {
+                    font-size: 2.4rem;
+                    font-family: sans-serif;
+                    color: gray;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+
+                > h3::after {
+                    content: '▼';
+                    font-size: 20px;
+                    margin-left: 5px;
+                }
+            }
+
+            // Conteneur liens vers les paramètres admin
+            > .main__container__menu-lateral__links__settings {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                height: 5vh;
+                padding: 2%;
+
+                // Titre
+                > h3 {
+                    font-size: 2.4rem;
+                    font-family: sans-serif;
+                    color: gray;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+
+                > h3::after {
+                    content: '▼';
+                    font-size: 20px;
+                    margin-left: 5px;
+                }
+            }
+
+            // Conteneur caché "modifcations de données"
+            > .main__container__menu-lateral__links__datas__hidden {
+                display: none;
+                width: 100%;
+                height: 12.5vh;
+
+                > nav {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    width: 97%;
+                    height: 12.5vh;
+                    margin-left: 3%;
+
+                    button {
+                        font-size: 2rem;
+                        font-family: sans-serif;
+                        border: none;
+                        color: $white;
+                        background-color: $grey_black;
+
+                        &:hover {
+                            color: gray;
+                        }
+                    }
+                }     
+            }
+            
+    
+            // Conteneur caché "paramètres"
+            > .main__container__menu-lateral__links__settings__hidden {
+                display: none;
+                width: 100%;
+                height: 10vh;
+
+                > nav {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    width: 97%;
+                    height: 5vh;
+                    margin-left: 3%;
+
+                    button {
+                        font-size: 2rem;
+                        font-family: sans-serif;
+                        border: none;
+                        color: $white;
+                        background-color: $grey_black;
+
+                        &:hover {
+                            color: gray;
+                        }
+                    }
+                }     
+            }
+        }
+
+        > .main__container__menu-lateral__id-deconnexion {
+            display: none;
+        }
+    }
+}

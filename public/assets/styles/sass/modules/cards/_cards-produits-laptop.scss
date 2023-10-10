@@ -1,0 +1,127 @@
+// Conteneur principal
+.card {
+    width: 20%;
+    margin: 2%;
+    background-color: $white;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+    // Ajout dark mode
+    &.dark-mode {
+        background-color: $black;
+    }
+
+    // Conteneur images
+    > .card__picture {
+        width: 100%;
+        overflow: hidden;
+
+        // Image
+        > .card__picture--img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // Conteneur informations
+    > .card__infos {
+        width: 100%;
+        padding: 3%;
+   
+        // Conteneur titre
+        > .card__infos__title {
+
+            // Titre
+            > .card__infos__title--title {
+                padding: 2.5%;
+                width: 100%;
+                font-size: 1.8rem;
+                font-weight: bold;
+                text-align: center;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+        }
+
+        // Conteneur prix et stock
+        > .card__infos__price-stock {
+            display: flex;
+            padding: 3%;
+
+            // Conteneur prix
+            > .card__infos__price-stock__price {
+                width: 50%;
+                text-align: center;
+             
+                // Prix
+                > p {
+                    padding: 2.5%;
+                    font-size: 1.8rem;
+                    font-family: $fontText, sans-serif;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+            }
+
+            // Conteneur stock
+            > .card__infos__price-stock__stock {
+                width: 50%;
+                text-align: center;
+
+                // Stock
+                > p {
+                    padding: 2.5%;
+                    font-size: 1.8rem;
+                    font-family: $fontText, sans-serif;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    // Conteneur bouton
+    > .card__button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 3%;
+
+        // Bouton
+        > .card__button--btn {
+            width: 90%;
+            height: 40px;
+            border: none;
+            font-family: $fontText, sans-serif;
+            font-size: 1.4rem;
+            cursor: pointer;
+            background-color: $grey_white;
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+            // Ajout dark mode
+            &.dark-mode {
+                background-color: $grey_black;
+                color: $white;
+                &:hover {
+                    background-color: $white;
+                    color: $black;
+                }
+            }
+
+            &:hover {
+                color: $white;
+                background-color: $black;
+            }
+        }
+    }
+}

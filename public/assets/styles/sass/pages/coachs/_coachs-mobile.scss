@@ -1,0 +1,575 @@
+/* === Page coachs === */
+
+/* Style pour version Mobile */
+@media screen and (max-width: 767px) {
+    :root {
+        font-size: 10px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%
+    }
+
+    /* === Barre de navigation === */
+    @import '../../layout/navbar-mobile';
+
+    main {
+        width: 100%;
+        height: auto;
+        flex-grow: 1
+    }
+
+    /* === Section 1 : Coachs === */
+
+    #sectionCoachs {
+        width: 100%;
+        height: 100%;
+    }
+
+    // Conteneur principal des coachs
+    .main__container__coachs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        // Conteneur coach 1
+        > .main__container__coachs-one {
+            width: 100%;
+            height: 55vh;
+
+            // Image
+            > .main__container__coachs-one--img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        // Conteneur coach 2
+        > .main__container__coachs-two {
+            width: 100%;
+            height: 55vh;
+
+            // Image
+            > .main__container__coachs-two--img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        // Conteneur coach 3
+        > .main__container__coachs-three {
+            width: 100%;
+            height: 55vh;
+
+            // Image
+            > .main__container__coachs-three--img {
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        // Conteneur coach 4
+        > .main__container__coachs-four {
+            width: 100%;
+            height: 55vh;
+
+            // Image
+            > .main__container__coachs-four--img {
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    /* Eléments (cachés) montrés uniquement au survol === */
+
+    // Conteneur principal coach one
+    .main-show__coachs__one {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 55vh;
+        z-index: 1;
+
+        // Conteneur images de fond
+        > .main-show__coachs__one__background-img {
+
+            // Filtre noir
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height: 100%;   
+                background-color: rgba(0, 0, 0, 0.5);   
+            }
+
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            > picture {
+                width: 100%;
+                height: 100%;
+
+                // Images
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        // Conteneur titre
+        > .main-show__coachs__one__title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 12.5vh;
+            margin-bottom: 5%;
+
+            // Titre
+            > .main-show__coachs__one__title--title {
+                padding: 20px;
+                line-height: 10vh;
+                vertical-align: center;
+                text-align: center;        
+                font-size: 2.4rem;
+                font-family: $fontText, sans-serif;
+                font-weight: bold;
+                color: $white;
+            }
+
+            // Icon
+            > img {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+
+                // Hover zoom
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        // Conteneur zone de textes un
+        > .main-show__coachs__one__infos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 12.5vh;
+            color: $white;
+
+            // Textes
+            > p {
+                width: 55%;
+                text-align: center;
+                font-size: 1.6rem;
+                font-family: $fontText, sans-serif;
+                font-weight: bold;
+                color: $white;
+            }
+        }
+
+        // Conteneur zone de textes deux
+        > .main-show__coachs__one__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 30vh;      
+            color: $white;
+
+            // Textes
+            > p {
+                width: 100%;
+                padding: 15px;
+                line-height: normal;
+                text-align: center;
+                font-size: 1.6rem;
+                font-family: $fontText, sans-serif;
+                color: $white;
+            }
+        }
+    }
+
+    // Conteneur principal coach two
+    .main-show__coachs__two {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 55vh;
+        z-index: 1;
+        background-color: black;
+
+        // Conteneur images de fond
+        > .main-show__coachs__two__background-img {
+
+            // Filtre noir
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height: 100%;    
+                background-color: rgba(0, 0, 0, 0.5);   
+            }
+
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            > picture {
+                width: 100%;
+                height: 100%;
+
+                // Images
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }     
+        }
+
+        // Conteneur titre
+        > .main-show__coachs__two__title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 12.5vh;
+            margin-bottom: 5%;
+
+            // Titre
+            > .main-show__coachs__two__title--title {
+                padding: 20px;
+                line-height: 10vh;
+                vertical-align: center;
+                text-align: center;    
+                font-size: 2.4rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+                color: $white;
+            }
+
+            // Icon
+            > img {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+
+                // Hover zoom
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        // Conteneur zone de textes une
+        > .main-show__coachs__two__infos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 12.5vh;
+            color: $white;
+
+            // Textes
+            > p {
+                width: 50%;
+                text-align: center;
+                font-size: 1.6rem;
+                font-family: $fontText, sans-serif;
+                font-weight: bold;
+                color: $white;
+            }
+        }
+
+        // Conteneur zone de textes deux
+        > .main-show__coachs__two__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 30vh;   
+            color: $white;
+
+            // Textes
+            > p {
+                width: 100%;
+                padding: 15px;
+                line-height: normal;
+                text-align: center;
+                font-size: 1.6rem;
+                font-family: $fontText, sans-serif;
+                color: $white;
+            }
+        }
+    }
+
+    // Conteneur principal coach three
+    .main-show__coachs__three {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 55vh;
+        z-index: 1;
+        background-color: black;
+
+        // Conteneur images de fond
+        > .main-show__coachs__three__background-img {
+
+            // Filtre noir
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height: 100%;        
+                background-color: rgba(0, 0, 0, 0.5);   
+            }
+
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            > picture {
+                width: 100%;
+                height: 100%;
+
+                // Images
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }     
+        }
+
+        // Conteneur titre
+        > .main-show__coachs__three__title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 12.5vh;
+            margin-bottom: 5%;
+
+            // Titre
+            > .main-show__coachs__three__title--title {
+                padding: 20px;
+                line-height: 10vh;
+                vertical-align: center;
+                text-align: center;          
+                font-size: 2.4rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+                color: $white;
+            }
+
+            // Icon
+            > img {
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+
+                // Hover zoom
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        // Conteneur zone de textes une
+        > .main-show__coachs__three__infos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 12.5vh;
+            color: $white;
+
+            // Textes
+            > p {
+                width: 50%;
+                text-align: center;
+                font-size: 1.6rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+                color: $white;
+            }
+        }
+
+        // Conteneur zone de textes deux
+        > .main-show__coachs__three__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 30vh;     
+            color: $white;
+
+            // Textes
+            > p {
+                width: 100%;
+                padding: 15px;
+                line-height: normal;
+                text-align: center;
+                font-size: 1.6rem;
+                font-family: $fontText, sans-serif;
+                color: $white;
+            }
+        }
+    }
+
+    // Conteneur principal coach four
+    .main-show__coachs__four {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 55vh;
+        z-index: 1;
+        background-color: black;
+
+        // Conteneur images de fond
+        > .main-show__coachs__four__background-img {
+
+            // Filtre noir
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width:100%;
+                height: 100%;   
+                background-color: rgba(0, 0, 0, 0.5);   
+            }
+
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+            > picture {
+                width: 100%;
+                height: 100%;
+
+                // Images
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }      
+        }
+
+        // Conteneur titre
+        > .main-show__coachs__four__title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 12.5vh;
+            margin-bottom: 5%;
+
+            // Titre
+            > .main-show__coachs__four__title--title {
+                padding: 20px;
+                line-height: 10vh;
+                vertical-align: center;
+                text-align: center;      
+                font-size: 2.4rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+                color: $white;
+            }
+
+            // Icon
+            > img {
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+
+                // Hover zoom
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        // Conteneur zone de textes une
+        > .main-show__coachs__four__infos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 12.5vh;
+            color: $white;
+
+            // Textes
+            > p {
+                width: 50%;
+                text-align: center;
+                font-size: 1.6rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+                color: $white;
+            }
+        }
+
+        // Conteneur zone de textes deux
+        > .main-show__coachs__four__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 30vh;         
+            color: $white;
+
+            // Textes
+            > p {
+                width: 100%;
+                padding: 15px;
+                line-height: normal;
+                text-align: center;
+                font-size: 1.6rem;
+                font-family: $fontText, sans-serif;
+                color: $white;
+            }
+        }
+    }
+
+    /* === Footer === */
+    @import '../../layout/footer-mobile';
+}

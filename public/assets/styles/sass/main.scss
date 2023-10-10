@@ -1,0 +1,106 @@
+/* Paramètres */
+@import 'base/reset'; // Fichier reset CSS
+@import'theme/colors'; // Fichier des couleurs
+@import 'theme/typography'; // Fichier des typographies
+
+/* Page Accueil */
+@import 'pages/accueil/accueil-desktop'; // Version ordinateur de bureau
+@import 'pages/accueil/accueil-laptop'; // Version ordinateur portable
+@import 'pages/accueil/accueil-tablet'; // Version tablette
+@import 'pages/accueil/accueil-mobile'; // Version mobile
+
+/* Page Espaces */
+@import 'pages/espaces/espaces-desktop'; // Version ordinateur de bureau
+@import 'pages/espaces/espaces-laptop'; // Version ordinateur portable
+@import 'pages/espaces/espaces-tablet'; // Version tablette
+@import 'pages/espaces/espaces-mobile'; // Version mobile
+
+/* Page Coachs */
+@import 'pages/coachs/coachs-desktop'; // Version ordinateur de bureau
+@import 'pages/coachs/coachs-laptop'; // Version ordinateur portable
+@import 'pages/coachs/coachs-tablet'; // Version tablette
+@import 'pages/coachs/coachs-mobile'; // Version mobile
+
+/* Page Cours collectifs */
+@import 'pages/cours/cours-desktop.scss'; // Version ordinateur de bureau
+@import 'pages/cours/cours-laptop.scss'; // Version ordinateur portable
+@import 'pages/cours/cours-tablet.scss'; // Version tablette
+@import 'pages/cours/cours-mobile.scss'; // Version mobile
+
+/* Page Evènements */
+@import 'pages/evenements/evenements-desktop'; // Version ordinateur de bureau
+@import 'pages/evenements/evenements-laptop'; // Version ordinateur portable
+@import 'pages/evenements/evenements-tablet'; // Version tablette
+@import 'pages/evenements/evenements-mobile'; // Version mobile
+
+/* Page Produits */
+@import 'pages/produits/produits-desktop'; // Version ordinateur de bureau
+@import 'pages/produits/produits-laptop'; // Version ordinateur portable
+@import 'pages/produits/produits-tablet'; // Version tablette
+@import 'pages/produits/produits-mobile'; // Version mobile
+
+/* Page contact */
+@import 'pages/contact/contact-desktop'; // Version ordinateur de bureau
+@import 'pages/contact/contact-laptop'; // Version ordinateur portable
+@import 'pages/contact/contact-tablet'; // Version tablette
+@import 'pages/contact/contact-mobile'; // Version mobile
+
+// Titre Ref SEO 
+.ref-only {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+/* Page administrateur */
+@import 'pages/admin/admin-desktop'; // Version ordinateur de bureau
+@import 'pages/admin/admin-laptop'; // Version ordinateur portable
+@import 'pages/admin/admin-tablet'; // Version tablette
+@import 'pages/admin/admin-mobile'; // Version mobile
+
+/* Formulaires */
+@import 'modules/formulaires/inscription/form-register-desktop.scss'; // Formulaire inscription version desktop
+@import 'modules/formulaires/inscription/form-register-laptop.scss'; // Formulaire inscription version laptop
+@import 'modules/formulaires/inscription/form-register-tablet.scss'; // Formulaire inscription version tablet
+@import 'modules/formulaires/inscription/form-register-mobile.scss'; // Formulaire inscription version mobile
+
+@import 'modules/formulaires/connexion/form-connect-desktop.scss'; // Formulaire connexion version desktop
+@import 'modules/formulaires/connexion/form-connect-laptop.scss'; // Formulaire connexion version laptop
+@import 'modules/formulaires/connexion/form-connect-tablet.scss'; // Formulaire connexion version tablet
+@import 'modules/formulaires/connexion/form-connect-mobile.scss'; // Formulaire connexion version mobile
+
+
+@import 'modules/formulaires/ajout/form-add-event-desktop.scss'; // Formulaire ajout évènement version desktop
+@import 'modules/formulaires/ajout/form-add-event-laptop.scss'; // Formulaire ajout évènement version laptop
+@import 'modules/formulaires/ajout/form-add-event-tablet.scss'; // Formulaire ajout évènement version tablet
+@import 'modules/formulaires/ajout/form-add-event-mobile.scss'; // Formulaire ajout évènement version mobile
+
+@import 'modules/formulaires/ajout/form-add-cours-desktop.scss'; // Formulaire ajout cours collectifs version desktop
+@import 'modules/formulaires/ajout/form-add-cours-laptop.scss'; // Formulaire ajout cours collectifs version laptop
+@import 'modules/formulaires/ajout/form-add-cours-tablet.scss'; // Formulaire ajout cours collectifs version tablet
+@import 'modules/formulaires/ajout/form-add-cours-mobile.scss'; // Formulaire ajout cours collectifs version mobile
+
+@import 'modules/formulaires/ajout/form-add-product-desktop.scss'; // Formulaire ajout produits version desktop
+@import 'modules/formulaires/ajout/form-add-product-laptop.scss'; // Formulaire ajout cours collectifs version laptop
+@import 'modules/formulaires/ajout/form-add-product-tablet.scss'; // Formulaire ajout cours collectifs version tablet
+@import 'modules/formulaires/ajout/form-add-product-mobile.scss'; // Formulaire ajout cours collectifs version mobile
+
+
+@import 'modules/formulaires/modification/form-modification-cours-desktop.scss'; // Formulaire modification cours version desktop
+@import 'modules/formulaires/modification/form-modification-cours-laptop.scss'; // Formulaire modification cours version laptop
+@import 'modules/formulaires/modification/form-modification-cours-tablet.scss'; // Formulaire modification cours version tablet
+@import 'modules/formulaires/modification/form-modification-cours-mobile.scss'; // Formulaire modification cours version mobile
+
+@import 'modules/formulaires/modification/form-modification-event-desktop.scss'; // Formulaire modification évènement version desktop
+@import 'modules/formulaires/modification/form-modification-event-laptop.scss'; // Formulaire modification évènement version laptop
+@import 'modules/formulaires/modification/form-modification-event-tablet.scss'; // Formulaire modification évènement version tablet
+@import 'modules/formulaires/modification/form-modification-event-mobile.scss'; // Formulaire modification évènement version mobile
+
+@import 'modules/formulaires/modification/form-modification-products-desktop.scss'; // Formulaire modification produits version desktop
+@import 'modules/formulaires/modification/form-modification-products-laptop.scss'; // Formulaire modification produits version laptop
+@import 'modules/formulaires/modification/form-modification-products-tablet.scss'; // Formulaire modification produits version tablet
+@import 'modules/formulaires/modification/form-modification-products-mobile.scss'; // Formulaire modification produits version mobile

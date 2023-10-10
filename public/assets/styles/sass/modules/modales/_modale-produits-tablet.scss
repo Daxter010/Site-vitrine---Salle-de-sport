@@ -1,0 +1,166 @@
+// Conteneur principal
+.modale-products__hidden {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 85vh;
+    background-color: $white;
+    z-index: 1;
+
+    // Conteneur image
+    > .modale-products__hidden__picture {
+        width: 100%;
+        height: 50%;
+
+        // Toites les tailles
+        > picture {
+            width: 100%;
+            height: 100%;
+
+            // Images
+            > .card__picture--img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    // Conteneur principal informations
+    > .modale-products__hidden__infos {
+        width: 100%;
+        height: 50%;
+
+        // Conteneur titre et bouton
+        > .modale-products__hidden__infos__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 10%;
+            padding: 25px 25px 0 25px;
+
+            // Conteneur titre 
+            > .modale-products__hidden__infos__title--title {
+                width: 70%;
+                font-size: 2.4rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+            }
+
+            // Bouton fermer
+            > .btn-close-products img {
+                width: 25px;
+                cursor: pointer;
+            }
+        }   
+
+        // Conteneur sous-titre
+        > .modale-products__hidden__infos__subtitle {
+            display: flex;
+            align-items: center;
+            width: 90%;
+            height: 10%;
+            padding: 25px 25px 0 25px;
+            
+            // Sous-titre
+            > .modale-products__hidden__infos__subtitle--text {
+                font-size: 1.6rem;
+                font-family: $fontText, sans-serif;
+            }
+        }
+
+        // Conteneur description
+        .modale-products__hidden__infos__description {
+            width: 100%;
+            height: 50%;
+            padding: 25px 25px 0 25px;
+            background-color: $grey_white;
+
+            // Conteneur titre description
+            > .modale-products__hidden__infos__description__title {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 20%;
+                margin-bottom: 5px;
+
+                // Titre
+                > .modale-products__hidden__infos__description__title--title {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    font-family: $fontText, sans-serif;
+                }
+            }
+
+            // Conteneur texte description 
+            .modale-products__hidden__infos__description__text {
+                width: 100%;
+                height: 80%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
+                // Texte
+                > .modale-products__hidden__infos__description__text--text {
+                    font-size: 1.6rem;
+                    font-family: $fontText, sans-serif;
+                }
+            }
+        }
+        
+        // Conteneur prix et stock
+        > .modale-products__hidden__infos__price-stock {
+            display: flex;
+            width: 100%;
+            height: 15%;
+            padding: 25px 25px 0 25px;
+
+            //Conteneur prix
+            > .modale-products__hidden__infos__price-stock__price {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 50%;
+
+                // Texte
+                > .modale-products__hidden__infos__price-stock__price--text {
+                    font-size: 2.2rem;
+                    font-family: $fontText, sans-serif;
+                }
+            }
+
+            //Conteneur stpck
+            > .modale-products__hidden__infos__price-stock__stock {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                width: 50%;
+
+                // Texte
+                > .modale-products__hidden__infos__price-stock__stock--text {
+                    font-size: 2.2rem;
+                    font-family: $fontText, sans-serif;
+                }
+            }
+        }
+
+        // Conteneur alerte accueil
+        > .modale-products__hidden__infos__alert {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 15%;
+
+            // Texte
+            > .modale-products__hidden__infos__alert--text {
+                width: 50%;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.8rem;
+                font-family: $fontText, sans-serif;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

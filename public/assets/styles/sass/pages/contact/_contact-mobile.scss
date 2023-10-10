@@ -1,0 +1,126 @@
+/* === Page contact === */
+
+/* Style pour version Mobile */
+@media screen and (max-width: 767px) {
+    :root {
+        font-size: 10px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%
+    }
+
+    /* === Barre de navigation === */
+    @import '../../layout/navbar-mobile';
+
+    main {
+        width: 100%;
+        height: auto;
+        flex-grow: 1;
+    }
+
+    #informationsCoordonnees {
+        width: 100%;
+        height: auto;
+    }
+
+    /* === Section 1 : Informations / Coordonnées === */
+
+    // Conteneur principal
+    .main__container__contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        // Carousel
+        @import '../../modules/carousel_contact/carousel-mobile';
+
+
+        // Conteneur map
+        > .main__container__contact__map {
+            width: 100%;
+            height: 100%;
+
+            > iframe {
+                width: 100%;
+            }
+        }
+
+        // Conteneur coordonnées
+        > .main__container__contact__coordonnees {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            background-color: $grey_white;
+
+            // Ajout dark mode
+            &.dark-mode {
+                background-color: $grey_black;
+            }
+
+            // Conteneur icon + liens
+            > .main__container__contact__coordonnees__container {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                padding: 5px;
+                margin: 0 0 5px 0;
+                width: 100%;
+                height: 100%;
+
+                // icons
+                > img {
+                    width: 20px;
+                    margin-right: 3%;
+                }
+
+                // Texte
+                > p {
+                    width: 75%;
+                    font-size: 1.6rem;
+                    font-family: $fontText, sans-serif;
+                    
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+
+                // Liens
+                > a {
+                    font-size: 1.6rem;
+                    font-family: $fontText, sans-serif;
+                    text-decoration: none;
+                    color: $black;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                        &:hover {
+                            padding: 5px;
+                            background-color: $white;
+                            color: $black;
+                        }
+                    }
+
+                    // Hover sur les liens
+                    &:hover {
+                        padding: 5px;
+                        background-color: $black;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    /* === Footer=== */
+    @import '../../layout/footer-mobile';
+}

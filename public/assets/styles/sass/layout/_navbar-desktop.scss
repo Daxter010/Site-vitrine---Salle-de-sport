@@ -1,0 +1,251 @@
+/* === Navbar === */
+
+/* Style pour version Desktop */
+
+// Réglage de la taille de police de base
+:root {
+    font-size: 10px;
+}
+
+// Barre de navigation principale
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15vh;
+    background-color: $white;
+    
+    // Ajout du dark mode
+    &.dark-mode {
+        background-color: $black;
+    }
+}
+
+// Conteneneur logo
+.nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 15vh;
+
+    // Lien
+    > .nav__logo-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80%;
+
+        // Logo blanc
+        > :nth-child(1) {
+            width: 100%;
+            height: auto;
+        }
+        
+        // logo noir caché
+        > :nth-child(2) {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// Contenu menu burger pour tablette et mobile
+.nav__burger {
+    display: none;
+}
+
+.nav__menu-mobile {
+    display: none;
+}
+
+// Contenu de la barre de navigation
+.nav__content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 15vh;
+
+    // Conteneur des contrôles et icônes
+    > .nav__controls {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 7.5vh;
+
+        // Contrôle du mode sombre
+        > .nav__dark-mode {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            width: 52%;
+            height: 5vh;
+
+            // Arrière plan du bouton mode sombre
+            > .back-dark-mode {
+                position: relative;
+                display: block;
+                width: 60px;
+                height: 30px;
+                border-radius: 160px;
+                background-color: $grey_black;
+                transition: 0.5s;
+                box-shadow: inset 0 8px 60px rgb(0,0,0,0.1),
+                            inset 0 8px 8px rgb(0,0,0,0.1),
+                            inset 0 -4px 4px rgb(0,0,0,0.1);
+
+                @import '../modules/btn_navbar/buttons-desktop';
+
+                // Au click, déclenche la classe active en javascript
+                &.back-dark-mode.active .nav__dark-mode-button {
+                    left: 30px;
+                }
+
+                // Ajout du dark mode
+                &.dark-mode {
+                    background-color: $white;
+                }
+            }
+        }
+
+        // Icons réseaux
+        > .nav__icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+            width: 32.5%;
+            height: 5vh;
+
+            // Lien icônes
+            > .nav__icon {
+                margin-inline-start: 85px;
+
+                // Icône
+                > img {
+                    width: 35px;
+                    transition: transform 0.2s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+
+    // Menu de navigation
+    > .nav__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 7.5vh;
+
+        // Liste des liens
+        > .nav__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 10vh;
+            font-size: 2.2rem;
+
+            // Lien individuelle
+            > .nav__item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 40px;
+                width: 10%;
+                height: 5vh;
+                line-height: 5vh; // Définit la hauteur pour l'alignement vertical (a ci-dessous)
+
+                @import '../states/navbar_hover/hover';
+
+                // Style du lien
+                > a {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    vertical-align: middle; // Aligne verticalement
+                    text-decoration: none;
+                    font-family: $fontText, sans-serif;
+                    color: black;    
+
+                    @import '../states/navbar_hover/hover';
+
+                    // Ajout du dark mode
+                    &.dark-mode {
+                        color: $white;
+                        
+                        &:hover {
+                            background-color: $white;
+                            color: $black;
+                        }
+                    }
+                }
+            }
+
+            // Liste déroulante "espaces"
+            > .nav__item--submenu > .nav__sublist {
+                display: none;
+                position: absolute;
+                top: 128px;
+                left: 48.8%;
+                width: 10%;
+                height: 125px;
+                padding: 5px;
+                
+                // Sous-lien "espaces"
+                > .nav__subitem {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 7px 0;
+                    width: 80%;
+                    height: 5vh;
+
+                    @import '../states/navbar_hover/hover';
+
+                    // Style des sous-liens
+                    > a {
+                        text-decoration: none;
+                        color: $black;
+
+                        @import '../states/navbar_hover/hover';
+
+                        // Ajout du dark mode
+                        &.dark-mode {
+                            color: $white;
+                            &:hover {
+                                width: 100%;
+                                text-align: center;
+                                background-color: $white;
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            } 
+
+            // Ajoute du chevron après le lien "espace"
+            > :nth-child(2) > a::after {
+                content: '▼';
+                margin-left: 5px;
+                font-size: 12px
+            }
+
+            // Affichage de la liste déroulante au survol
+            > .nav__item--submenu {
+                @import '../states/navbar_hover/hover';
+            }  
+        }
+    }
+}
