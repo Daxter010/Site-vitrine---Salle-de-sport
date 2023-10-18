@@ -13,7 +13,7 @@
         <div class="card__infos__price-stock">
             <!-- Prix du produit -->
             <div class="card__infos__price-stock__price">
-                <p>Prix: <?php echo $product['prix'] ?></p>
+                <p>Prix: <?php echo $product['prix'] ?> €</p>
             </div>
 
             <!-- Stock du produit -->

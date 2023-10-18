@@ -30,6 +30,12 @@ if ($route === '/') {
 } elseif ($route === '/contact') {
   require_once(ROOT . '/src/views/pages/contact.php'); // Page "Contact"
 
+}  elseif ($route === '/mentions-legales') {
+  require_once(ROOT . '/src/views/pages/mentions.php'); // Page "Mentions légales"
+
+}  elseif ($route === '/politiques-de-confidentialites') {
+  require_once(ROOT . '/src/views/pages/politiques.php'); // Page "Politiques de confiendialitéss"
+
 } elseif ($route === '/admin/add-cours') {
   // Vérifie si l'administrateur est authentifié
   if (!isset($_SESSION['admin_authenticated'])) {
@@ -141,6 +147,17 @@ if ($route === '/') {
     exit();
   }
 
+} elseif (strpos($route, '/admin/delete-admin') === 0 ) { 
+  // Vérifie si l'administrateur est authentifié
+  if (!isset($_SESSION['admin_authenticated'])) {
+    header('location : /');
+  } else {
+    $params = explode ('=', parse_url($route, PHP_URL_QUERY));
+    if (count($params) === 2 && $params[0] === 'id') {
+      require_once(ROOT . '/src/views/compenents/formulaires/delete-admin.php'); // Formulaire "Modifier un produit"
+    }
+  }
+    
 } else {
   http_response_code(404);
   echo "Page non trouvée";

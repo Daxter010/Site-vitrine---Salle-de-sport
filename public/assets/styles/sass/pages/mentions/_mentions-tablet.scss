@@ -1,0 +1,219 @@
+/* === Page mentions légales === */
+
+/* Style pour version Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        font-size: 10px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    /* === Barre de navigation === */
+    @import '../../layout/navbar-tablet';
+
+    main {
+        width: 100%;
+        height: auto;
+        flex-grow: 1;
+        background-color: $grey_white;
+        &.dark-mode {
+            background-color: $grey_black;
+        }
+    }
+
+    /* === Section : Menntions === */
+
+    #sectionMentions {
+        width: 100%;
+        height: auto;
+    }
+
+    .main__container-mentions {
+        width: 100%;
+        height: 100%;
+        padding: 1%;
+
+        // Conteneur Mentions légales
+        > .main__container-mentions__container-title {
+            padding: 1%;
+
+            > h1 {
+                padding: 1%;
+                text-align: center;
+                font-size: 3.2rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+
+            > p {
+                text-align: center;
+                font-size: 2rem;
+                color: $black;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+        }
+
+        // Conteneur Editions du site
+        > .main__container-mentions__container-edition {
+            padding: 1%;
+
+            > h2 {
+                margin-bottom: 1%;
+                font-size: 2.8rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+
+            > p {
+                font-size: 2rem;
+                color: $black;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+        }
+
+        // Conteneur Responsable de publication
+        > .main__container-mentions__container-responsable {
+            padding: 1%;
+
+            > h2 {
+                margin-bottom: 1%;
+                font-size: 2.8rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+
+            > p {
+                font-size: 2rem;
+                color: $black;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+        }
+
+        // Conteneur Hébergeur
+        > .main__container-mentions__container-hebergeur {
+            padding: 1%;
+
+            > h2 {
+                margin-bottom: 1%;
+                font-size: 2.8rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+
+            > p {
+                font-size: 2rem;
+                color: $black;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+        }
+
+        // Conteneur Nous contacter
+        > .main__container-mentions__container-contact {
+            padding: 1%;
+
+            > h2 {
+                margin-bottom: 1%;
+                font-size: 2.8rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+
+            > p {
+                font-size: 2rem;
+                color: $black;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+        }
+
+        // Conteneur Votre vie privée
+        > .main__container-mentions__container-privee {
+            padding: 1%;
+
+            > h2 {
+                margin-bottom: 1%;
+                font-size: 2.8rem;
+                font-weight: bold;
+                font-family: $fontText, sans-serif;
+
+                // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+            }
+
+            > p {
+                font-size: 2rem;
+                color: $black;
+                font-family: $fontText, sans-serif;
+
+               // Ajout dark mode
+                &.dark-mode {
+                    color: $white;
+                }
+
+                > a {
+                    color: $black;
+
+                    // Ajout dark mode
+                    &.dark-mode {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

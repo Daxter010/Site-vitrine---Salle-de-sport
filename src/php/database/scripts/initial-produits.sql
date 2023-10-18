@@ -12,7 +12,7 @@ INSERT INTO `produits` (
         "Born of Rage Ultimate - Préworkout sans créatine", 
         1,
         "Pre-Workout explosif pour des entraînements intensifs",
-        20,
+        33.00,
         10,
         "BORN OF RAGE ULTIMATE est un puissant PRE-WORKOUT sans créatine. Un cocktail unique pour repousser vos limites1, rester concentré2, explosif1 et endurant1 tout au long de votre séance !
         Avec 3g de Beta-Alanine et 2g de Citrulline, Born of Rage Ultimate vous apportera tous les effets que vous attendez d'un pre-workout.
@@ -24,7 +24,7 @@ INSERT INTO `produits` (
         "Born of Rage Ultimate - Explosive Préworkout", 
         1,
         "Explosive preworkout - Performance",
-        20,
+        13.50,
         10,
         "BORN OF RAGE du Laboratoire Eric Favre® est un puissant PRE-WORKOUT en poudre composé d'un cokctail explosif de 11 ingrédients sélectionnés pour vous assurer des trainings explosifs et intenses dont la vitamine B3 qui contribue à un métabolisme énergétique normal et au fonctionnement normal du système nerveux.
         Energie & explosivité, Endurance, Concentration",
@@ -34,7 +34,7 @@ INSERT INTO `produits` (
         "Créatine Monohydrate 3000mg", 
         1,
         "La Créatine, un acide aminé semi-essentiel pour vos performances physiques !",
-        20,
+        20.90,
         10,
         "La créatine monohydrate est un acide aminé non essentiel et précurseur de l'ATP (Adénosine Triphosphate). La créatine améliore les capacités physiques en cas de séries successives d'exercices très intenses de courte durée. L'effet bénéfique est obtenu par la consommation journalière de 3g de créatine. La créatine du laboratoire Eric Favre est d'origine vegan et est dosée à 3000mg par jour pour vous permettre de performer.",
         "Creatine_3000mg"
@@ -43,32 +43,20 @@ INSERT INTO `produits` (
         "Pure Creatine - Créatine Pro Zero", 
         1,
         "Creatine Pro Zero améliore les capacités physiques sur séries d'exercices intenses",
-        20,
+        19.90,
         10,
         "La créatine est un dérivé d'acides aminés que l'on trouve principalement dans la viande et le poisson. L'organisme la produit en fonction de ses besoins. Elle se trouve à 95% dans les muscles squelettiques et est synthétisée dans les reins, le foie et le pancréas.
         La créatine est très utilisée dans le monde du sport (body, fitness) car elle améliore les capacités physiques en cas de séries successives d'exercices très intenses de courte durée, effet bénéfique obtenu par la consommation journalière de 3g de créatine.    ",
         "Creatine_Pro_Zero-min"
     ),
     (
-        "Born of Rage Ultimate - Préworkout sans créatine", 
-        1,
-        "Pre-Workout explosif pour des entraînements intensifs",
-        20,
-        10,
-        "BORN OF RAGE ULTIMATE est un puissant PRE-WORKOUT sans créatine. Un cocktail unique pour repousser vos limites1, rester concentré2, explosif1 et endurant1 tout au long de votre séance !
-        Avec 3g de Beta-Alanine et 2g de Citrulline, Born of Rage Ultimate vous apportera tous les effets que vous attendez d'un pre-workout.
-        Zynamite® est un actif breveté et testé cliniquement par 3 études, et récompensé avec son 1er prix au Nutra Ingredient Award dans la catégorie Nutrition Sportive. Le remplaçant idéal de la caféine de haute qualité et particulièrement renommé !
-        Avec son arôme frais et naturel de poire, dégustez une dose de motivation avant chaque training pour repousser vos limites !",
-        "Born_Rage_Ultimate-min"
-    ),
-    (
         "Iron Performance E.A.A", 
         1,
         "Iron Performance vous permet d'améliorer vos performances et de repousser vos limites",
-        20,
+        46.00,
         10,
         "La gamme Iron Series E.A.A (acides aminés essentiels) est une exclusivité mondiale du Laboratoire Eric Favre® grâce à la présence d'un ingrédient exclusif issu d'une technologie de pointe unique au monde : La Biaminoée ™.
-        C’est un concentré exclusif de dipeptides, molécules à base d'acides aminés de qualité plasmatique pour une assimilation optimale & fer héminique, fer le plus assimilable par le corps.
+        C'est un concentré exclusif de dipeptides, molécules à base d'acides aminés de qualité plasmatique pour une assimilation optimale & fer héminique, fer le plus assimilable par le corps.
         Biaminoée™ est scientifiquement testé.
         Le fer contribue présent dans Iron Performance aide à réduire la fatigue et au transport normal de l'oxygène dans l'organisme et à une synthèse protéique normale.
         Votre métabolisme sera boosté et plus performant en gagnant en endurance et en énergie, agissant notamment sur l'oxygénation cellulaire et ayant une action sur vos muscles.",
@@ -112,7 +100,7 @@ INSERT INTO `produits` (
         "Coffret Lipoxycut Vegan - Brûleur de graisses", 
         2,
         "Lipoxycut Vegan brûle les graisses, sculpte et affine la silhouette",
-        20,
+        42.50,
         10,
         "POUR DES RESULTATS 100% PLAISIR !
         L'association de 19 ingrédients sélectionnés est au service d'un produit complet qui agit de façon globale sur la perte de poids1:
@@ -140,7 +128,7 @@ INSERT INTO `produits` (
         "Liquid Detox - Draineur", 
         2,
         "Liquid detox - Draineur",
-        20,
+        15.50,
         10,
         "Le laboratoire Eric Favre Santé® a développé ce liquide détox pour vous aider à vous sentir bien dans votre corps afin de ne pas laisser les désagréments du quotiden vous gâcher la vie ! Le Liquid Détox, c'est :
         • Des formules concentrées, des ingrédients sélectionnés
@@ -153,7 +141,7 @@ INSERT INTO `produits` (
         "Casein +", 
         3,
         "Récupération & construction musculaire - Fort pouvoir satiétant",
-        20,
+        67.90,
         10,
         "Casein+ est riche en protéine et est composée de la source la plus qualitative de caséine : la caséine micellaire. Cette protéine est très appréciée en période de sèche ou de privation alimentaire du fait qu'elle est assimilée très lentement. Elle est souvent consommée le soir pour favoriser une bonne récupération musculaire. Enrichie en HMB, Vitamine B, magnésium et calcium son efficacité n'en saura que renforcée.
         Casein+ peut être utilisée quelque soit le sport que vous pratiquez ou l'objectif recherché :
@@ -166,7 +154,7 @@ INSERT INTO `produits` (
         "Iso Zero 100% Whey Protéine", 
         3,
         "Iso zero 100% whey - Protéines isolate pour le développement musculaire - Saveur Triple Choco",
-        20,
+        64.50,
         10,
         "ISO ZERO est constituée de plus de 83% de protéines de whey (WPI, WPC), l'une des plus pures sources de protéines. Ces 83% de protéines proviennent uniquement de la whey : sans ajout d'acides aminés synthétiques, ni collagène, ni gluten (100% from whey). Preuve de sa quallité également, son indice chimique supérieur à 100. Le laboratoire Eric Favre® l'a sélectionnée pour son assimilation rapide permettant le développement musculaire, en effet, les protéines contribuent à augmenter la masse musculaire. De part son process d'extraction la protéine n'est que très peu dénaturée et lui assure une très bonne digestion.",
         "Iso_Whey_Zero_Chocolat-min"
@@ -175,7 +163,7 @@ INSERT INTO `produits` (
         "Iso Zero 100% Whey Protéine", 
         3,
         "Iso zero 100% whey - Protéines isolate pour le développement musculaire - Saveur Chocotella",
-        20,
+        64.50,
         10,
         "ISO ZERO est constituée de 85% de protéines de whey (WPI, WPC), l'une des plus pures sources de protéines. Ces 85% de protéines proviennent uniquement de la whey : sans ajout d'acides aminés synthétiques, ni collagène, ni gluten (100% from whey). Preuve de sa quallité également, son indice chimique supérieur à 100. Le laboratoire Eric Favre® l'a sélectionné pour son assimilation rapide permettant le développement musculaire, en effet, les protéines contribuent à augmenter la masse musculaire. De part son process d'extraction la protéine n'est que très peu dénaturée et lui assure une très bonne digestion",
         "Iso_Whey_Zero_Chocotella-min"
@@ -184,7 +172,7 @@ INSERT INTO `produits` (
         "Iso Zero 100% Whey Protéine", 
         3,
         "Iso zero 100% whey - Protéines isolate pour le développement musculaire - Saveur Cookies & Cream",
-        20,
+        64.50,
         10,
         "ISO ZERO est constituée de + de 85% de protéines d'isolate de whey (WPH, WPI), l'une des plus pures sources de protéines. Le laboratoire Eric Favre® l'a sélectionnée pour son assimilation rapide permettant l'anabolisme musculaire. De part sa microfiltration à froid, la protéine n'est que très peu dénaturée et lui assure une très bonne digestion. Les protéines contribuent à augmenter la masse musculaire.",
         "Iso_Whey_Zero_Cookie-min"
@@ -193,7 +181,7 @@ INSERT INTO `produits` (
         "Iso Zero 100% Whey Protéine", 
         3,
         "Iso zero 100% whey - Protéines isolate pour le développement musculaire - Saveur Framboisier",
-        20,
+        64.50,
         10,
         "ISO ZERO est constituée de 85% de protéines de whey (WPI, WPC), l'une des plus pures sources de protéines. Ces 85% de protéines proviennent uniquement de la whey : sans ajout d'acides aminés synthétiques, ni collagène, ni gluten (100% from whey). Preuve de sa quallité également, son indice chimique supérieur à 100. Le laboratoire Eric Favre® l'a sélectionnée pour son assimilation rapide permettant le développement musculaire, en effet, les protéines contribuent à augmenter la masse musculaire. De part son process d'extraction la protéine n'est que très peu dénaturée et lui assure une très bonne digestion.",
         "Iso_Whey_Zero_Framboise-min"
@@ -202,7 +190,7 @@ INSERT INTO `produits` (
         "Iso Zero 100% Whey Protéine", 
         3,
         "Iso zero 100% whey - Protéines isolate pour le développement musculaire - Saveur Pistache",
-        20,
+        64.50,
         10,
         "ISO ZERO est constituée de 85% de protéines de whey (WPI, WPC), l'une des plus pures sources de protéines. Ces 85% de protéines proviennent uniquement de la whey : sans ajout d'acides aminés synthétiques, ni collagène, ni gluten (100% from whey). Preuve de sa quallité également, son indice chimique supérieur à 100. Le laboratoire Eric Favre® l'a sélectionnée pour son assimilation rapide permettant le développement musculaire, en effet, les protéines contribuent à augmenter la masse musculaire. De part son process d'extraction la protéine n'est que très peu dénaturée et lui assure une très bonne digestion.",
         "Iso_Whey_Zero_Pistache-min"
@@ -211,7 +199,7 @@ INSERT INTO `produits` (
         "Iso Zero 100% Whey Protéine", 
         3,
         "Iso zero 100% whey - Protéines isolate pour le développement musculaire - Saveur Vanille",
-        20,
+        64.50,
         10,
         "ISO ZERO est constituée de + de 85% de protéines d'isolate de whey (WPH, WPI), l'une des plus pures sources de protéines. Le laboratoire Eric Favre® l'a sélectionnée pour son assimilation rapide permettant l'anabolisme musculaire. De part sa microfiltration à froid, la protéine n'est que très peu dénaturée et lui assure une très bonne digestion. Les protéines contribuent à augmenter la masse musculaire.",
         "Iso_Whey_Zero_Vanille-min"
@@ -284,7 +272,7 @@ INSERT INTO `produits` (
         "Proteine_Pancakes-min", 
         3,
         "Préparation pour pâte à pancakes protéinés, saveur vanille",
-        20,
+        15.50,
         10,
         "Moelleux, gourmands et “healthy”, NEED'S PROTEIN PANCAKES feront l'unanimité tant pour leur goût délicieux que pour leurs qualités nutritives et leur facilité et rapidité de préparation.
 
@@ -299,7 +287,7 @@ INSERT INTO `produits` (
     ),
     (   
         "Spiruline", 
-        3,
+        9.00,
         "La spiruline accompagne votre santé au quotidien.",
         20,
         10,
@@ -314,7 +302,7 @@ INSERT INTO `produits` (
         "Spiruline Vegan Bio", 
         3,
         "La spiruline accompagne votre santé au quotidien.",
-        20,
+        18.90,
         10,
         "Traditionnellement utilisée pour ses qualités nutritives, la spiruline ou algue d'eau douce est un véritable partenaire au quotidien. Ce super aliment est effectivement un concentré de nutriments.
         SPIRULINE BIO VEGAN est composée de spiruline riche en protéines (60% de son poids sec) contenant notamment des acides aminés essentiels.
@@ -327,7 +315,7 @@ INSERT INTO `produits` (
         "Whey Optimax Protein", 
         3,
         "L'excellence pour les muscles - Protéines de Whey bi-sources",
-        20,
+        50.90,
         10,
         "Whey Optimax Protein est constitué de plus de 74% de protéines provenant de 2 sources combinées : Whey Protein Concentrate (WPC) et une protéine de levure AnPro®.
 
@@ -342,7 +330,7 @@ INSERT INTO `produits` (
         "Whey Optimax Protein", 
         3,
         "L'excellence pour les muscles - Protéines de Whey bi-sources",
-        20,
+        50.90,
         10,
         "Whey Optimax Protein est constitué de plus de 74% de protéines provenant de 2 sources combinées : Whey Protein Concentrate (WPC) et une protéine de levure AnPro®.
 
@@ -357,7 +345,7 @@ INSERT INTO `produits` (
         "Whey Optimax Protein", 
         3,
         "L'excellence pour les muscles - Protéines de Whey bi-sources",
-        20,
+        50.90,
         10,
         "Whey Optimax Protein est constitué de plus de 74% de protéines provenant de 2 sources combinées : Whey Protein Concentrate (WPC) et une protéine de levure AnPro®.
 
@@ -372,7 +360,7 @@ INSERT INTO `produits` (
         "Arginine Kyowa® 2000mg", 
         4,
         "Arginine, un acide aminé semi-essentiel pour le développement musculaire !",
-        20,
+        20.90,
         10,
         "Arginine est un acide aminé semi-essentiel, en fonction de l'état physiologique de chacun l'organisme peut en manquer. Pour les sportifs sérieux, cet acide aminé doit être considéré comme essentiel. Précurseur de l'oxyde nitrique (N.O), il va permettre un meilleur apport des nutriments vers les muscles et donc favoriser le développement musculaire.
 
@@ -392,7 +380,7 @@ INSERT INTO `produits` (
         "Myo D - Décontraction musculaire", 
         4,
         "Myo D aide à la décontraction des muscles après l'effort !",
-        20,
+        9.40,
         10,
         "Myo D est composé d'un ensemble d'ingrédients sélectionnés pour contribuer à la décontraction musculaire :
         • L'orange amer est reconnue pour ses propriétés apaisantes et relaxantes.
@@ -403,7 +391,7 @@ INSERT INTO `produits` (
         "Pure Collagen + Formule Liquide", 
         4,
         "Le Collagène Marin pour votre Santé",
-        20,
+        20.50,
         10,
         "Dès 20 ans, nous perdons 1% de collagène par an, un apport est donc indispensable car cette protéine est présente dans nos tissus conjonctifs (peau, tissus osseux, tendons, ligaments).
         PURE COLLAGEN+ est l'indispensable santé (sportifs, personnes actives et âgées) & beauté (peaux matures et/ou fragilisées, ongles et cheveux) grâce, notamment, à la présence des 4 000mg de collagène marin hydrolysé, du zinc qui contribue au maintien d'une ossature normale et qui aide également au maintien d'une peau, de cheveux et d'ongles normaux, d'acide hyaluronique, de sélénium et de vitamine E.
@@ -414,7 +402,7 @@ INSERT INTO `produits` (
         "ZMA + 120 Gélules", 
         4,
         "Avec ZMA +, boostez votre énergie au quotidien et votre testostérone.",
-        20,
+        18.90,
         10,
         "ZMA+ est un complexe de zinc, de magnésium et de vitamine B6 au dosage maximal pour vous accompagner lors des vos efforts physiques mais aussi au quotidien.
 
@@ -427,7 +415,7 @@ INSERT INTO `produits` (
         "BCAA 8.1.1 ZERO Vegan 500gr", 
         5,
         "Idéal pour les sports de force et d'endurance",
-        20,
+        27.90,
         10,
         "Les B.C.A.A. (branched-chain amino acids) ou acides aminés ramifiés regroupent 3 acides aminés essentiels : la leucine, l'isoleucine et la valine.
         Ils sont très présents dans le tissu musculaire et entrent donc dans la constitution du muscle. Un apport en BCAA est donc indispensable lors de la pratique d'un sport et ce, quelque soit ce dernier (body, fitness, sports d'endurance, explosif...). Non synthétisés par l'organisme, ils doivent être apportés par l'alimentation et/ou la supplémentation.
@@ -440,7 +428,7 @@ INSERT INTO `produits` (
         "BCAA 8.1.1 ZERO Vegan 500gr", 
         5,
         "Idéal pour les sports de force et d'endurance",
-        20,
+        27.90,
         10,
         "Les B.C.A.A. (branched-chain amino acids) ou acides aminés ramifiés regroupent 3 acides aminés essentiels : la leucine, l'isoleucine et la valine.
         Ils sont très présents dans le tissu musculaire et entrent donc dans la constitution du muscle. Un apport en BCAA est donc indispensable lors de la pratique d'un sport et ce, quelque soit ce dernier (body, fitness, sports d'endurance, explosif...). Non synthétisés par l'organisme, ils doivent être apportés par l'alimentation et/ou la supplémentation.
@@ -453,7 +441,7 @@ INSERT INTO `produits` (
         "BCAA 8.1.1 ZERO Vegan 500gr", 
         5,
         "Idéal pour les sports de force et d'endurance",
-        20,
+        27.90,
         10,
         "Les B.C.A.A. (branched-chain amino acids) ou acides aminés ramifiés regroupent 3 acides aminés essentiels : la leucine, l'isoleucine et la valine.
         Ils sont très présents dans le tissu musculaire et entrent donc dans la constitution du muscle. Un apport en BCAA est donc indispensable lors de la pratique d'un sport et ce, quelque soit ce dernier (body, fitness, sports d'endurance, explosif...). Non synthétisés par l'organisme, ils doivent être apportés par l'alimentation et/ou la supplémentation.
@@ -466,7 +454,7 @@ INSERT INTO `produits` (
         "BCAA 8.1.1 ZERO Vegan 500gr", 
         5,
         "Idéal pour les sports de force et d'endurance",
-        20,
+        27.90,
         10,
         "Les B.C.A.A. (branched-chain amino acids) ou acides aminés ramifiés regroupent 3 acides aminés essentiels : la leucine, l'isoleucine et la valine.
         Ils sont très présents dans le tissu musculaire et entrent donc dans la constitution du muscle. Un apport en BCAA est donc indispensable lors de la pratique d'un sport et ce, quelque soit ce dernier (body, fitness, sports d'endurance, explosif...). Non synthétisés par l'organisme, ils doivent être apportés par l'alimentation et/ou la supplémentation.
@@ -479,7 +467,7 @@ INSERT INTO `produits` (
         "BCAA 8.1.1 ZERO Vegan 500gr", 
         5,
         "Idéal pour les sports de force et d'endurance",
-        20,
+        27.90,
         10,
         "Les B.C.A.A. (branched-chain amino acids) ou acides aminés ramifiés regroupent 3 acides aminés essentiels : la leucine, l'isoleucine et la valine.
         Ils sont très présents dans le tissu musculaire et entrent donc dans la constitution du muscle. Un apport en BCAA est donc indispensable lors de la pratique d'un sport et ce, quelque soit ce dernier (body, fitness, sports d'endurance, explosif...). Non synthétisés par l'organisme, ils doivent être apportés par l'alimentation et/ou la supplémentation.
@@ -492,7 +480,7 @@ INSERT INTO `produits` (
         "BCAA 8.1.1 ZERO Vegan 500gr", 
         5,
         "Idéal pour les sports de force et d'endurance",
-        20,
+        27.90,
         10,
         "Les B.C.A.A. (branched-chain amino acids) ou acides aminés ramifiés regroupent 3 acides aminés essentiels : la leucine, l'isoleucine et la valine.
         Ils sont très présents dans le tissu musculaire et entrent donc dans la constitution du muscle. Un apport en BCAA est donc indispensable lors de la pratique d'un sport et ce, quelque soit ce dernier (body, fitness, sports d'endurance, explosif...). Non synthétisés par l'organisme, ils doivent être apportés par l'alimentation et/ou la supplémentation.
@@ -505,7 +493,7 @@ INSERT INTO `produits` (
         "BCAA Optimiz - BCAA 2:1:1 - Acides aminés essentiels", 
         5,
         "BCAA Optimiz 2:1:1 - Idéal pendant l'entraînement",
-        20,
+        17.90,
         10,
         "Les B.C.A.A. (branched-chain amino acids) ou acides aminés ramifiés regroupent 3 acides aminés essentiels : la leucine, l'isoleucine et la valine. Ils sont très présents dans le tissu musculaire et entrent donc dans la constitution du muscle. Un apport en BCAA est donc indispensable lors de la pratique d'un sport et ce, quelque soit ce dernier (body, fitness, sports d'endurance, explosif...). Non synthétisés par l'organisme, ils doivent être apportés par l'alimentation et/ou la supplémentation.
 
@@ -516,7 +504,7 @@ INSERT INTO `produits` (
         "BCAA Optimiz - BCAA 2:1:1 - Acides aminés essentiels", 
         5,
         "BCAA Optimiz 2:1:1 - Idéal pendant l'entraînement",
-        20,
+        17.90,
         10,
         "Les B.C.A.A. (branched-chain amino acids) ou acides aminés ramifiés regroupent 3 acides aminés essentiels : la leucine, l'isoleucine et la valine. Ils sont très présents dans le tissu musculaire et entrent donc dans la constitution du muscle. Un apport en BCAA est donc indispensable lors de la pratique d'un sport et ce, quelque soit ce dernier (body, fitness, sports d'endurance, explosif...). Non synthétisés par l'organisme, ils doivent être apportés par l'alimentation et/ou la supplémentation.
 
@@ -541,7 +529,7 @@ INSERT INTO `produits` (
         "Glutamine Pro Zero", 
         5,
         "Pure L-glutamine favorise la récupération après un exercice intense",
-        20,
+        23.90,
         10,
         "La glutamine ou L-glutamine est l'acide aminé le plus abondant dans le sang et les muscles. Elle joue un rôle dans la synthèse des protéines.
         Après l'exercice intense, les réserves musculaires en glutamine diminuent considérablement il est donc important d'en apporter par la supplémentation.",
@@ -551,7 +539,7 @@ INSERT INTO `produits` (
         "L-Carnitine 2000mg", 
         5,
         "L-Carnitine, un acide aminé semi-essentiel pour brûler des graisses ! ",
-        20,
+        20.90,
         10,
         "La carnitine est un acide aminé non essentiel et représente un véritable carburant pour les muscles. Acide aminé à forte notoriété auprès des sportifs pour ces nombreux bienfaits pour l'organisme (bruleur, antioxydant, énergie…). Avec un apport journalier de 2000mg par jour, la L-Carnitine de la marque Eric Favre est d'origine vegan et encapsulée dans une gélule végétale.",
         "L_Carnitine_2000mg-min"
@@ -560,7 +548,7 @@ INSERT INTO `produits` (
         "L-Tyrosine 1000mg", 
         5,
         "L-Tyrosine, un acide aminé semi-essentiel pour atteindre tes objectifs ! ",
-        20,
+        13.90,
         10,
         "La tyrosine est un acide aminé non essentiel, précurseur de 3 neurotransmetteurs pour la performance et l'énergie musculaire. Avec son apport journalier de 1000mg et 100% pure, la L-Tyrosine du laboratoire Eric Favre saura vous accompagner au quotidien pour vous aider à atteindre vos objectifs.",
         "L_Tyrosine_1000mg"
@@ -569,7 +557,7 @@ INSERT INTO `produits` (
         "Vitamines B max - Métabolisme énergétique", 
         5,
         "90 jours de programme avec Vitamines B Max pour remettre d'aplomb votre métabolisme",
-        20,
+        15.90,
         10,
         "Vitamines B Max est un complément alimentaire complet puisqu'il contient l'ensemble des vitamines du Groupe B à des dosages maximum. Ces vitamines sont reconnues pour être au carrefour des métabolismes : glucides, protéines, lipides.
         • La vitamine B1 contribue à un métabolisme énergétique normal.
@@ -586,7 +574,7 @@ INSERT INTO `produits` (
         "Vitamine C Vegan - Boostez Votre Tonus", 
         5,
         "La vitamine C pour stimuler votre vitalité et votre tonus !",
-        20,
+        15.20,
         10,
         "La vitamine C est une vitamine hydrosoluble, soluble dans l'eau et ne peut être stockée par notre organisme. De plus, c'est une vitamine essentielle soit une vitamine que l'on ne peut pas synthétiser.
         Nous devons donc l'apporter à notre organisme par l'alimentation ou la supplémentation au quotidien. Les fruits et les légumes contiennent de la vitamine C mais c'est une vitamine très fragile qui se détériore donc très vite, notamment lors de la cuisson.
@@ -633,7 +621,7 @@ INSERT INTO `produits` (
         "Vitamino+ Immunité, fatigue, Multivitamines et minéraux", 
         5,
         "Vitamino+ stimule votre immunité et vous permet de lutter contre la fatigue",
-        20,
+        14.80,
         10,
         "Les changements de saison sont souvent synonyme de fatigue, baisse de vitalité... Pour booster sa forme et renforcer son immunité, rien ne vaut un cocktail à base de vitamines, de minéraux ou de plantes.
         Vitamino+ est un complément alimentaire complet (vitamines, minéraux et acides aminés) :

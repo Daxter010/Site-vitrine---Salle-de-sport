@@ -45,6 +45,18 @@
 @import 'pages/contact/contact-tablet'; // Version tablette
 @import 'pages/contact/contact-mobile'; // Version mobile
 
+/* Page mentions légales */
+@import 'pages/mentions/mentions-desktop'; // Version ordinateur de bureau
+@import 'pages/mentions/mentions-laptop'; // Version ordinateur portable
+@import 'pages/mentions/mentions-tablet'; // Version tablette
+@import 'pages/mentions/mentions-mobile'; // Version mobile
+
+/* Page politiques de confidentialités */
+@import 'pages/politiques/politiques-desktop'; // Version ordinateur de bureau
+@import 'pages/politiques/politiques-laptop'; // Version ordinateur portable
+@import 'pages/politiques/politiques-tablet'; // Version tablette
+@import 'pages/politiques/politiques-mobile'; // Version mobile
+
 // Titre Ref SEO 
 .ref-only {
     position: absolute;
@@ -89,7 +101,6 @@
 @import 'modules/formulaires/ajout/form-add-product-tablet.scss'; // Formulaire ajout cours collectifs version tablet
 @import 'modules/formulaires/ajout/form-add-product-mobile.scss'; // Formulaire ajout cours collectifs version mobile
 
-
 @import 'modules/formulaires/modification/form-modification-cours-desktop.scss'; // Formulaire modification cours version desktop
 @import 'modules/formulaires/modification/form-modification-cours-laptop.scss'; // Formulaire modification cours version laptop
 @import 'modules/formulaires/modification/form-modification-cours-tablet.scss'; // Formulaire modification cours version tablet
@@ -104,3 +115,8 @@
 @import 'modules/formulaires/modification/form-modification-products-laptop.scss'; // Formulaire modification produits version laptop
 @import 'modules/formulaires/modification/form-modification-products-tablet.scss'; // Formulaire modification produits version tablet
 @import 'modules/formulaires/modification/form-modification-products-mobile.scss'; // Formulaire modification produits version mobile
+
+@import 'modules/formulaires/suppression/form-suppression-admin-desktop.scss'; // Formulaire suppression admin version desktop
+@import 'modules/formulaires/suppression/form-suppression-admin-laptop.scss'; // Formulaire suppression admin version laptop
+@import 'modules/formulaires/suppression/form-suppression-admin-tablet.scss'; // Formulaire suppression admin version tablet
+@import 'modules/formulaires/suppression/form-suppression-admin-mobile.scss'; // Formulaire suppression admin version mobile

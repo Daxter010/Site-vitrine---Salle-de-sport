@@ -165,18 +165,9 @@
                     <!-- Conteneur photos + textes descriptif -->
                     <div class="main-show__vestiaires__img-text">
                         <div class="main-show__vestiaires__img-text__img">
-                            <img class="main-show__vestiaires__img-text__img--img" src="/public/assets/images/espaces/CircuitTwo-min.webp" alt="" loading="lazy">
+                            <img class="main-show__vestiaires__img-text__img--img" src="/public/assets/images/espaces/vestiaires-min.webp" alt="Des bancs avec des casiers et un sauna" loading="lazy">
                         </div>
 
-                        <div class="main-show__vestiaires__img-text__text">
-                            <p class="main-show__vestiaires__img-text__text--text"><span>Pourquoi ?</span> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum facere! Odit illum accusamus fugiat provident, hic voluptates cupiditate debitis?</p><br>
-                            <p class="main-show__vestiaires__img-text__text--text"><span>Pour qui ?</span> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum facere! Odit illum accusamus fugiat provident, hic voluptates cupiditate debitis?</p>
-                        </div>
-
-                        <div class="main-show__vestiaires__img-text__img">
-                            <img class="main-show__vestiaires__img-text__img--img" src="/public/assets/images/espaces/CircuitTwo-min.webp" alt="" loading="lazy">
-                        </div>
-                        
                         <div class="main-show__vestiaires__img-text__text">
                             <p class="main-show__vestiaires__img-text__text--text"><span>Pourquoi ?</span> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum facere! Odit illum accusamus fugiat provident, hic voluptates cupiditate debitis?</p><br>
                             <p class="main-show__vestiaires__img-text__text--text"><span>Pour qui ?</span> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cum facere! Odit illum accusamus fugiat provident, hic voluptates cupiditate debitis?</p>

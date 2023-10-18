@@ -52,12 +52,12 @@
 
                                 <div class="form-modification-event__starthours">
                                     <label for="starthours-modification-event">Heure de début</label>
-                                    <input type="time" name="starthours-modification-event" id="starthours-modification-event" placeholder="Entrez l'heure de début" value="<?php echo  $detailEvents['heure_debut'] ?>">
+                                    <input type="time" name="starthours-modification-event" id="starthours-modification-event" step="60" placeholder="Entrez l'heure de début" value="<?php echo  $detailEvents['heure_debut'] ?>">
                                 </div>
 
                                 <div class="form-modification-event__endhours">
                                     <label for="endhours-modification-event">Heure de fin</label>
-                                    <input type="time" name="endhours-modification-event" id="endhours-modification-event" placeholder="Entrez l'heure de fin" value="<?php echo  $detailEvents['heure_fin'] ?>">
+                                    <input type="time" name="endhours-modification-event" id="endhours-modification-event" step="60" placeholder="Entrez l'heure de fin" value="<?php echo  $detailEvents['heure_fin'] ?>">
                                 </div>
                             </div>
 

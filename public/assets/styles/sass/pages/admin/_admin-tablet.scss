@@ -67,7 +67,6 @@
                 font-family: sans-serif;
                 font-size: 2.4rem;
                 font-weight: bold;
-                text-align: center;
             }
 
             // Titre 2 (Tableau de bord)
@@ -96,7 +95,7 @@
                 // ID admin
                 > .main__container__deconnexion__button-id-container__id--id {
                     font-family: sans-serif;
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     
                     > span {
                         font-weight: bold;
@@ -106,7 +105,7 @@
                 // Id rôle
                 > .main__container__deconnexion__button-id-container__id--role {
                     font-family: sans-serif;
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     color: grey;
                 }
             }
@@ -122,7 +121,7 @@
                 // Bouton
                 > .main__container__deconnexion__button-id-container__button--btn {
                     height: 60px;
-                    width: 150px;
+                    width: 170px;
                     line-height: 60px;
                     vertical-align: center;
                     text-align: center;
@@ -131,6 +130,7 @@
                     text-decoration: none;
                     color: $black;
                     background-color: $grey_white;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
                     &:hover {
                         background-color: $black;
@@ -148,9 +148,8 @@
 
     // Conteneur principal
     .main__container__links-add {
-        display: flex;
         width: 100%;
-        height:  15vh;
+        height: 15vh;
         background-color: $grey_white;
 
         // Conteneur des liens vers les tableaux
@@ -158,15 +157,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 33.33%;
-            height: 15vh;
+            width: 100%;
+            height: 100%;
 
             // Liens
-            > button {
+            > a {
                 padding: 1%;
                 font-size: 1.6rem;
                 font-family: sans-serif;
                 border: none;
+                text-decoration: none;
                 color: $black;
                 background-color: $grey_white;
 
@@ -174,6 +174,7 @@
                     background-color: $black;
                     color: $white;
                     padding: 1%;
+                    cursor: pointer;
                 }
             }
 
@@ -181,92 +182,7 @@
                 font-size: 1.8rem;
                 margin: 0 1% 0 1%;
             }
-        }
-
-        > div {
-            width: 33.33%;
-        }
-
-        // Conteneur filtre produits
-        > .filter_admin-products {
-            width: 50%;
-            height: 100%;
-
-            // Fomulaire
-            > form {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 100%;
-                
-                // Select
-                > .filter__admin-products__select {
-                    width: 30%;
-                    height: 32%;
-                    margin-right: 1%;
-                    cursor: pointer;
-                    border: none;
-                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-                    font-size: 1.4rem;
-                }
-
-                // Search
-                > .filter__admin-products__search-input {
-                    width: 50%;
-                    height: 32%;
-                    margin: 0 1.5% 0 1.5%;
-                    border: none;
-                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-                    font-size: 1.4rem;
-                }
-
-                > .filter__admin-products__button {
-                    width: 30%;
-                    height: 32%;
-                    cursor: pointer;
-                    border: none;
-                    background-color: $white;
-                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-                    font-size: 1.4rem;
-
-                    &:hover {
-                        background-color: $black;
-                        color: $white;
-                    }
-                }
-            }
-        }
-
-        // Conteneur bouton ajouter
-        > .main__container__links-add__add {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 20%;
-            height: 15vh;
-
-            // Bouton
-            > .main__container__links-add__add--btn {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 45px;
-                width: 150px;
-                line-height: 45px;
-                vertical-align: center;
-                text-align: center;
-                text-decoration: none;
-                font-family: sans-serif;
-                font-size: 1.6rem;
-                color: $white;
-                background-color: #007bff;
-
-                &:hover {
-                    background-color:  #0067eb;
-                }
-            }
-        }
+        } 
     }
 
     #sectionTables {
@@ -278,20 +194,110 @@
     .main__container__tables {
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         height: auto;
 
         // Conteneur principal tableau 1
         > .main__container__tables__one {
             display: block;
-            width: 90%;
+            width: 95%;
             height: auto;
             overflow-x: auto;
+
+            > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+
+                // Conteneur bouton ajouter
+                > .main__container__tables__one-add {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    width: 40%;
+                    height: 15vh;
+
+                    // Bouton
+                    > .main__container__tables__one-add--btn  {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 50px;
+                        width: 225px;
+                        text-decoration: none;
+                        font-family: sans-serif;
+                        font-size: 1.6rem;
+                        color: $white;
+                        background-color: #007bff;
+                        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                        
+                        &:hover {
+                            background-color:  #0067eb;
+                        }
+                    }
+                }
+
+                // Conteneur filtre produits
+                > .filter_admin-products {
+                    width: 60%;
+                    height: 15vh;
+
+                    // Fomulaire
+                    > form {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        
+                        // Select
+                        > .filter__admin-products__select {
+                            width: 30%;
+                            height: 32%;
+                            margin-right: 1%;
+                            cursor: pointer;
+                            border: none;
+                            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                            font-size: 1.4rem;
+                        }
+
+                        // Search
+                        > .filter__admin-products__search-input {
+                            width: 40%;
+                            height: 32%;
+                            margin: 0 1.5% 0 1.5%;
+                            border: none;
+                            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                            font-size: 1.4rem;
+                        }
+
+                        > .filter__admin-products__button {
+                            width: 30%;
+                            height: 32%;
+                            cursor: pointer;
+                            border: none;
+                            background-color: $white;
+                            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                            font-size: 1.4rem;
+
+                            &:hover {
+                                background-color: $black;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
 
             // Tableau 1
             > table {
                 width: 100%;
                 height: auto;
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
                 > thead {
                     width: 100%;
@@ -302,7 +308,7 @@
                         height: 10vh;
                         
                         > th{
-                            width: 16.6%;
+                            width: 10.55%;
                             height: 10vh;
                             font-size: 1.6rem;
                             font-family: sans-serif;
@@ -325,23 +331,24 @@
 
                         td {
                             padding: 10px;
-                            width: 16.6%;
+                            width: 10.55%;
                             height: auto;
-                            line-height: auto;
                             max-width: 300px; 
                             overflow: hidden;
                             text-overflow: ellipsis; 
                             white-space: nowrap;
+                            line-height: auto;
+                            vertical-align: middle;
                             font-size: 1.6rem;
                             font-family: sans-serif;
                             text-align: center;
                             background-color: $white;
-
+                        
                             > a {
                                 text-decoration: none;
                                 
                                 img {
-                                    width: 60px;
+                                    width: 50px;
                                     transition: transform 0.2s ease-in-out;
 
                                     // Hover zoom
@@ -358,15 +365,44 @@
 
         // Conteneur principal tableau 2
         > .main__container__tables__two {
-            display: none;
-            width: 90%;
+            display: block;
+            width: 95%;
             height: auto;
-            overflow-x: auto;
+            margin: 5% 0 5% 0;
+
+            // Conteneur bouton ajouter
+            > .main__container__tables__one-add {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                height: 15vh;
+
+                // Bouton
+                > .main__container__tables__one-add--btn  {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50px;
+                    width: 225px;
+                    text-decoration: none;
+                    font-family: sans-serif;
+                    font-size: 1.6rem;
+                    color: $white;
+                    background-color: #007bff;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                    
+                    &:hover {
+                        background-color:  #0067eb;
+                    }
+                }
+            }
 
             // Tableau 2
             > table {
                 width: 100%;
                 height: auto;
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
                 > thead {
                     width: 100%;
@@ -403,11 +439,11 @@
                             padding: 10px;
                             width: 14.28%;
                             height: auto;
-                            line-height: auto;
                             max-width: 300px; 
                             overflow: hidden;
                             text-overflow: ellipsis; 
                             white-space: nowrap;
+                            line-height: auto;
                             vertical-align: middle;
                             font-size: 1.6rem;
                             font-family: sans-serif;
@@ -418,7 +454,7 @@
                                 text-decoration: none;
                                 
                                 img {
-                                    width: 60px;
+                                    width: 50px;
                                     transition: transform 0.2s ease-in-out;
 
                                     // Hover zoom
@@ -435,16 +471,121 @@
 
         // Conteneur principal tableau 3
         > .main__container__tables__three {
-            display: none;
-            width: 90%;
+            display: block;
+            width: 95%;
             height: auto;
-            overflow-x: auto;
+
+            
+            // Conteneur bouton ajouter
+            > .main__container__tables__three-add {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                height: 15vh;
+
+                // Bouton
+                > .main__container__tables__three-add--btn  {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50px;
+                    width: 225px;
+                    text-decoration: none;
+                    font-family: sans-serif;
+                    font-size: 1.6rem;
+                    color: $white;
+                    background-color: #007bff;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                    
+                    &:hover {
+                        background-color:  #0067eb;
+                    }
+                }
+            }
 
             // Tableau 3
             > table {
                 width: 100%;
                 height: auto;
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
+                > thead {
+                    width: 100%;
+                    height: 10vh;
+    
+                    > tr {
+                        width: 100%;
+                        height: 10vh;
+                        
+                        > th {
+                            width: 16.6%;
+                            height: 10vh;
+                            font-size: 1.6rem;
+                            font-family: sans-serif;
+                            font-weight: bold;
+                            line-height: 90px;
+                            vertical-align: center;
+                            background-color: lightgray;
+                        
+                        }
+                    }
+                }
+
+                > tbody {
+                    width: 100%;
+                    height: auto;
+
+                    > tr {
+                        width: 100%;
+                        height: auto;
+                        border-bottom: 1px solid lightgrey;
+
+                        td {
+                            padding: 10px;
+                            width: 16.6%;
+                            height: auto;
+                            max-width: 300px; 
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                            white-space: nowrap;
+                            line-height: auto;
+                            vertical-align: middle;
+                            font-size: 1.6rem;
+                            font-family: sans-serif;
+                            text-align: center;
+                            background-color: $white;
+
+                            > a {
+                                text-decoration: none;
+                                
+                                img {
+                                    width: 50px;
+                                    transition: transform 0.2s ease-in-out;
+
+                                    // Hover zoom
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+
+        // Conteneur principal tableau 4
+        > .main__container__tables__four {
+            display: none;
+            width: 95%;
+            height: auto;
+
+            // Tableau 4
+            > table {
+                width: 100%;
+                height: auto;
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
                 > thead {
                     width: 100%;
@@ -455,7 +596,7 @@
                         height: 10vh;
                         
                         > th{
-                            width: 20%;
+                            width: 16.6%;
                             height: 10vh;
                             font-size: 1.6rem;
                             font-family: sans-serif;
@@ -478,24 +619,24 @@
 
                         td {
                             padding: 10px;
-                            width: 20%;
+                            width: 16.6%;
                             height: auto;
-                            line-height: auto;
                             max-width: 300px; 
                             overflow: hidden;
                             text-overflow: ellipsis; 
                             white-space: nowrap;
+                            line-height: auto;
                             vertical-align: middle;
                             font-size: 1.6rem;
                             font-family: sans-serif;
                             text-align: center;
                             background-color: $white;
-
+                        
                             > a {
                                 text-decoration: none;
                                 
                                 img {
-                                    width: 60px;
+                                    width: 50px;
                                     transition: transform 0.2s ease-in-out;
 
                                     // Hover zoom
@@ -519,8 +660,8 @@
         position: absolute;
         top: 0;
         width: 30%;
-        height: 100vh;
-        background-color: $black;
+        height: 100%;
+        background-color: $grey_black;
 
         // Conteneur logo et bouton close
         > .main__container__menu-lateral__logo {
@@ -529,6 +670,7 @@
             align-items: center;
             width: 100%;
             height: 15vh;
+            background-color: $black;
 
             // Logo
             > img {
@@ -542,7 +684,6 @@
 
                 // Icône
                 > img {
-                    width: 20px;
                     cursor: pointer;
                     transition: transform 0.2s ease-in-out;
     
@@ -565,7 +706,7 @@
 
             // Titre
             > h2 {
-                font-size: 2.4rem;
+                font-size: 2.6rem;
                 font-family: sans-serif;
                 font-weight: bold;
                 color: $white;
@@ -601,7 +742,7 @@
 
                 > h3::after {
                     content: '▼';
-                    font-size: 20px;
+                    font-size: 12.5px;
                     margin-left: 5px;
                 }
             }
@@ -629,31 +770,31 @@
 
                 > h3::after {
                     content: '▼';
-                    font-size: 20px;
+                    font-size: 12.5px;
                     margin-left: 5px;
                 }
             }
 
             // Conteneur caché "modifcations de données"
             > .main__container__menu-lateral__links__datas__hidden {
-                display: none;
+                display: block;
                 width: 100%;
-                height: 10vh;
+                height: 12.5vh;
 
                 > nav {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    align-items: start;
                     width: 97%;
-                    height: 10vh;
-                    margin-left: 3%;
+                    height: 12.5vh;
+                    margin-left: 5%;
 
-                    button {
-                        margin-bottom: 5px;
+                    a {
+                        margin: 0 0 1% 0;
                         font-size: 1.8rem;
                         font-family: sans-serif;
                         border: none;
+                        text-decoration: none;
                         color: $white;
                         background-color: $grey_black;
 
@@ -681,7 +822,6 @@
                     margin-left: 3%;
 
                     button {
-                        margin-bottom: 5px;
                         font-size: 1.8rem;
                         font-family: sans-serif;
                         border: none;

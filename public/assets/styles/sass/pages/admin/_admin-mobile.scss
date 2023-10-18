@@ -56,11 +56,88 @@
         // Conteneur titre
         > .main__container__deconnexion__title-container {
             display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 100%;
+
+            // Titre 1 (Magic Form Romilly-sur-Seine)
+            > .main__container__deconnexion__title-container-titleOne {
+                font-family: sans-serif;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            // Titre 2 (Tableau de bord)
+            > .main__container__deconnexion__title-container-titleTwo {
+                font-family: sans-serif;
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
         }
 
         // Conteneur ID admin et bouton déconnexion
         > .main__container__deconnexion__button-id-container {
             display: none;
+            width: 40%;
+            height: 100%;
+
+            // Conteneur ID admin
+            > .main__container__deconnexion__button-id-container__id {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                height: 100%;
+
+                // ID admin
+                > .main__container__deconnexion__button-id-container__id--id {
+                    font-family: sans-serif;
+                    font-size: 1.6rem;
+                    
+                    > span {
+                        font-weight: bold;
+                    }
+                }
+                
+                // Id rôle
+                > .main__container__deconnexion__button-id-container__id--role {
+                    font-family: sans-serif;
+                    font-size: 1.4rem;
+                    color: grey;
+                }
+            }
+
+            // Conteneur bouton déconnexion
+            >.main__container__deconnexion__button-id-container__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                height: 100%;
+                
+                // Bouton
+                > .main__container__deconnexion__button-id-container__button--btn {
+                    height: 60px;
+                    width: 170px;
+                    line-height: 60px;
+                    vertical-align: center;
+                    text-align: center;
+                    font-size: 1.4rem;
+                    font-family: sans-serif;
+                    text-decoration: none;
+                    color: $black;
+                    background-color: $grey_white;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+                    &:hover {
+                        background-color: $black;
+                        color: $white;
+                    }
+                }
+            }
         }
     }
 
@@ -71,11 +148,9 @@
 
     // Conteneur principal
     .main__container__links-add {
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        height: auto;
-        padding: 15px;
+        height: 15vh;
+        background-color: $grey_white;
 
         // Conteneur des liens vers les tableaux
         > .main__container__links-add__links {
@@ -83,14 +158,15 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: auto;
+            height: 100%;
 
             // Liens
-            > button {
+            > a {
                 padding: 1%;
                 font-size: 1.4rem;
                 font-family: sans-serif;
                 border: none;
+                text-decoration: none;
                 color: $black;
                 background-color: $grey_white;
 
@@ -98,6 +174,7 @@
                     background-color: $black;
                     color: $white;
                     padding: 1%;
+                    cursor: pointer;
                 }
             }
 
@@ -105,92 +182,7 @@
                 font-size: 1.6rem;
                 margin: 0 1% 0 1%;
             }
-        }
-
-        > div {
-            width: 33.33%;
-        }
-
-        // Conteneur filtre produits
-        > .filter_admin-products {
-            width: 100%;
-            height: auto;
-            margin: 2% 0 2% 0;
-
-            // Fomulaire
-            > form {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 100%;
-                
-                // Select
-                > .filter__admin-products__select {
-                    width: 100%;
-                    height: 4vh;
-                    cursor: pointer;
-                    border: none;
-                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-                    font-size: 1.4rem;
-                }
-
-                // Search
-                > .filter__admin-products__search-input {
-                    width: 100%;
-                    height: 4vh;
-                    margin: 1.5% 0 1.5% 0;
-                    border: none;
-                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-                    font-size: 1.4rem;
-                }
-
-                > .filter__admin-products__button {
-                    width: 100%;
-                    height: 4vh;
-                    cursor: pointer;
-                    border: none;
-                    background-color: $white;
-                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-                    font-size: 1.4rem;
-
-                    &:hover {
-                        background-color: $black;
-                        color: $white;
-                    }
-                }
-            }
-        }
-
-        // Conteneur bouton ajouter
-        > .main__container__links-add__add {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: auto;
-            margin: 1.5% 0 1.5% 0;
-
-            // Bouton
-            > .main__container__links-add__add--btn {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 40px;
-                width: 100%;
-                text-align: center;
-                text-decoration: none;
-                font-family: sans-serif;
-                font-size: 1.4rem;
-                color: $white;
-                background-color: #007bff;
-
-                &:hover {
-                    background-color:  #0067eb;
-                }
-            }
-        }
+        } 
     }
 
     #sectionTables {
@@ -202,20 +194,112 @@
     .main__container__tables {
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         height: auto;
 
         // Conteneur principal tableau 1
         > .main__container__tables__one {
             display: block;
-            width: 90%;
+            width: 95%;
             height: auto;
             overflow-x: auto;
+
+            > div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+
+                // Conteneur bouton ajouter
+                > .main__container__tables__one-add {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    width: 100%;
+                  
+                    // Bouton
+                    > .main__container__tables__one-add--btn  {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 5%;
+                        height: 50px;
+                        width: 100%;
+                        text-decoration: none;
+                        font-family: sans-serif;
+                        font-size: 1.4rem;
+                        color: $white;
+                        background-color: #007bff;
+                        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                        
+                        &:hover {
+                            background-color:  #0067eb;
+                        }
+                    }
+                }
+
+                // Conteneur filtre produits
+                > .filter_admin-products {
+                    width: 100%;
+                    height: auto;
+
+                    // Fomulaire
+                    > form {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 100%;
+                        
+                        // Select
+                        > .filter__admin-products__select {
+                            width: 100%;
+                            height: 5vh;
+                            cursor: pointer;
+                            border: none;
+                            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                            font-size: 1.2rem;
+                        }
+
+                        // Search
+                        > .filter__admin-products__search-input {
+                            width: 100%;
+                            height: 5vh;
+                            margin: 1.5% 0 1.5% 0;
+                            border: none;
+                            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                            font-size: 1.2rem;
+                        }
+
+                        > .filter__admin-products__button {
+                            width: 100%;
+                            height: 5vh;
+                            margin-bottom: 5%;
+                            cursor: pointer;
+                            border: none;
+                            background-color: $white;
+                            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                            font-size: 1.2rem;
+
+                            &:hover {
+                                background-color: $black;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
 
             // Tableau 1
             > table {
                 width: 100%;
                 height: auto;
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
                 > thead {
                     width: 100%;
@@ -225,10 +309,10 @@
                         width: 100%;
                         height: 10vh;
                         
-                        > th {
-                            width: 16.6%;
+                        > th{
+                            width: 10.55%;
                             height: 10vh;
-                            font-size: 1.2rem;
+                            font-size: 1.4rem;
                             font-family: sans-serif;
                             font-weight: bold;
                             line-height: 90px;
@@ -249,23 +333,24 @@
 
                         td {
                             padding: 10px;
-                            width: 16.6%;
+                            width: 10.55%;
                             height: auto;
                             max-width: 300px; 
                             overflow: hidden;
                             text-overflow: ellipsis; 
                             white-space: nowrap;
-                            font-size: 1.2rem;
+                            line-height: auto;
+                            vertical-align: middle;
+                            font-size: 1.4rem;
                             font-family: sans-serif;
                             text-align: center;
                             background-color: $white;
-
+                        
                             > a {
                                 text-decoration: none;
                                 
                                 img {
-                                    width: 40px;
-                                    margin-block: 10px;
+                                    width: 50px;
                                     transition: transform 0.2s ease-in-out;
 
                                     // Hover zoom
@@ -282,15 +367,45 @@
 
         // Conteneur principal tableau 2
         > .main__container__tables__two {
-            display: none;
-            width: 90%;
+            display: block;
+            width: 95%;
             height: auto;
+            margin: 5% 0 5% 0;
             overflow-x: auto;
+
+            // Conteneur bouton ajouter
+            > .main__container__tables__one-add {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                height: 15vh;
+
+                // Bouton
+                > .main__container__tables__one-add--btn  {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50px;
+                    width: 100%;
+                    text-decoration: none;
+                    font-family: sans-serif;
+                    font-size: 1.4rem;
+                    color: $white;
+                    background-color: #007bff;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                    
+                    &:hover {
+                        background-color:  #0067eb;
+                    }
+                }
+            }
 
             // Tableau 2
             > table {
                 width: 100%;
                 height: auto;
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
                 > thead {
                     width: 100%;
@@ -303,7 +418,7 @@
                         > th{
                             width: 14.28%;
                             height: 10vh;
-                            font-size: 1.2rem;
+                            font-size: 1.4rem;
                             font-family: sans-serif;
                             font-weight: bold;
                             line-height: 90px;
@@ -331,7 +446,9 @@
                             overflow: hidden;
                             text-overflow: ellipsis; 
                             white-space: nowrap;
-                            font-size: 1.2rem;
+                            line-height: auto;
+                            vertical-align: middle;
+                            font-size: 1.4rem;
                             font-family: sans-serif;
                             text-align: center;
                             background-color: $white;
@@ -340,8 +457,7 @@
                                 text-decoration: none;
                                 
                                 img {
-                                    width: 40px;
-                                    margin-block: 10px;
+                                    width: 50px;
                                     transition: transform 0.2s ease-in-out;
 
                                     // Hover zoom
@@ -358,16 +474,122 @@
 
         // Conteneur principal tableau 3
         > .main__container__tables__three {
-            display: none;
-            width: 90%;
+            display: block;
+            width: 95%;
             height: auto;
             overflow-x: auto;
+            
+            // Conteneur bouton ajouter
+            > .main__container__tables__three-add {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                height: 15vh;
+
+                // Bouton
+                > .main__container__tables__three-add--btn  {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50px;
+                    width: 100%;
+                    text-decoration: none;
+                    font-family: sans-serif;
+                    font-size: 1.4rem;
+                    color: $white;
+                    background-color: #007bff;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+                    
+                    &:hover {
+                        background-color:  #0067eb;
+                    }
+                }
+            }
 
             // Tableau 3
             > table {
                 width: 100%;
                 height: auto;
-                margin-top: 30%;
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+                > thead {
+                    width: 100%;
+                    height: 10vh;
+    
+                    > tr {
+                        width: 100%;
+                        height: 10vh;
+                        
+                        > th {
+                            width: 16.6%;
+                            height: 10vh;
+                            font-size: 1.4rem;
+                            font-family: sans-serif;
+                            font-weight: bold;
+                            line-height: 90px;
+                            vertical-align: center;
+                            background-color: lightgray;
+                        
+                        }
+                    }
+                }
+
+                > tbody {
+                    width: 100%;
+                    height: auto;
+
+                    > tr {
+                        width: 100%;
+                        height: auto;
+                        border-bottom: 1px solid lightgrey;
+
+                        td {
+                            padding: 10px;
+                            width: 16.6%;
+                            height: auto;
+                            max-width: 300px; 
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                            white-space: nowrap;
+                            line-height: auto;
+                            vertical-align: middle;
+                            font-size: 1.4rem;
+                            font-family: sans-serif;
+                            text-align: center;
+                            background-color: $white;
+
+                            > a {
+                                text-decoration: none;
+                                
+                                img {
+                                    width: 50px;
+                                    transition: transform 0.2s ease-in-out;
+
+                                    // Hover zoom
+                                    &:hover {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+
+        // Conteneur principal tableau 4
+        > .main__container__tables__four {
+            display: none;
+            width: 95%;
+            height: auto;
+            overflow-x: auto;
+
+            // Tableau 4
+            > table {
+                width: 100%;
+                height: auto;
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
                 > thead {
                     width: 100%;
@@ -378,9 +600,9 @@
                         height: 10vh;
                         
                         > th{
-                            width: 20%;
+                            width: 16.6%;
                             height: 10vh;
-                            font-size: 1.2rem;
+                            font-size: 1.4rem;
                             font-family: sans-serif;
                             font-weight: bold;
                             line-height: 90px;
@@ -401,23 +623,24 @@
 
                         td {
                             padding: 10px;
-                            width: 20%;
+                            width: 16.6%;
                             height: auto;
                             max-width: 300px; 
                             overflow: hidden;
                             text-overflow: ellipsis; 
                             white-space: nowrap;
-                            font-size: 1.2rem;
+                            line-height: auto;
+                            vertical-align: middle;
+                            font-size: 1.4rem;
                             font-family: sans-serif;
                             text-align: center;
                             background-color: $white;
-
+                        
                             > a {
                                 text-decoration: none;
                                 
                                 img {
-                                    width: 40px;
-                                    margin-block: 10px;
+                                    width: 50px;
                                     transition: transform 0.2s ease-in-out;
 
                                     // Hover zoom
@@ -440,9 +663,10 @@
         display: none;
         position: absolute;
         top: 0;
-        width: 60%;
-        min-height: 100vh;
-        background-color: $black;
+        width: auto;
+        height: 100%;
+        background-color: $grey_black;
+        overflow: hidden;
 
         // Conteneur logo et bouton close
         > .main__container__menu-lateral__logo {
@@ -451,6 +675,7 @@
             align-items: center;
             width: 100%;
             height: 15vh;
+            background-color: $black;
 
             // Logo
             > img {
@@ -462,9 +687,8 @@
             >.main__container__menu-lateral__close {
                 width: 15%;
 
-                // Icônes
+                // Icône
                 > img {
-                    width: 20px;
                     cursor: pointer;
                     transition: transform 0.2s ease-in-out;
     
@@ -487,7 +711,7 @@
 
             // Titre
             > h2 {
-                font-size: 2rem;
+                font-size: 2.6rem;
                 font-family: sans-serif;
                 font-weight: bold;
                 color: $white;
@@ -496,9 +720,9 @@
 
         // Conteneur liens
         > .main__container__menu-lateral__links {
+           // background-color: $grey_black;
             width: 100%;
-            height: 25vh;
-            background-color: $grey_black;
+            height: 40vh;
 
             // Conteneur liens vers les tableaux
             > .main__container__menu-lateral__links__datas {
@@ -511,7 +735,7 @@
 
                 // Titre
                 > h3 {
-                    font-size: 1.6rem;
+                    font-size: 2rem;
                     font-family: sans-serif;
                     color: gray;
                     cursor: pointer;
@@ -523,7 +747,7 @@
 
                 > h3::after {
                     content: '▼';
-                    font-size: 20px;
+                    font-size: 12.5px;
                     margin-left: 5px;
                 }
             }
@@ -539,7 +763,7 @@
 
                 // Titre
                 > h3 {
-                    font-size: 1.6rem;
+                    font-size: 2rem;
                     font-family: sans-serif;
                     color: gray;
                     cursor: pointer;
@@ -551,31 +775,31 @@
 
                 > h3::after {
                     content: '▼';
-                    font-size: 20px;
+                    font-size: 12.5px;
                     margin-left: 5px;
                 }
             }
 
             // Conteneur caché "modifcations de données"
             > .main__container__menu-lateral__links__datas__hidden {
-                display: none;
+                display: block;
                 width: 100%;
-                height: 10vh;
+                height: 12.5vh;
 
                 > nav {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    align-items: start;
                     width: 97%;
-                    height: 10vh;
-                    margin-left: 3%;
+                    height: 12.5vh;
+                    margin-left: 5%;
 
-                    button {
-                        margin-bottom: 5px;
-                        font-size: 1.4rem;
+                    a {
+                        margin: 0 0 1% 0;
+                        font-size: 1.8rem;
                         font-family: sans-serif;
                         border: none;
+                        text-decoration: none;
                         color: $white;
                         background-color: $grey_black;
 
@@ -603,8 +827,7 @@
                     margin-left: 3%;
 
                     button {
-                        margin-bottom: 5px;
-                        font-size: 1.4rem;
+                        font-size: 1.8rem;
                         font-family: sans-serif;
                         border: none;
                         color: $white;
@@ -619,21 +842,21 @@
         }
 
         > .main__container__menu-lateral__id-deconnexion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             width: 100%;
-            height: 50vh;
-            background-color: $grey_black;
+            height: 30vh;
 
-            // Conteneur ID admin
             > .main__container__deconnexion__button-id-container__id {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 100%;
-                height: 10vh;
+                height: 7.5vh;
 
-                // ID admin
-                > .main__container__deconnexion__button-id-container__id--id {
+                p {
                     font-family: sans-serif;
                     font-size: 1.6rem;
                     color: $white;
@@ -642,27 +865,18 @@
                         font-weight: bold;
                     }
                 }
-                
-                // Id rôle
-                > .main__container__deconnexion__button-id-container__id--role {
-                    font-family: sans-serif;
-                    font-size: 1.4rem;
-                    color: grey;
-                }
             }
 
-            // Conteneur bouton déconnexion
-            >.main__container__deconnexion__button-id-container__button {
+            > .main__container__deconnexion__button-id-container__button {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 100%;
-                height: 10vh;
-                
-                // Bouton
-                > .main__container__deconnexion__button-id-container__button--btn {
+                width: 95%;
+                height: 5vh;
+
+                > a { 
                     height: 40px;
-                    width: 90%;
+                    width: 100%;
                     line-height: 40px;
                     vertical-align: center;
                     text-align: center;
@@ -671,6 +885,7 @@
                     text-decoration: none;
                     color: $black;
                     background-color: $grey_white;
+                    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
                     &:hover {
                         background-color: $black;

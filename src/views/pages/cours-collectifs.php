@@ -30,7 +30,6 @@
                     <!-- Conteneur flèche --> 
                     <div class="main__container__accordeon__arrow">
                         <img class="main__container__accordeon__arrow--black" src="/public/assets/icons/ArrowRightBlack-min.svg" alt="Une icône de flèche" loading="lazy">
-                        <img class="main__container__accordeon__arrow--white" src="/public/assets/icons/ArrowRightWhite-min.svg" alt="Une icône de flèche" loading="lazy">
                     </div>
 
                     <!-- Conteneur titre --> 

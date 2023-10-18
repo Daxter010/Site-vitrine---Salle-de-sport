@@ -48,12 +48,12 @@
                                 
                                 <div class="form-add-event__starthours">
                                     <label for="starthours-add-event">Heure de début</label>
-                                    <input type="time" name="starthours-add-event" id="starthours-add-event" placeholder="Entrez l'heure de début" required>
+                                    <input type="text" name="starthours-add-event" id="starthours-add-event" placeholder="HH:MM" required>
                                 </div>
 
                                 <div class="form-add-event__endhours">
                                     <label for="endhours-add-event">Heure de fin</label>
-                                    <input type="time" name="endhours-add-event" id="endhours-add-event" placeholder="Entrez l'heure de fin" required>
+                                    <input type="text" name="endhours-add-event" id="endhours-add-event" placeholder="HH:MM" required>
                                 </div>
                             </div>
 

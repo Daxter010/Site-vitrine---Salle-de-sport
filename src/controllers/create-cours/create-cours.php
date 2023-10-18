@@ -32,7 +32,7 @@
                 if (move_uploaded_file($file_tmp, $destination)) {
                     // Appel de la fonction model
                     createCoursModel($addTitleCours, $addDescriptionCours, $addPictureCours, $addCategorieCours);
-                    echo "<div style='width:100%; background-color: #32CD32;'><p style='padding: 10px; font-size: 2vw; font-weight: bold; font-family: sans-serif; color: white'>Création de l'évènement réalisée avec succès.</p></div>";
+                    echo "<div style='width:100%; background-color: #32CD32;'><p style='padding: 10px; font-size: 2vw; font-weight: bold; font-family: sans-serif; color: white'>Création du cours réalisée avec succès.</p></div>";
                     header("refresh:2;url=/admin");
                 } else {
                     echo "<div style='width:100%; background-color: B22222;'><p style='padding: 10px; font-size: 2vw; font-weight: bold; font-family: sans-serif; color: white'>Erreur lors du téléversement de l'image.</p></div>";
@@ -42,4 +42,3 @@
     }
 
     createCoursController();
-    

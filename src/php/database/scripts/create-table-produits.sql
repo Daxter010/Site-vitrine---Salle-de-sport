@@ -4,7 +4,7 @@ CREATE TABLE produits (
     nom VARCHAR(50),
     categorie_id INT,
     sous_titre VARCHAR(50),
-    prix INT,
+    prix DECIMAL(10, 2),
     stock INT,
     description TEXT,
     image VARCHAR(100),

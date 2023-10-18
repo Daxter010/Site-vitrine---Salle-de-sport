@@ -23,21 +23,21 @@
                <div class="carousel__slider">
                     <!-- Première image -->
                     <div class="carousel__slider__item">
-                        <img src="/public/assets/images/accueil/1064201.png" alt="Tous les espaces de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
+                        <img src="/public/assets/images/accueil//CarouselEspaces-min.webp" alt="Tous les espaces de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
                         <h2 class="carousel__slide__item--title">Découvrez <br> nos espaces !</h2>
                         <a href="/espaces" class="carousel__slide__item--link">Voir nos espaces</a>
                     </div>
 
                     <!-- Deuxième image -->
                     <div class="carousel__slider__item">
-                        <img src="/public/assets/images/accueil/1064201.png" alt="Tous les coachs sportifs de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
+                        <img src="/public/assets/images/accueil/Germany_Lake_Mountains_Stones_Scenery_Eibsee_Alps_616675_1920x1080.jpg" alt="Tous les coachs sportifs de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
                         <h2 class="carousel__slide__item--title">Faites connaissance avec nos coachs !</h2>
                         <a href="/coachs" class="carousel__slide__item--link">Voir nos coachs</a>
                     </div>
 
                     <!-- Troisième image -->
                     <div class="carousel__slider__item">
-                        <img src="/public/assets/images/accueil/1064201.png" alt="Tous les cours collectifs de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
+                        <img src="/public/assets/images/accueil/Norway_Mountains_Lake_Scenery_Clouds_617039_1920x1080 (1).jpg" alt="Tous les cours collectifs de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
                         <h2 class="carousel__slide__item--title">Participez à nos cours collectifs !</h2>
                         <a href="/cours-collectifs" class="carousel__slide__item--link">Découvrir nos cours</a>
                     </div>                    
@@ -146,7 +146,7 @@
                 <div class="main__container_links-pages__contact">
                     <a href="/contact" class="main__container_links-pages__contact--link">Contactez-nous</a>
                     <h3>Contactez-nous plus pour plus d'informations !</h3>
-                    <img src="/public/assets/images/accueil/hhh.webp" alt="Un futur adhérant demandant des informations sur Magic Form Romilly-sur-Seine" loading="lazy">
+                    <img src="/public/assets/images/accueil/Contact-min.webp" alt="Un futur adhérant demandant des informations sur Magic Form Romilly-sur-Seine" loading="lazy">
                 </div>
 
                 <!-- Vers Vélo & Oxygen -->

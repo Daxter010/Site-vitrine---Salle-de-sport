@@ -13,5 +13,3 @@
         <script src="/public/assets/js/dark-mode.js" defer></script>
         <script src="/public/assets/js/burger.js" defer></script>
     </head>
-        
-     

@@ -705,12 +705,12 @@
                     display: flex;
                     justify-content: center;
                     width: 30%;
-                    height: 100%;
+                    height: auto;
 
                     // Images
                     >.main-show__vestiaires__img-text__img--img {
                         width: auto;
-                        height: 100%
+                        height: auto;
                     }
                 }
 
@@ -721,6 +721,7 @@
                     justify-content: space-around;
                     width: 70%;
                     height: 100%;
+                    padding: 1%;
 
                     // Textes
                     > .main-show__vestiaires__img-text__text--text {

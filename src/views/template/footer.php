@@ -42,8 +42,8 @@
     
     <!-- Conteneur mentions / politique / copyright -->
     <div class="main__container__footer-infos">
-        <a href="/">Politique de confidentialité</a>
+        <a href="/politiques-de-confidentialites">Politique de confidentialité</a>
         <a href="/">Magic Form Romilly-sur-Seine © 2023</a>
-        <a href="/">Mentions légales</a>
+        <a href="/mentions-legales">Mentions légales</a>
     </div>
 </div>

@@ -4,7 +4,6 @@
     <div class="nav__logo">
         <a href="/" class="nav__logo-link">
             <img id="logoWhiteMode" src="/public/assets/logo/LogoMFB-min.webp" alt="Une icône de Facebook">
-            <img id="logoDarkMode" src="/public/assets/logo/LogoMFN-min.webp" alt="Une icône de Facebook">
         </a>
     </div>
 
@@ -58,7 +57,7 @@
             <div class="nav__dark-mode-mobile">
                 <!-- Bouton de mode sombre pour version mobile -->
                 <div class="back-dark-mode">
-                    <button class="nav__dark-mode-button"></button>
+                    <button class="nav__dark-mode-button" aria-label="Activer le mode sombre"></button>
                 </div>
             </div>   
        </div>
@@ -69,7 +68,7 @@
         <div class="nav__controls">
             <div class="nav__dark-mode">
                 <div class="back-dark-mode">
-                    <button class="nav__dark-mode-button"></button>
+                    <button class="nav__dark-mode-button" aria-label="Activer le mode sombre"></button>
                 </div>
             </div>
             

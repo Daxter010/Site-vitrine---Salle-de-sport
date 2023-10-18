@@ -31,22 +31,22 @@
                         <form action="#" method="post" class="form-register">
                             <div class="form-register__name">
                                 <label for="name-register">Nom</label>
-                                <input type="text" name="name-register" id="name-register" placeholder="Entrez votre nom">
+                                <input type="text" name="name-register" id="name-register" placeholder="Entrez votre nom" required>
                             </div>
 
                             <div class="form-register__forname">
                                 <label for="forname-register">Prénom</label>
-                                <input type="text" name="forname-register" id="forname-register" placeholder="Entrez votre prénom">
+                                <input type="text" name="forname-register" id="forname-register" placeholder="Entrez votre prénom" required>
                             </div>
 
                             <div class="form-register__password">
                                 <label for="password-register">Mot de passe</label>
-                                <input type="password" name="password-register" id="password-register" placeholder="Entrez un mot de passe">
+                                <input type="password" name="password-register" id="password-register" placeholder="Entrez un mot de passe" required>
                             </div>
 
                             <div class="form-register__confirm-password">
                                 <label for="confirm-password-register">Confirmer le mot de passe</label>
-                                <input type="password" name="confirm-password-register" id="confirm-password-register" placeholder="Confirmer le mot de passe">
+                                <input type="password" name="confirm-password-register" id="confirm-password-register" placeholder="Confirmer le mot de passe" required>
                             </div>
 
                             <div class="form-register__btn">

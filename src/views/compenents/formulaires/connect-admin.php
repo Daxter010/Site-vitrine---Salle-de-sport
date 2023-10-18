@@ -30,22 +30,22 @@
                         <form action="#" method="post" class="form-connect">
                             <div class="form-connect__name">
                                 <label for="name-connect">Nom</label>
-                                <input type="text" name="name-connect" id="name-connect" placeholder="Entrez votre nom">
+                                <input type="text" name="name-connect" id="name-connect" placeholder="Entrez votre nom" required>
                             </div>
 
                             <div class="form-connect__forname">
                                 <label for="forname-connect">Prénom</label>
-                                <input type="text" name="forname-connect" id="forname-connect" placeholder="Entrez votre prénom">
+                                <input type="text" name="forname-connect" id="forname-connect" placeholder="Entrez votre prénom" required>
                             </div>
 
                             <div class="form-connect__password">
                                 <label for="password-connect">Mot de passe</label>
-                                <input type="password" name="password-connect" id="password-connect" placeholder="Entrez un mot de passe">
+                                <input type="password" name="password-connect" id="password-connect" placeholder="Entrez un mot de passe" required>
                             </div>
 
                             <div class="form-connect__confirm-password">
                                 <label for="confirm-password-connect">Confirmer le mot de passe</label>
-                                <input type="password" name="confirm-password-connect" id="confirm-password-connect" placeholder="Confirmer le mot de passe">
+                                <input type="password" name="confirm-password-connect" id="confirm-password-connect" placeholder="Confirmer le mot de passe" required>
                             </div>
 
                             <div class="form-connect__btn">

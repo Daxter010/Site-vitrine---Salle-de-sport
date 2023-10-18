@@ -35,6 +35,10 @@
             > .card__infos__title--title {
                 padding: 2.5%;
                 width: 100%;
+                max-width: 100%; 
+                overflow: hidden;
+                text-overflow: ellipsis; 
+                white-space: nowrap;
                 font-size: 1.8rem;
                 font-weight: bold;
                 text-align: center;
