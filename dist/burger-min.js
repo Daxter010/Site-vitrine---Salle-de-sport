@@ -1,0 +1,1 @@
+function navBurger(){const e=document.querySelector(".nav__burger--button"),n=document.querySelector(".nav__menu-mobile");e.addEventListener("click",()=>{n.classList.toggle("active")})}navBurger();

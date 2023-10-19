@@ -140,19 +140,19 @@
                     <!-- Conteneur réseaux facebook -->
                     <div class="main__container__contact__coordonnees__container">
                         <img src="/public/assets/icons/IconFacebookBlack-min.svg" alt="Une icône de Facebook">
-                        <a href="">Facebook</a>
+                        <a href="https://www.facebook.com/magicform.romilly/?locale=fr_FR">Facebook</a>
                     </div>
 
                     <!-- Conteneur réseaux instagram -->
                     <div class="main__container__contact__coordonnees__container">
                         <img src="/public/assets/icons/IconInstagramBlack-min.svg" alt="Une icône d'Instagram">
-                        <a href="">Instagram</a>
+                        <a href="https://www.instagram.com/magicformromillysurseine/">Instagram</a>
                     </div>
 
                     <!-- Conteneur réseaux snapchat -->
                     <div class="main__container__contact__coordonnees__container">
                         <img src="/public/assets/icons/IconSnapchatBlack-min.svg" alt="Une icône de Snapchat">
-                        <a href="">Snapchat</a>
+                        <a href="https://www.snapchat.com/add/magicromilly?share_id=LmN6yTfJSXaoy+U9jApgXw&locale=fr_FR&sid=8d7410c90636450696945ec846ccbec8">Snapchat</a>
                     </div>       
                 </div>
             </div>
@@ -163,8 +163,14 @@
         <!-- === Footer === -->
         <?php include_once ROOT . '/src/views/template/footer.php'?>
     </footer>
-
-    <script src="/public/assets/js/carousel-contact.js" defer></script>
+    
+    <!-- Fichiers JS -->
+    <!-- <script src="/public/assets/js/dark-mode.js" defer></script>
+    <script src="/public/assets/js/burger.js" defer></script>
+    <script src="/public/assets/js/carousel-contact.js" defer></script> -->
+    <script src="/dist/dark-mode-min.js" defer></script>
+    <script src="/dist/burger-min.js" defer></script>
+    <script src="/dist/carousel-contact-min.js" defer></script>
 </body>
 
 <!-- Foot -->

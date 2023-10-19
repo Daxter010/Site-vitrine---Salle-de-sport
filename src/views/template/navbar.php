@@ -46,10 +46,10 @@
                 <a href="https://www.facebook.com/magicform.romilly/?locale=fr_FR" class="nav__icon-mobile">
                     <img src="/public/assets/icons/IconFacebookBlack-min.svg" alt="Une icône de Facebook">
                 </a>
-                <a href="" class="nav__icon-mobile">
+                <a href="https://www.instagram.com/magicformromillysurseine/" class="nav__icon-mobile">
                     <img src="/public/assets/icons/IconInstagramBlack-min.svg" alt="Une icône d'Instagram">
                 </a>
-                <a href="" class="nav__icon-mobile">
+                <a href="https://www.snapchat.com/add/magicromilly?share_id=LmN6yTfJSXaoy+U9jApgXw&locale=fr_FR&sid=8d7410c90636450696945ec846ccbec8" class="nav__icon-mobile">
                     <img src="/public/assets/icons/IconSnapchatBlack-min.svg" alt="Une icône de Snapchat">
                 </a>
             </div>
@@ -77,10 +77,10 @@
                 <a href="https://www.facebook.com/magicform.romilly/?locale=fr_FR" class="nav__icon">
                     <img src="/public/assets/icons/IconFacebookBlack-min.svg" alt="Une icône de Facebook">
                 </a>
-                <a href="" class="nav__icon">
+                <a href="https://www.instagram.com/magicformromillysurseine/" class="nav__icon">
                     <img src="/public/assets/icons/IconInstagramBlack-min.svg" alt="Une icône d'Instagram">
                 </a>
-                <a href="" class="nav__icon">
+                <a href="https://www.snapchat.com/add/magicromilly?share_id=LmN6yTfJSXaoy+U9jApgXw&locale=fr_FR&sid=8d7410c90636450696945ec846ccbec8" class="nav__icon">
                     <img src="/public/assets/icons/IconSnapchatBlack-min.svg" alt="Une icône de Snapchat">
                 </a>
             </div>

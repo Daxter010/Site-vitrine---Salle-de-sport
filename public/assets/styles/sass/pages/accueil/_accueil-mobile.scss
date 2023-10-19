@@ -153,6 +153,17 @@
                                 transform: scale(1.2);
                             }
                         }
+
+                        > #apple {
+                            width: 100px;
+                            height: 31.5px;
+                            transition: transform 0.2s ease-in-out;
+
+                            // Hover zoom
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
                     }
                 }
 

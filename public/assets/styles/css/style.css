@@ -263,16 +263,19 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 128px;
     left: 48.8%;
     width: 10%;
     height: 125px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,7 +283,7 @@ table {
     width: 80%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -290,18 +293,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -311,21 +314,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -408,7 +415,6 @@ table {
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link.dark-mode {
     color: #FFFFFF;
@@ -512,7 +518,6 @@ table {
   .main__containerr > .main__container__products-pub > .main__container__products > .main__container__products--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__containerr > .main__container__products-pub > .main__container__products > .main__container__products--link.dark-mode {
     background-color: #000000;
@@ -623,7 +628,6 @@ table {
   .main__containerr .main__container__events > .main__container__events--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__containerr .main__container__events > .main__container__events--link.dark-mode {
     background-color: #000000;
@@ -696,7 +700,6 @@ table {
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link.dark-mode {
     color: #FFFFFF;
@@ -796,7 +799,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__mf > .main__container_links-pages__mf--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__mf > .main__container_links-pages__mf--link.dark-mode {
     background-color: #000000;
@@ -854,7 +856,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__contact > .main__container_links-pages__contact--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__contact > .main__container_links-pages__contact--link.dark-mode {
     background-color: #000000;
@@ -913,7 +914,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__partner > .main__container_links-pages__partner--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__partner > .main__container_links-pages__partner--link.dark-mode {
     background-color: #000000;
@@ -1262,23 +1262,26 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 130px;
     left: 43%;
     width: 12%;
     height: 115px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -1288,18 +1291,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -1309,21 +1312,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -1404,7 +1411,6 @@ table {
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link.dark-mode {
     color: #FFFFFF;
@@ -1508,7 +1514,6 @@ table {
   .main__containerr > .main__container__products-pub > .main__container__products > .main__container__products--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__containerr > .main__container__products-pub > .main__container__products > .main__container__products--link.dark-mode {
     background-color: #000000;
@@ -1619,7 +1624,6 @@ table {
   .main__containerr .main__container__events > .main__container__events--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__containerr .main__container__events > .main__container__events--link.dark-mode {
     background-color: #000000;
@@ -1692,7 +1696,6 @@ table {
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link.dark-mode {
     color: #FFFFFF;
@@ -1792,7 +1795,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__mf > .main__container_links-pages__mf--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__mf > .main__container_links-pages__mf--link.dark-mode {
     background-color: #000000;
@@ -1850,7 +1852,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__contact > .main__container_links-pages__contact--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__contact > .main__container_links-pages__contact--link.dark-mode {
     background-color: #000000;
@@ -1909,7 +1910,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__partner > .main__container_links-pages__partner--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__partner > .main__container_links-pages__partner--link.dark-mode {
     background-color: #000000;
@@ -2304,7 +2304,6 @@ table {
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link.dark-mode {
     color: #FFFFFF;
@@ -2408,7 +2407,6 @@ table {
   .main__containerr > .main__container__products-pub > .main__container__products > .main__container__products--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__containerr > .main__container__products-pub > .main__container__products > .main__container__products--link.dark-mode {
     background-color: #000000;
@@ -2518,7 +2516,6 @@ table {
   .main__containerr .main__container__events > .main__container__events--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__containerr .main__container__events > .main__container__events--link.dark-mode {
     background-color: #000000;
@@ -2591,7 +2588,6 @@ table {
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link.dark-mode {
     color: #FFFFFF;
@@ -2691,7 +2687,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__mf > .main__container_links-pages__mf--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__mf > .main__container_links-pages__mf--link.dark-mode {
     background-color: #000000;
@@ -2749,7 +2744,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__contact > .main__container_links-pages__contact--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__contact > .main__container_links-pages__contact--link.dark-mode {
     background-color: #000000;
@@ -2808,7 +2802,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__partner > .main__container_links-pages__partner--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__partner > .main__container_links-pages__partner--link.dark-mode {
     background-color: #000000;
@@ -3207,7 +3200,6 @@ table {
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link.dark-mode {
     color: #FFFFFF;
@@ -3311,7 +3303,6 @@ table {
   .main__containerr > .main__container__products-pub > .main__container__products > .main__container__products--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__containerr > .main__container__products-pub > .main__container__products > .main__container__products--link.dark-mode {
     background-color: #000000;
@@ -3363,6 +3354,14 @@ table {
     transition: transform 0.2s ease-in-out;
   }
   .main__containerr > .main__container__products-pub > .main__container__pub > .main__container__pub__content-text > div > .main__container__pub__content-text__app--link > img:hover {
+    transform: scale(1.2);
+  }
+  .main__containerr > .main__container__products-pub > .main__container__pub > .main__container__pub__content-text > div > .main__container__pub__content-text__app--link > #apple {
+    width: 100px;
+    height: 31.5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .main__containerr > .main__container__products-pub > .main__container__pub > .main__container__pub__content-text > div > .main__container__pub__content-text__app--link > #apple:hover {
     transform: scale(1.2);
   }
   .main__containerr > .main__container__products-pub > .main__container__pub > .main__container__pub__content-img {
@@ -3420,7 +3419,6 @@ table {
   .main__containerr .main__container__events > .main__container__events--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__containerr .main__container__events > .main__container__events--link.dark-mode {
     background-color: #000000;
@@ -3494,7 +3492,6 @@ table {
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .carousel > .carousel__slider > .carousel__slider__item > .carousel__slide__item--link.dark-mode {
     color: #FFFFFF;
@@ -3595,7 +3592,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__mf > .main__container_links-pages__mf--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__mf > .main__container_links-pages__mf--link.dark-mode {
     background-color: #000000;
@@ -3653,7 +3649,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__contact > .main__container_links-pages__contact--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__contact > .main__container_links-pages__contact--link.dark-mode {
     background-color: #000000;
@@ -3712,7 +3707,6 @@ table {
   .main__container_links-pages > .main__container_links-pages__partner > .main__container_links-pages__partner--link:hover {
     color: #FFFFFF;
     background-color: #000000;
-    transition: 0.2s;
   }
   .main__container_links-pages > .main__container_links-pages__partner > .main__container_links-pages__partner--link.dark-mode {
     background-color: #000000;
@@ -4065,16 +4059,19 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 128px;
     left: 48.8%;
     width: 10%;
     height: 125px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4082,7 +4079,7 @@ table {
     width: 80%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -4092,18 +4089,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -4113,21 +4110,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -5218,23 +5219,26 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 130px;
     left: 43%;
     width: 12%;
     height: 115px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -5244,18 +5248,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -5265,21 +5269,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -8459,16 +8467,19 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 128px;
     left: 48.8%;
     width: 10%;
     height: 125px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8476,7 +8487,7 @@ table {
     width: 80%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -8486,18 +8497,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -8507,21 +8518,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -9288,23 +9303,26 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 130px;
     left: 43%;
     width: 12%;
     height: 115px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -9314,18 +9332,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -9335,21 +9353,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -11592,16 +11614,19 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 128px;
     left: 48.8%;
     width: 10%;
     height: 125px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11609,7 +11634,7 @@ table {
     width: 80%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -11619,18 +11644,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -11640,21 +11665,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -12382,23 +12411,26 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 130px;
     left: 43%;
     width: 12%;
     height: 115px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -12408,18 +12440,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -12429,21 +12461,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -14558,16 +14594,19 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 128px;
     left: 48.8%;
     width: 10%;
     height: 125px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14575,7 +14614,7 @@ table {
     width: 80%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -14585,18 +14624,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -14606,21 +14645,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -15166,23 +15209,26 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 130px;
     left: 43%;
     width: 12%;
     height: 115px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -15192,18 +15238,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -15213,21 +15259,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -16781,16 +16831,19 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 128px;
     left: 48.8%;
     width: 10%;
     height: 125px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16798,7 +16851,7 @@ table {
     width: 80%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -16808,18 +16861,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -16829,21 +16882,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -17535,23 +17592,26 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 130px;
     left: 43%;
     width: 12%;
     height: 115px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -17561,18 +17621,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -17582,21 +17642,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -19532,16 +19596,19 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 128px;
     left: 48.8%;
     width: 10%;
     height: 125px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19549,7 +19616,7 @@ table {
     width: 80%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -19559,18 +19626,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -19580,21 +19647,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -20198,23 +20269,26 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 130px;
     left: 43%;
     width: 12%;
     height: 115px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -20224,18 +20298,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -20245,21 +20319,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -22008,16 +22086,19 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 128px;
     left: 48.8%;
     width: 10%;
     height: 125px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22025,7 +22106,7 @@ table {
     width: 80%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -22035,18 +22116,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -22056,21 +22137,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -22445,23 +22530,26 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 130px;
     left: 43%;
     width: 12%;
     height: 115px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -22471,18 +22559,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -22492,21 +22580,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -23559,16 +23651,19 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 128px;
     left: 48.8%;
     width: 10%;
     height: 125px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23576,7 +23671,7 @@ table {
     width: 80%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -23586,18 +23681,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -23607,21 +23702,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";
@@ -23950,23 +24049,26 @@ table {
     background-color: #FFFFFF;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist {
-    display: none;
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist {
+    display: block;
     position: absolute;
     top: 130px;
     left: 43%;
     width: 12%;
     height: 115px;
     padding: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 5vh;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -23976,18 +24078,18 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a {
     text-decoration: none;
     color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist {
     display: block;
     display: flex;
     flex-direction: column;
@@ -23997,21 +24099,25 @@ table {
     z-index: 1;
     background-color: white;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover .nav__sublist.dark-mode {
     background-color: black;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a:hover {
     color: #FFFFFF;
     background-color: #000000;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode {
     color: #FFFFFF;
   }
-  .nav__content > .nav__menu > .nav__list > .nav__item--submenu > .nav__sublist > .nav__subitem > a.dark-mode:hover {
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu .nav__sublist > .nav__subitem > a.dark-mode:hover {
     width: 100%;
     text-align: center;
     background-color: #FFFFFF;
     color: #000000;
+  }
+  .nav__content > .nav__menu > .nav__list > .nav__item--submenu:hover .nav__sublist {
+    opacity: 1;
+    visibility: visible;
   }
   .nav__content > .nav__menu > .nav__list > :nth-child(2) > a::after {
     content: "▼";

@@ -5,10 +5,10 @@
         <a href="https://www.facebook.com/magicform.romilly/?locale=fr_FR" class="main__container__footer-socials__link">
             <img src="/public/assets/icons/IconFacebookBlack-min.svg" alt="Une icône de Facebook" class="main__container__footer-socials__link--img">
         </a>
-        <a href="" class="main__container__footer-socials__link">
+        <a href="https://www.instagram.com/magicformromillysurseine/" class="main__container__footer-socials__link">
             <img src="/public/assets/icons/IconInstagramBlack-min.svg" alt="Une icône d'Instagram" class="main__container__footer-socials__link--img">
         </a>
-        <a href="" class="main__container__footer-socials__link">
+        <a href="https://www.snapchat.com/add/magicromilly?share_id=LmN6yTfJSXaoy+U9jApgXw&locale=fr_FR&sid=8d7410c90636450696945ec846ccbec8" class="main__container__footer-socials__link">
             <img src="/public/assets/icons/IconSnapchatBlack-min.svg" alt="Une icône de Snapchat" class="main__container__footer-socials__link--img">
         </a>
     </div>

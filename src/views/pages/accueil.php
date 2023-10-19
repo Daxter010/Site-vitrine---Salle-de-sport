@@ -23,21 +23,21 @@
                <div class="carousel__slider">
                     <!-- Première image -->
                     <div class="carousel__slider__item">
-                        <img src="/public/assets/images/accueil//CarouselEspaces-min.webp" alt="Tous les espaces de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
+                        <img src="/public/assets/images/accueil/CarouselEspaces-min.webp" alt="Tous les espaces de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
                         <h2 class="carousel__slide__item--title">Découvrez <br> nos espaces !</h2>
                         <a href="/espaces" class="carousel__slide__item--link">Voir nos espaces</a>
                     </div>
 
                     <!-- Deuxième image -->
                     <div class="carousel__slider__item">
-                        <img src="/public/assets/images/accueil/Germany_Lake_Mountains_Stones_Scenery_Eibsee_Alps_616675_1920x1080.jpg" alt="Tous les coachs sportifs de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
+                        <img src="/public/assets/images/accueil/CarouselEspaces-min.webp" alt="Tous les coachs sportifs de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
                         <h2 class="carousel__slide__item--title">Faites connaissance avec nos coachs !</h2>
                         <a href="/coachs" class="carousel__slide__item--link">Voir nos coachs</a>
                     </div>
 
                     <!-- Troisième image -->
                     <div class="carousel__slider__item">
-                        <img src="/public/assets/images/accueil/Norway_Mountains_Lake_Scenery_Clouds_617039_1920x1080 (1).jpg" alt="Tous les cours collectifs de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
+                        <img src="/public/assets/images/accueil/CarouselEspaces-min.webp" alt="Tous les cours collectifs de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
                         <h2 class="carousel__slide__item--title">Participez à nos cours collectifs !</h2>
                         <a href="/cours-collectifs" class="carousel__slide__item--link">Découvrir nos cours</a>
                     </div>                    
@@ -95,7 +95,7 @@
 
                 <!-- Evènements -->
                 <div class="main__container__events">
-                    <img src="/public/assets/images/accueil/IMG_evenements.png" alt="Divers évènements à Magic Form Romilly-sur-Seine" loading="lazy">
+                    <img src="/public/assets/images/accueil/IMG_evenements-min.webp" alt="Divers évènements à Magic Form Romilly-sur-Seine" loading="lazy">
                     <h3 class="main__container__events--title">Participez à nos évènements réguliers !</h3>
                     <a href="/evenements" class="main__container__events--link">Voir nos évènements</a>
                 </div>
@@ -165,7 +165,13 @@
         <?php include_once ROOT . '/src/views/template/footer.php' ?>
     </footer>
 
-    <script src="/public/assets/js/carousel.js" defer></script>
+    <!-- Fichiers JS -->
+    <!-- <script src="/public/assets/js/dark-mode.js" defer></script>
+    <script src="/public/assets/js/burger.js" defer></script>
+    <script src="/public/assets/js/carousel.js" defer></script> -->
+    <script src="/dist/dark-mode-min.js" defer></script>
+    <script src="/dist/burger-min.js" defer></script>
+    <script src="/dist/carousel-min.js" defer></script>
 </body>
 
 <!-- Foot -->
