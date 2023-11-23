@@ -18,7 +18,7 @@ const machinesGuideesHidden = document.querySelector('.main-show__machines');
     Fonction 'espacesAppearsAndDisappears()': 
     * C'est une fonction qui gère le comportement des clics sur différentes parties de l'interface, montrant ou cachant les sections correspondantes.
 */
-function espacesAppearsAndDisappears() {
+const espacesAppearsAndDisappears = () => {
     // Bouclage du btn-close pour avoir un index sur chaque btn-close
     for(let i = 0; i < btnClose.length; i++) {
         // Lors du click sur le btn-close

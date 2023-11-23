@@ -141,7 +141,7 @@ const alertIconsPath = {
 }
 
 // Fonction pour basculer le mode sombre
-function toggleDarkMode() {
+const toggleDarkMode = () => {
     const isDarkModeEnabled = localStorage.getItem('darkMode') === 'true';
     
     // Selectionne tous les éléments
@@ -233,7 +233,7 @@ function toggleDarkMode() {
 }
 
 // Fonction pour appliquer le mode sombre au chargement
-function applyDarkModeOnLoad() {
+const applyDarkModeOnLoad = () => {
     const isDarkModeEnabled = localStorage.getItem('darkMode') === 'true';
     toggleDarkMode(isDarkModeEnabled);
 }

@@ -330,9 +330,10 @@
             // Style pour le titre
             > h3 {
                 position: absolute;
-                bottom: 22.5%;
-                left: 10%;
-                width: 80%;
+                bottom: 20%;
+                left: 17.5%;
+                width: 65%;
+                padding: 1%;
                 text-align: center;
                 font-size: 2rem;
                 font-family: $fontText, sans-serif;
@@ -401,8 +402,9 @@
             > h3 {
                 position: absolute;
                 bottom: 25%;
-                left: 5%;
-                width: 90%;
+                left: 0;
+                width: 100%;
+                padding: 1%;
                 text-align: center;
                 font-size: 2rem;
                 font-family: $fontText, sans-serif;
@@ -471,8 +473,9 @@
             > h3 {
                 position: absolute;
                 bottom: 25%;
-                left: 5%;
-                width: 95%;
+                left: 0;
+                width: 100%;
+                padding: 1%;
                 text-align: center;
                 font-size: 2rem;
                 font-family: $fontText, sans-serif;

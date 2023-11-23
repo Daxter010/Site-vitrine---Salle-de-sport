@@ -1,1 +1,1 @@
-function navBurger(){const e=document.querySelector(".nav__burger--button"),n=document.querySelector(".nav__menu-mobile");e.addEventListener("click",()=>{n.classList.toggle("active")})}navBurger();
+const navBurger=()=>{const e=document.querySelector(".nav__burger--button"),t=document.querySelector(".nav__menu-mobile");e.addEventListener("click",()=>{t.classList.toggle("active")})};navBurger();

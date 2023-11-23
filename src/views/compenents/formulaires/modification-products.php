@@ -1,13 +1,13 @@
 <?php 
     // Sélectionne chaque catégories de produits
-    require_once ROOT . '/src/controllers/select-categories-products/select-categories-products.php';
+    require_once ROOT . '/src/controllers/select-categories-products.php';
 
     // Sélectionne chaque catégories de produits
-    require_once ROOT . '/src/controllers/select-products/select-products.php';
+    require_once ROOT . '/src/controllers/select-products.php';
     $detailProducts = selectIdProductsController();
 
     // Modifie les produits
-    require_once ROOT . '/src/controllers/update-products/update-products.php';
+    require_once ROOT . '/src/controllers/update-products.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">

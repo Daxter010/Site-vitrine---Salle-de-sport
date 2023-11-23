@@ -29,11 +29,12 @@
                 <a href="/cours-collectifs">Cours collectifs</a>
             </li>
             <li class="main__container__footer-nav__list--item">
-                <a href="/evenements">Évènements</a>
-            </li>
-            <li class="main__container__footer-nav__list--item">
                 <a href="/produits">Produits</a>
             </li>
+            <li class="main__container__footer-nav__list--item">
+                <a href="/evenements">Évènements</a>
+            </li>
+            
             <li class="main__container__footer-nav__list--item">
                 <a href="/contact">Contact</a>
             </li>

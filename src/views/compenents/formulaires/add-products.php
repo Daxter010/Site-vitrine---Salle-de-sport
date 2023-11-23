@@ -1,6 +1,9 @@
 <?php 
+    // Sélectionne chaque catégories de produits
+    require_once ROOT . '/src/controllers/select-categories-products.php';
+
     // Permet la création / l'ajout d'un nouveau produit dans la base de données
-    require_once ROOT . '/src/controllers/create-products/create-products.php';
+    require_once ROOT . '/src/controllers/create-products.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -43,12 +46,12 @@
                            <div>
                                 <div class="form-add-products__price">
                                     <label for="price-add-products">Prix</label>
-                                    <input type="number" name="price-add-products" id="price-add-products" placeholder="Entrez un prix" required>
+                                    <input type="number" step="0.01" min="0" name="price-add-products" id="price-add-products" placeholder="Entrez un prix" required>
                                 </div>
 
                                 <div class="form-add-products__stock">
                                     <label for="stock-add-products">Stock</label>
-                                    <input type="number" step="0.01" min="0" name="stock-add-products" id="stock-add-products" placeholder="Entrez le nombre en stock" required>
+                                    <input type="number" min="0" name="stock-add-products" id="stock-add-products" placeholder="Entrez le nombre en stock" required>
                                 </div>
                            </div>
 
@@ -66,11 +69,9 @@
                                 <div class="form-add-products__select">
                                     <label for="categorie-add-products">Catégorie</label>
                                     <select name="categorie-add-products" id="categorie-add-products" required>
-                                        <option value="">Performance</option>
-                                        <option value="">Perte de poids</option>
-                                        <option value="">Protéines</option>
-                                        <option value="">Récupération</option>
-                                        <option value="">Vitamines</option>
+                                        <?php foreach(selectCategoriesProductsController() as $categorieProduct) { ?>
+                                            <option value="<?php echo $categorieProduct['id'] ?>"><?php echo $categorieProduct['nom'] ?></option>
+                                        <?php } ?>
                                     </select>
                                 </div>
                             </div>

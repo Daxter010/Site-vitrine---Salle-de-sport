@@ -1,5 +1,5 @@
 /* Burger Navbar */
-function navBurger() {
+const navBurger = () => {
     // Selectionne le bouton burger et le menu mobile
     const burgerButton = document.querySelector('.nav__burger--button');
     const mobileMenu = document.querySelector('.nav__menu-mobile');

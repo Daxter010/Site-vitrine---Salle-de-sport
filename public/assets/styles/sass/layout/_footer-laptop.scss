@@ -83,15 +83,15 @@ footer {
                     font-family: $fontText, sans-serif;
                     color: $black;
 
-                    // Hover (même style que navbar)
-                    @import '../states/navbar_hover/hover';
+                    &:hover {
+                        border-bottom: solid 3px $black;  
+                    }
 
                     // Ajout du dark mode
                     &.dark-mode {
                         color: $white;
                         &:hover {
-                            background-color: $white;
-                            color: $black;
+                            border-bottom: solid 3px $white;  
                         }
                     }
                 }
@@ -120,18 +120,9 @@ footer {
             color: $black;
             font-family: $fontText, sans-serif;
 
-            &:hover {
-                background-color: $black;
-                color: $white;
-            }
-
             // Ajout du dark mode
             &.dark-mode {
                 color: $white;
-                &:hover {
-                    background-color: $white;
-                    color: $black;
-                }
             }
         }
     }

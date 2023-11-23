@@ -1,10 +1,10 @@
 <?php
-    require_once (ROOT . '/src/controllers/select-categories-cours/select-categories-cours.php'); // Sélectionne toutes les catégories de cours
-    require_once (ROOT . '/src/controllers/select-cours/select-cours.php'); // Sélectionne chaque cours pour chaque catégories de cours
-    require_once (ROOT . '/src/controllers/select-events/select-event.php'); // Sélectionne chaque évènements depuis la base de données
-    require_once (ROOT . '/src/controllers/select-categories-products/select-categories-products.php'); // Sélectionne toutes les catégories de produits
-    require_once (ROOT . '/src/controllers/select-products/select-products.php'); // Sélectionne chaque produits
-    require_once (ROOT . '/src/controllers/select-admin/select-admin.php'); // Sélectionne chaque produits
+    require_once (ROOT . '/src/controllers/select-categories-cours.php'); // Sélectionne toutes les catégories de cours
+    require_once (ROOT . '/src/controllers/select-cours.php'); // Sélectionne chaque cours pour chaque catégories de cours
+    require_once (ROOT . '/src/controllers/select-event.php'); // Sélectionne chaque évènements depuis la base de données
+    require_once (ROOT . '/src/controllers/select-categories-products.php'); // Sélectionne toutes les catégories de produits
+    require_once (ROOT . '/src/controllers/select-products.php'); // Sélectionne chaque produits
+    require_once (ROOT . '/src/controllers/select-admin.php'); // Sélectionne chaque produits
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -15,7 +15,7 @@
         <meta name="robots" content="noindex,nofollow">
         <meta name="author" content="Mickaël Poncelet">
         <link rel="icon" href="/public/assets/icons/Favicon_MF.ico" type="image/x-icon">
-        <script src="/public/assets/js/admin.js" defer></script>
+        <script src="/dist/admin-min.js" defer></script>
     </head>
         
     <body>
@@ -170,7 +170,7 @@
                                         2 => 'Perte de poids',
                                         3 => 'Protéines',
                                         4 => 'Récupération',
-                                        4 => 'Vitamines'
+                                        5 => 'Vitamines'
                                     ];
 
                                     // Parcours de tous les produits avec la fonction de filtre
@@ -245,7 +245,7 @@
                         </table>
                     </div>
 
-                    <!-- Tableau 3 : Produits -->
+                    <!-- Tableau 3 : Cours -->
                     <div id="tableThree" class="main__container__tables__three">
                         <div class="main__container__tables__three-add">
                             <a href="/admin/add-cours" class="main__container__tables__three-add--btn">Ajouter un cours</a>

@@ -1,6 +1,6 @@
 <?php 
     // Sélectionne chaque catégories de produits
-    require_once ROOT . '/src/controllers/create-admin/create-admin.php';
+    require_once ROOT . '/src/controllers/create-admin.php';
     createAdminController();
 ?>
 <!DOCTYPE html>

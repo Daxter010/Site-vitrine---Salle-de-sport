@@ -1,9 +1,9 @@
 <?php 
     // Permet la modification des évènements dans la base de données
-    require_once ROOT . '/src/controllers/update-events/update-event.php';
+    require_once ROOT . '/src/controllers/update-event.php';
 
-    // Sélectionne chaque cours
-    require_once ROOT . '/src/controllers/select-events/select-event.php';
+    // Sélectionne chaque évènements
+    require_once ROOT . '/src/controllers/select-event.php';
     $detailEvents = selectIdEventsController();
 ?>
 <!DOCTYPE html>
@@ -40,7 +40,7 @@
 
                                 <div class="form-modification-event__picture">
                                     <label for="picture-modification-event">Image</label>
-                                    <input type="file" name="picture-modification-event" id="picture-modification-event">
+                                    <input type="file" name="picture-modification-event" id="picture-modification-event" required>
                                 </div>
                            </div>
 

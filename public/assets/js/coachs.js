@@ -13,10 +13,10 @@ const coachFourHidden = document.querySelector('.main-show__coachs__four');
 const iconClose = document.querySelectorAll('.close-coachs'); // Bouton fermer
 
 /*
-    Fonction 'appearsAndDisappearsCoachs()':
+    Fonction fléchée 'appearsAndDisappearsCoachs()':
     * Cette fonction gère l'apparition et la disparition des sections lors d'un événement.
 */
-function appearsAndDisappearsCoachs() {
+const appearsAndDisappearsCoachs = () => {
     // Evènement lors du click sur 'coachOne'
     coachOne.addEventListener('click', function() {
         containerCoachsPrincipal.style.display = 'none'; // Cache la partie cliquée
@@ -59,7 +59,7 @@ function appearsAndDisappearsCoachs() {
         })
     });
 
-    // Evènement lors du survol sur 'coachFour'
+    // Evènement lors du click sur 'coachFour'
     coachFour.addEventListener('click', function() {
         containerCoachsPrincipal.style.display = 'none'; // Cache la partie cliquée
         coachFourHidden.style.display= 'block'; // Fait appaître le contenu caché de la partie cliquée

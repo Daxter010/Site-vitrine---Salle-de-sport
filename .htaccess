@@ -1,3 +1,6 @@
+# Options -Indexes, à appliquer pour proteger les images etc... avec une erreur 403.
+
+# Redirige les URL demandées qui ne correspondent ni à un fichier existant ni à un répertoire existant vers le fichier "index.php",
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -9,6 +12,7 @@ RewriteRule ^(.*)$ index.php [L,QSA]
     Header set Access-Control-Allow-Headers "Content-Type"
 </IfModule>
 
+# Compression de contenu 
 <IfModule mod_deflate.c>
     # Compress text, HTML, JavaScript, CSS, XML:
     AddOutputFilterByType DEFLATE text/plain

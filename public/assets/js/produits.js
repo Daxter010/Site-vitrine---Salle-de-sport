@@ -1,24 +1,25 @@
-const btnCloseProducts = document.querySelectorAll('.btn-close-products');
-const btnCardsProducts = document.querySelectorAll('.card__button--btn');
-const modalProducts = document.querySelector('.main__container__filter');
+const btnCloseProducts = document.querySelectorAll('.btn-close-products'); // Sélection de tous les boutons pour fermer la modale
+const btnCardsProducts = document.querySelectorAll('.card__button--btn'); // Sélection de tous les boutons des cartes de produits
+const modalProducts = document.querySelector('.main__container__filter'); // Sélection de l'élément modale de produits
 
-/*
-    Fonction 'appearsAndDisappearsModalProducts()': 
-    * C'est une fonction qui gère le comportement des clics sur les boutons de cartes, montrant ou cachant la modal correspondante.
+/* 
+   Fonction ' appearsAndDisappearsModalProducts()':
+   * Cette fonction cache et fait apparaître la modale au clique sur le bouton des cards.
 */
-function appearsAndDisappearsModalProducts() {
+const appearsAndDisappearsModalProducts = () => {
     // Cache la modale
     modalProducts.style.display = 'none';
 
+    // Au clique sur chaque bouton de bouton de card, ouvre la modale
     for(let i = 0; i < btnCardsProducts.length; i++) {
-        // Lors du click sur le btnCardsProducts
         btnCardsProducts[i].addEventListener('click', function() {
+            displayProductsModal(this); // Appel de displayProductsModal avec le bouton cliqué
             modalProducts.style.display = 'flex'; // Affiche la modale
         });
     }
 
+    // Au clique sur chaque bouton de fermeture, cache la modale
     for(let i = 0; i < btnCloseProducts.length; i++) {
-        // Lors du click sur le btnCloseProducts
         btnCloseProducts[i].addEventListener('click', function() {
             modalProducts.style.display = 'none'; // Ferme la modale
         });
@@ -27,17 +28,17 @@ function appearsAndDisappearsModalProducts() {
 
 /* 
    Fonction 'displayProductsModal()':
-   * Cette fonction récupère les données du bouton cliqué et les affiche dans la modal.
+   * Cette fonction récupère les données du bouton cliqué et les affiche dans la modale.
 */
-function displayProductsModal(bouton) {
-    // Récupération des données à partir des atrributs date du bouton de card
-    var id = bouton.getAttribute('data-id');
-    var nom = bouton.getAttribute('data-nom');
-    var sous_titre = bouton.getAttribute('data-sousTitre');
-    var prix = bouton.getAttribute('data-prix');
-    var stock = bouton.getAttribute('data-stock');
-    var description = bouton.getAttribute('data-description');
-    var image = bouton.getAttribute('data-image');
+const displayProductsModal = (bouton) => {
+    // Récupération des données à partir des attributs "data" du bouton de card
+    let id = bouton.getAttribute('data-id');
+    let nom = bouton.getAttribute('data-nom');
+    let sous_titre = bouton.getAttribute('data-sousTitre');
+    let prix = bouton.getAttribute('data-prix');
+    let stock = bouton.getAttribute('data-stock');
+    let description = bouton.getAttribute('data-description');
+    let image = bouton.getAttribute('data-image');
 
     // Mise à jour du contenu de la modale avec les données récupérées
     document.querySelector('#dataTitleModal').innerHTML = nom;
@@ -46,16 +47,7 @@ function displayProductsModal(bouton) {
     document.querySelector('#dataPriceModal').innerText = "Prix : " + prix + " €";
     document.querySelector('#dataStockModal').innerText = "Stock : " + stock;
     document.querySelector('#datePictureModal').src = "/public/assets/images/produits/" + image;
-   
 }
 
-// Selection de tous les boutons qui ouvrent la modale
-var boutons = document.querySelectorAll('.card__button--btn');
-// Ajout de l'évènement click sur chaque bouton
-boutons.forEach(function(bouton) {
-    bouton.addEventListener('click', function() {
-        displayProductsModal(bouton); // Affiche les détails des produits dans la modale
-    })
-})
-
-appearsAndDisappearsModalProducts(); // Appel de la fonction
+appearsAndDisappearsModalProducts(); // Appel de la fonction pour gérer l'affichage et la disparition
+displayProductsModal(btnCardsProducts); // Appel de la fonction pour afficher les données du produit

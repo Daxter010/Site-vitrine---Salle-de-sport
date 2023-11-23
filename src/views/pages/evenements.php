@@ -1,6 +1,6 @@
 <?php 
     // Sélectionne chaque évènements depuis la base de données
-    require_once ROOT . '/src/controllers/select-events/select-event.php';
+    require_once ROOT . '/src/controllers/select-event.php';
 
     // SEO
     $titlePage = "Évènements | Magic Form Romilly-sur-Seine";
@@ -95,10 +95,8 @@
     </footer>
 
     <!-- Fichiers JS -->
-    <!-- <script src="/public/assets/js/dark-mode.js" defer></script>
-    <script src="/public/assets/js/burger.js" defer></script> -->
     <script src="/dist/dark-mode-min.js" defer></script>
-    <script src="/dist/burger-min.js" defer></script>
+    <script src="/dist/burger-min.js" async></script>
 </body>
 
 <!-- Foot -->

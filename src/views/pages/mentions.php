@@ -64,10 +64,8 @@
     </footer>
 
     <!-- Fichiers JS -->
-    <!-- <script src="/public/assets/js/dark-mode.js" defer></script>
-    <script src="/public/assets/js/burger.js" defer></script> -->
     <script src="/dist/dark-mode-min.js" defer></script>
-    <script src="/dist/burger-min.js" defer></script>
+    <script src="/dist/burger-min.js" async></script>
 </body>
 <!-- Foot -->
 <?php include_once ROOT . '/src/views/template/foot.php'?>

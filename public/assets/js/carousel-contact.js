@@ -7,7 +7,7 @@ let currentIndexContact = 0;
     Fonction 'fadeOutContact()': 
     * Cette fonction masque un élément avec un fondu sortant (disparition progressive).
 */
-function fadeOutContact(element) {
+const fadeOutContact = (element) => {
     element.style.transition = `opacity ${fadeDurationContact}ms`;
     element.style.opacity = 0;
     setTimeout(() => {
@@ -20,7 +20,7 @@ function fadeOutContact(element) {
     Fonction 'showNextContact()': 
     * Cette fonction affiche le prochain élément du carrousel avec un fondu entrant.
 */
-function showNextContact() {
+const showNextContact = () => {
     currentIndexContact = (currentIndexContact + 1) % itemsContact.length; // Utilisez itemsContact.length au lieu de items.length
     const nextItem = itemsContact[currentIndexContact];
     nextItem.style.transition = 'none'; // Désactiver la transition pour éviter la transition instantanée
@@ -34,7 +34,7 @@ function showNextContact() {
     Fonction 'fadeInContact()': 
     * Cette fonction affiche un élément avec un fondu entrant, puis appelle fadeOutContact après un certain délai pour masquer l'élément.
 */
-function fadeInContact(element) {
+const fadeInContact= (element) => {
     element.style.transition = `opacity ${fadeDurationContact}ms`;
     element.style.opacity = 1;
     setTimeout(() => {

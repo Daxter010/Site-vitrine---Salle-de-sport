@@ -3,7 +3,7 @@
     * Cette fonction gère le menu burger pour la section d'administration.
     * Elle affiche ou masque le menu latéral lorsque l'icône du burger est cliquée.
 */
-function toggleBurgerAdmin() {
+const toggleBurgerAdmin = () => {
     // Selectionne l'icône du burger et le menu latéral
     const burgerAdmin = document.querySelector('.main__container__deconnexion__burger-container img');
     const lateralMenu = document.querySelector('.main__container__menu-lateral');
@@ -35,6 +35,7 @@ function toggleBurgerAdmin() {
 
         // Selectionne le lien "paramètres" et sa fenêtre cachée
         const settingsAdmin = document.querySelector('.main__container__menu-lateral__links__settings h3');
+        const adminAccount = document.querySelector('.main__container__menu-lateral__links__settings__hidden--links a');
         const settingsHiddenAdmin = document.querySelector('.main__container__menu-lateral__links__settings__hidden');
         const tableOne = document.querySelector('#tableOne');
         const tableTwo = document.querySelector('#tableTwo');
@@ -46,7 +47,7 @@ function toggleBurgerAdmin() {
             if (settingsHiddenAdmin.style.display === 'none') {
                 settingsHiddenAdmin.style.display = 'flex';
 
-                settingsAdmin.addEventListener('click', function() {
+                adminAccount.addEventListener('click', function() {
                     if (tableFour.style.display === 'none') {
                         tableOne.style.display = 'none';
                         tableTwo.style.display = 'none';
@@ -79,7 +80,7 @@ toggleBurgerAdmin();
     Fonction 'confirmDelete()':
     * Gère la confirmation de suppression des cours / évènements / produits
 */
-function confirmDelete() {
+const confirmDelete = () => {
     // Selectionne tous les boutons de suppression des cours / évènements / produits
     const btnDeteleProductAdmin = document.querySelectorAll('.btnDeteleAdmin');
     btnDeteleProductAdmin.forEach(btn => {

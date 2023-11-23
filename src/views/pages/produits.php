@@ -1,6 +1,6 @@
 <?php 
-    require_once ROOT . '/src/controllers/select-categories-products/select-categories-products.php';  // fichier "select" des catégories de produits
-    require_once ROOT . '/src/controllers/select-products/select-products.php'; // Fichier "select" des produits
+    require_once ROOT . '/src/controllers/select-categories-products.php';  // fichier "select" des catégories de produits
+    require_once ROOT . '/src/controllers/select-products.php'; // Fichier "select" des produits
   
     // SEO
     $titlePage = "Produits | Magic Form Romilly-sur-Seine";
@@ -70,12 +70,9 @@
     </footer>
 
     <!-- Fichiers JS -->
-    <!-- <script src="/public/assets/js/dark-mode.js" defer></script>
-    <script src="/public/assets/js/burger.js" defer></script>
-    <script src="/public/assets/js/produits.js" defer></script> -->
+    <script src="/dist/burger-min.js" async></script>
+    <script src="/dist/produits-min.js" async></script>
     <script src="/dist/dark-mode-min.js" defer></script>
-    <script src="/dist/burger-min.js" defer></script>
-    <script src="/dist/produits-min.js" defer></script>
 </body>
 
 <!-- Foot -->

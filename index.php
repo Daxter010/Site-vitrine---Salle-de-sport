@@ -13,16 +13,16 @@ if ($route === '/') {
   require_once(ROOT . '/src/views/pages/accueil.php'); // Page "Accueil"
 
 } elseif ($route === '/espaces') {
-  require_once(ROOT . '/src/views/pages/espaces.php');  // Page "Espaces"
+  require_once(ROOT . '/src/views/pages/espaces.php'); // Page "Espaces"
 
 } elseif ($route === '/coachs') {
-  require_once(ROOT . '/src/views/pages/coachs.php');  // Page "Coachs"
+  require_once(ROOT . '/src/views/pages/coachs.php'); // Page "Coachs"
 
 } elseif ($route === '/cours-collectifs') {
   require_once(ROOT . '/src/views/pages/cours-collectifs.php'); // Page "Cours collectifs"
 
 } elseif ($route === '/evenements') {
-  require_once(ROOT . '/src/views/pages/evenements.php');  // Page "Evènements"
+  require_once(ROOT . '/src/views/pages/evenements.php'); // Page "Evènements"
 
 } elseif ($route === '/produits') {
   require_once(ROOT . '/src/views/pages/produits.php'); // Page "Produits"
@@ -62,7 +62,7 @@ if ($route === '/') {
   } else {
     $params = explode ('=', parse_url($route, PHP_URL_QUERY));
   if (count($params) === 2 && $params[0] === 'id') {
-    require_once(ROOT . '/src/controllers/delete-cours/delete-cours.php'); // Suppresion cours
+    require_once(ROOT . '/src/controllers/delete-cours.php'); // Suppresion cours
   } 
   }
 
@@ -92,7 +92,7 @@ if ($route === '/') {
   } else {
     $params = explode ('=', parse_url($route, PHP_URL_QUERY));
     if (count($params) === 2 && $params[0] === 'id') {
-      require_once(ROOT . '/src/controllers/delete-events/delete-event.php'); // Suppression d'évènements
+      require_once(ROOT . '/src/controllers/delete-event.php'); // Suppression d'évènements
     } 
   }
   
@@ -122,7 +122,7 @@ if ($route === '/') {
   } else {
     $params = explode ('=', parse_url($route, PHP_URL_QUERY));
     if (count($params) === 2 && $params[0] === 'id') {
-      require_once(ROOT . '/src/controllers/delete-products/delete-products.php');  // Suppression d'évènements
+      require_once(ROOT . '/src/controllers/delete-products.php');  // Suppression d'évènements
     }
   }
     
@@ -157,7 +157,7 @@ if ($route === '/') {
       require_once(ROOT . '/src/views/compenents/formulaires/delete-admin.php'); // Formulaire "Modifier un produit"
     }
   }
-    
+
 } else {
   http_response_code(404);
   echo "Page non trouvée";

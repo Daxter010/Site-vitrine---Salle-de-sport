@@ -199,7 +199,6 @@
                 font-family: $fontText, sans-serif;
                 font-weight: bold;
                 color: $white;
-                background-color: red;
             }
 
             // Lien vers la page produits
@@ -314,8 +313,9 @@
             > h3 {
                 position: absolute;
                 bottom: 10%;
-                left: 2.5%;
-                width: 95%;
+                left: 0;
+                width: 100%;
+                padding: 1%;
                 text-align: center;
                 font-size: 3.6rem;
                 font-family: $fontText, sans-serif;
@@ -382,8 +382,9 @@
             > h3 {
                 position: absolute;
                 bottom: 10%;
-                left: 3.5%;
-                width: 95%;
+                left: 0;
+                width: 100%;
+                padding: 1%;
                 text-align: center;
                 font-size: 3.6rem;
                 font-family: $fontText, sans-serif;
@@ -452,8 +453,9 @@
             > h3 {
                 position: absolute;
                 bottom: 10%;
-                left: 10%;
-                width: 80%;
+                left: 0;
+                width: 100%;
+                padding: 1%;
                 text-align: center;
                 font-size: 3.6rem;
                 font-family: $fontText, sans-serif;

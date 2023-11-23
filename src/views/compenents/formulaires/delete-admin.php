@@ -1,6 +1,6 @@
 <?php 
     // Permet la modification des adminitsrateurs dans la base de données
-    require_once ROOT . '/src/controllers/delete-admin/delete-admin.php';
+    require_once ROOT . '/src/controllers/delete-admin.php';
     deleteAdminController();
 ?>
 <!DOCTYPE html>

@@ -1,17 +1,14 @@
 <?php
-   
+    require_once("config.php");
+
     function connectDb() {
-        $sgbd = 'mysql';
-        $db_name = 'magic_form_romilly_sur_seine';
-        $host = 'localhost';
-        $user = 'root';
-        $password = '';
+        global $DB_SGBD, $DB_HOST, $DB_NAME, $DB_USER, $DB_PASS;
 
         try {
-            $db = new PDO("$sgbd:dbname=$db_name;host=$host", $user, $password);
+            $db = new PDO($DB_SGBD . ':host=' . $DB_HOST . ';dbname=' . $DB_NAME, $DB_USER, $DB_PASS);
             return $db;
 
-        } catch ( PDOException $e ) {          
+        } catch (PDOException $e) {          
             echo 'Erreur : '. $e->getMessage();
             die();
         } 

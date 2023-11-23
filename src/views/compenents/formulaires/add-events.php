@@ -1,6 +1,6 @@
 <?php
     // Permet la création / l'ajout d'un nouvel évènement dans la base de données
-    require_once ROOT . '/src/controllers/create-events/create-event.php';
+    require_once ROOT . '/src/controllers/create-event.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">

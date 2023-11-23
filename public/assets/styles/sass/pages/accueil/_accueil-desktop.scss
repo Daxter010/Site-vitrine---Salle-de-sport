@@ -323,8 +323,9 @@
             > h3 {
                 position: absolute;
                 bottom: 10%;
-                left: 5.5%;          
+                left: 5%;
                 width: 90%;
+                padding: 1.5%;
                 text-align: center;
                 font-size: 4rem;
                 font-family: $fontText, sans-serif;
@@ -392,8 +393,9 @@
             > h3 {
                 position: absolute;
                 bottom: 10%;
-                left: 10%;         
-                width: 80%;
+                left: 0;
+                width: 100%;
+                padding: 1.5%;
                 text-align: center;
                 font-size: 4rem;
                 font-family: $fontText, sans-serif;
@@ -462,8 +464,9 @@
             > h3 {
                 position: absolute;
                 bottom: 10%;
-                left: 5.5%;   
-                width: 90%;
+                left: 2.5%;
+                width: 95%;
+                padding: 1.5%;
                 text-align: center;
                 font-size: 4rem;
                 font-family: $fontText, sans-serif;
@@ -491,4 +494,3 @@
     /* === Footer === */
     @import '../../layout/footer-desktop';
 }
-

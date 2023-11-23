@@ -1,13 +1,13 @@
 <?php 
     // Affiche les catégories de cours collectifs depuis la base de données
-    require_once ROOT . '/src/controllers/select-categories-cours/select-categories-cours.php';
+    require_once ROOT . '/src/controllers/select-categories-cours.php';
 
     // Sélectionne chaque catégories de produits
-    require_once ROOT . '/src/controllers/select-cours/select-cours.php';
+    require_once ROOT . '/src/controllers/select-cours.php';
     $detailCours = selectIdCoursController();
 
     // Permet la modification des cours-collectifs dans la base de données
-    require_once ROOT . '/src/controllers/update-cours/update-cours.php';
+    require_once ROOT . '/src/controllers/update-cours.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -48,7 +48,7 @@
                             <div>
                                 <div class="form-modification-cours__picture">
                                     <label for="picture-modification-cours">Image</label>
-                                    <input type="file" name="picture-modification-cours" id="picture-modification-cours">
+                                    <input type="file" name="picture-modification-cours" id="picture-modification-cours" required>
                                 </div>
 
                                 <div class="form-modification-cours__select">

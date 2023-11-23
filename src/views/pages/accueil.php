@@ -25,21 +25,21 @@
                     <div class="carousel__slider__item">
                         <img src="/public/assets/images/accueil/CarouselEspaces-min.webp" alt="Tous les espaces de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
                         <h2 class="carousel__slide__item--title">Découvrez <br> nos espaces !</h2>
-                        <a href="/espaces" class="carousel__slide__item--link">Voir nos espaces</a>
+                        <a href="/espaces" class="carousel__slide__item--link" aria-label="Aller à la page espaces">Voir nos espaces</a>
                     </div>
 
                     <!-- Deuxième image -->
                     <div class="carousel__slider__item">
                         <img src="/public/assets/images/accueil/CarouselEspaces-min.webp" alt="Tous les coachs sportifs de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
                         <h2 class="carousel__slide__item--title">Faites connaissance avec nos coachs !</h2>
-                        <a href="/coachs" class="carousel__slide__item--link">Voir nos coachs</a>
+                        <a href="/coachs" class="carousel__slide__item--link"  aria-label="Aller à la page coachs">Voir nos coachs</a>
                     </div>
 
                     <!-- Troisième image -->
                     <div class="carousel__slider__item">
                         <img src="/public/assets/images/accueil/CarouselEspaces-min.webp" alt="Tous les cours collectifs de Magic Form Romilly-sur-Seine" class="carousel__slide__item--img" loading="lazy">
                         <h2 class="carousel__slide__item--title">Participez à nos cours collectifs !</h2>
-                        <a href="/cours-collectifs" class="carousel__slide__item--link">Découvrir nos cours</a>
+                        <a href="/cours-collectifs" class="carousel__slide__item--link" aria-label="Aller à la page cours">Découvrir nos cours</a>
                     </div>                    
                </div>
             </div>
@@ -138,7 +138,7 @@
                 <!-- Vers Magic Form France -->
                 <div class="main__container_links-pages__mf">
                     <a href="https://magic-form.fr/" class="main__container_links-pages__mf--link">Aller vers Magic Form</a>
-                    <h3>Obtenez plus d'informations sur Magic Form France !</h3>
+                    <h3>Plus d'informations sur Magic Form France !</h3>
                     <img src="/public/assets/images/accueil/MagicFormFrance-min.webp" alt="Un coach encourageant son adhérent sur un appareil de cardio" loading="lazy">
                 </div>
 
@@ -166,12 +166,10 @@
     </footer>
 
     <!-- Fichiers JS -->
-    <!-- <script src="/public/assets/js/dark-mode.js" defer></script>
-    <script src="/public/assets/js/burger.js" defer></script>
-    <script src="/public/assets/js/carousel.js" defer></script> -->
-    <script src="/dist/dark-mode-min.js" defer></script>
     <script src="/dist/burger-min.js" defer></script>
-    <script src="/dist/carousel-min.js" defer></script>
+    <script src="/dist/dark-mode-min.js" defer></script>
+    <script src="/dist/burger-min.js" async></script>
+    <script src="/dist/carousel-min.js" async></script>
 </body>
 
 <!-- Foot -->

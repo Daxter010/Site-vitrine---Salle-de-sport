@@ -1,6 +1,6 @@
 <?php 
-    require_once ROOT . '/src/controllers/select-categories-cours/select-categories-cours.php'; // Sélectionne toutes les catégories de cours
-    require_once ROOT . '/src/controllers/select-cours/select-cours.php'; // Sélectionne chaque cours pour chaque catégories de cours
+    require_once ROOT . '/src/controllers/select-categories-cours.php'; // Sélectionne toutes les catégories de cours
+    require_once ROOT . '/src/controllers/select-cours.php'; // Sélectionne chaque cours pour chaque catégories de cours
 
     // SEO
     $titlePage = "Cours Collectifs | Magic Form Romilly-sur-Seine";
@@ -147,11 +147,8 @@
     </footer>
     
     <!-- Fichiers JS -->
-    <!-- <script src="/public/assets/js/dark-mode.js" defer></script>
-    <script src="/public/assets/js/burger.js" defer></script>
-    <script src="/public/assets/js/accordeon.js" defer></script> -->
     <script src="/dist/dark-mode-min.js" defer></script>
-    <script src="/dist/burger-min.js" defer></script>
+    <script src="/dist/burger-min.js" async></script>
     <script src="/dist/accordeon-min.js" defer></script>
 </body>
 

@@ -1,9 +1,9 @@
 <?php 
     // Affiche les catégories de cours collectifs depuis la base de données
-    require_once ROOT . '/src/controllers/select-categories-cours/select-categories-cours.php';
+    require_once ROOT . '/src/controllers/select-categories-cours.php';
 
     // Permet la création / l'ajout d'un nouveau cours-collectif dans la base de données
-    require_once ROOT . '/src/controllers/create-cours/create-cours.php';
+    require_once ROOT . '/src/controllers/create-cours.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
