@@ -4,3 +4,4 @@
     $DB_NAME = "magic_form_romilly_sur_seine";
     $DB_USER = "root";
     $DB_PASS = "";
+    // Données TEST en Local
