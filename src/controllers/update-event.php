@@ -24,7 +24,7 @@
                 // Récupération du fichier uploadé
                 $updatePictureEvent = $_FILES['picture-modification-event']['name']; // Attribution de la clé "name"
                 $file_tmp = $_FILES['picture-modification-event']['tmp_name']; // Chemin temporaire
-                $destination = ROOT_PUBLIC . 'assets/images/evenements/' . $updatePictureEvent; // Chemin de destination pour le fichier image vers dossier "cours_collectifs"
+                $destination = ROOT_PUBLIC . '/assets/images/evenements/' . $updatePictureEvent; // Chemin de destination pour le fichier image vers dossier "cours_collectifs"
 
                 // Format désirés
                 $imgTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
@@ -75,7 +75,7 @@
 
         // Si mon image existe dans ma base de données alors...
         if ($result && isset($result['image'])) {
-            return ROOT_PUBLIC . 'assets/images/evenements/' . $result['image'];
+            return ROOT_PUBLIC . '/assets/images/evenements/' . $result['image'];
         } else {
             return null;
         }

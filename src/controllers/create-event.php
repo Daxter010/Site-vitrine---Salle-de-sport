@@ -22,7 +22,7 @@
                 $file_tmp = $_FILES['picture-add-event']['tmp_name'];
 
                 // Chemin de destination pour le fichier image
-                $destination = ROOT_PUBLIC . 'assets/images/evenements/' . $addPictureEvent;
+                $destination = ROOT_PUBLIC . '/assets/images/evenements/' . $addPictureEvent;
 
                 // Format désirés
                 $imgTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];

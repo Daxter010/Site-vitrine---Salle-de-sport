@@ -3,126 +3,127 @@
 /* Style pour version Desktop */
 
 footer {
-    width: 100%;
-    height: 30vh;
+  width: 100%;
+  height: 30vh;
 }
 
 // Styles container principal
 .main__container__footer {
+  width: 100%;
+  height: 100%;
+
+  // Style container liens réseaux sociaux
+  > .main__container__footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    
-    // Style container liens réseaux sociaux
-    > .main__container__footer-socials {
+    height: 40%;
+    background-color: $white;
+
+    // Ajout du dark mode
+    &.dark-mode {
+      background-color: $black;
+    }
+
+    // Style des liens
+    > .main__container__footer-socials__link {
+      margin: 0 42.5px;
+
+      // style des images des liens
+      > .main__container__footer-socials__link--img {
+        width: 35px;
+        transition: transform 0.2s ease-in-out;
+
+        // Hover zoom
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  // Style container liens de navigations
+  > .main__container__footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    background-color: $white;
+
+    // Ajout du dark mode
+    &.dark-mode {
+      background-color: $black;
+    }
+
+    // Style <ul>
+    > .main__container__footer-nav__list {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+
+      // Style <li>
+      > .main__container__footer-nav__list--item {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 40%;
-        background-color: $white;
-
-        // Ajout du dark mode
-        &.dark-mode {
-            background-color: $black;
-        }
-        
-        // Style des liens
-        > .main__container__footer-socials__link {
-            margin: 0 42.5px;
-
-            // style des images des liens
-            > .main__container__footer-socials__link--img {
-                width: 35px;
-                transition: transform 0.2s ease-in-out;
-
-                // Hover zoom
-                &:hover {
-                    transform: scale(1.2);
-                }
-            }
-        }
-    }
-    
-    // Style container liens de navigations
-    > .main__container__footer-nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 40%;
-        background-color: $white;
-
-        // Ajout du dark mode
-        &.dark-mode {
-            background-color: $black;
-        }
-        
-        // Style <ul>
-        > .main__container__footer-nav__list {
-            display: flex;
-            justify-content: space-around;
-            width: 80%;
-            
-            // Style <li>
-            > .main__container__footer-nav__list--item { 
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 10%;
-                height: 5vh;
-
-                // Style des liens
-                a {
-                    width: 100%;
-                    text-align: center;
-                    vertical-align: center;
-                    line-height: 5vh;
-                    font-size: 2.2rem;
-                    text-decoration: none;
-                    font-family: $fontText, sans-serif;
-                    color: $black;
-
-                    &:hover {
-                        border-bottom: solid 3px $black;  
-                    }
-
-                    // Ajout du dark mode
-                    &.dark-mode {
-                        color: $white;
-                        &:hover {
-                            border-bottom: solid 3px $white;  
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    // Style container des mentions / politiques et copyright
-    > .main__container__footer-infos {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 20%;
-        background-color: $grey_white;
-
-        // Ajout du dark mode
-        &.dark-mode {
-            background-color: $grey_black;
-        }
+        width: 10%;
+        height: 5vh;
 
         // Style des liens
-        > a {
-            padding: 10px;
-            font-size: 2rem;
-            font-family: $fontText, sans-serif;
-            color: $black;
+        a {
+          width: 100%;
+          text-align: center;
+          vertical-align: center;
+          line-height: 5vh;
+          font-size: 2.2rem;
+          text-decoration: none;
+          font-family: $fontText, sans-serif;
+          color: $black;
 
-            // Ajout du dark mode
-            &.dark-mode {
-                color: $white;
+          &:hover {
+            border-bottom: solid 3px $black;
+          }
+
+          // Ajout du dark mode
+          &.dark-mode {
+            color: $white;
+            &:hover {
+              border-bottom: solid 3px $white;
             }
+          }
         }
+      }
     }
+  }
+
+  // Style container des mentions / politiques et copyright
+  > .main__container__footer-infos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: $grey_white;
+
+    // Ajout du dark mode
+    &.dark-mode {
+      background-color: $grey_black;
+    }
+
+    // Style des liens
+    > a {
+      padding: 10px;
+      font-size: 2rem;
+      font-family: $fontText, sans-serif;
+      color: $black;
+      text-decoration: none;
+
+      // Ajout du dark mode
+      &.dark-mode {
+        color: $white;
+      }
+    }
+  }
 }

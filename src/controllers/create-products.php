@@ -27,7 +27,7 @@
                 $file_tmp = $_FILES['picture-add-products']['tmp_name'];
 
                 // Chemin de destination pour le fichier image
-                $destination = ROOT_PUBLIC . 'assets/images/produits/' . $addPictureProduct;
+                $destination = ROOT_PUBLIC . '/assets/images/produits/' . $addPictureProduct;
 
                 // Format désirés
                 $imgTypes = ['image/jpeg', 'image/png', 'image/jpg', 'image/webp'];

@@ -18,7 +18,7 @@
                 $file_tmp = $_FILES['picture-add-cours']['tmp_name'];
 
                 // Chemin de destination pour le fichier image
-                $destination = ROOT_PUBLIC . 'assets/images/cours_collectifs/' . $addPictureCours;
+                $destination = ROOT_PUBLIC . '/assets/images/cours_collectifs/' . $addPictureCours;
 
                 // Format désirés
                 $imgTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];

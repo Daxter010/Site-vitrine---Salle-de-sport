@@ -1,27 +1,21 @@
-# Options -Indexes, à appliquer pour proteger les images etc... avec une erreur 403.
+# Protection par mot de passe
+AuthType Basic
+AuthName "Accès réservé"
+AuthUserFile "d:/wamp/www/Magic_Form_Romilly/.htpasswd"
+Require valid-user
 
-# Redirige les URL demandées qui ne correspondent ni à un fichier existant ni à un répertoire existant vers le fichier "index.php",
+# Bloquer l'accès direct aux fichiers de configuration
+RewriteRule ^\config.php$ - [F]
+# Bloquer l'accès direct au fichier .htaccess
+RewriteRule ^\.htaccess$ - [F]
+
+# Activer le module de réécriture
 RewriteEngine On
+# Définir la base de la réécriture
+RewriteBase /
+# Vérifier si le fichier demandé n'existe pas
 RewriteCond %{REQUEST_FILENAME} !-f
+# Vérifier si le répertoire demandé n'existe pas
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [L,QSA]
-
-<IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "http://localhost"
-    Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
-    Header set Access-Control-Allow-Headers "Content-Type"
-</IfModule>
-
-# Compression de contenu 
-<IfModule mod_deflate.c>
-    # Compress text, HTML, JavaScript, CSS, XML:
-    AddOutputFilterByType DEFLATE text/plain
-    AddOutputFilterByType DEFLATE text/html
-    AddOutputFilterByType DEFLATE text/xml
-    AddOutputFilterByType DEFLATE text/css
-    AddOutputFilterByType DEFLATE application/xml
-    AddOutputFilterByType DEFLATE application/xhtml+xml
-    AddOutputFilterByType DEFLATE application/rss+xml
-    AddOutputFilterByType DEFLATE application/javascript
-    AddOutputFilterByType DEFLATE application/x-javascript
-</IfModule>
+# Réécrire l'URL pour diriger vers index.php avec le paramètre 'url'
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

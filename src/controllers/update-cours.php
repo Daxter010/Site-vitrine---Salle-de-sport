@@ -22,7 +22,7 @@
                 $updatePictureCours = $_FILES['picture-modification-cours']['name']; // Attribution de la clé "name"
                 $file_tmp = $_FILES['picture-modification-cours']['tmp_name']; // Chemin temporaire
                 // Chemin de destination pour le fichier image vers dossier "cours_collectifs"
-                $destination = ROOT_PUBLIC . 'assets/images/cours_collectifs/' . $updatePictureCours;
+                $destination = ROOT_PUBLIC . '/assets/images/cours_collectifs/' . $updatePictureCours;
 
                 // Format désirés
                 $imgTypes = ['image/jpeg', 'image/png', 'image/JPG', 'image/webp'];
@@ -73,7 +73,7 @@
 
         // Si mon image existe dans ma base de données alors...
         if ($result && isset($result['image'])) {
-            return ROOT_PUBLIC . 'assets/images/cours_collectifs/' . $result['image'];
+            return ROOT_PUBLIC . '/assets/images/cours_collectifs/' . $result['image'];
         } else {
             return null;
         }

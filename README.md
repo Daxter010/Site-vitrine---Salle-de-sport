@@ -35,10 +35,6 @@ Le site web de la Salle de Sport Magic Form Romilly-sur-Seine est un site vitrin
 5. **Produits (Produits)** : Parcourez notre boutique en ligne et achetez des produits sportifs en salle.
 6. **Contact (Contact)** : Contactez-nous pour toute question ou demande.
 
-## Auteurs
-
-- [Poncelet Mickaël](mickaelponcelet10@gmail.com)
-
 ## Licence
 
 Ce projet est sous licence MIT.

@@ -83,7 +83,7 @@
 
         // Si mon image existe dans ma base de données alors...
         if ($result && isset($result['image'])) {
-            return ROOT_PUBLIC . 'assets/images/produits/' . $result['image'];
+            return ROOT_PUBLIC . '/assets/images/produits/' . $result['image'];
         } else {
             return null;
         }
@@ -108,7 +108,7 @@
 
         // Si mon image existe dans ma base de données alors...
         if ($result && isset($result['image'])) {
-            return ROOT_PUBLIC . 'assets/images/produits/' . $result['image'];
+            return ROOT_PUBLIC . '/assets/images/produits/' . $result['image'];
         } else {
             return null;
         }
