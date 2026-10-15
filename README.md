@@ -1,4 +1,4 @@
-# Site Web de la Salle de Sport Magic Form Romilly-sur-Seine
+# Site Web de la Salle de Sport
 
 ## Description
 
